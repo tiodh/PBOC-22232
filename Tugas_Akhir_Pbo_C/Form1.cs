@@ -16,5 +16,30 @@ namespace Tugas_Akhir_Pbo_C
         {
             InitializeComponent();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

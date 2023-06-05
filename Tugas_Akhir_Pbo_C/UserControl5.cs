@@ -16,5 +16,10 @@ namespace Tugas_Akhir_Pbo_C
         {
             InitializeComponent();
         }
+
+        private void UserControl5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

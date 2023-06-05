@@ -84,41 +84,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl2.Designer.cs">
-      <DependentUpon>UserControl2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Daftar Wisata.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Daftar Wisata.Designer.cs">
       <DependentUpon>Daftar Wisata.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl5.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl5.Designer.cs">
-      <DependentUpon>UserControl5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl6.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl6.Designer.cs">
-      <DependentUpon>UserControl6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl7.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl7.Designer.cs">
-      <DependentUpon>UserControl7.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\Beranda_User.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Beranda_User.Designer.cs">
       <DependentUpon>Beranda_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Kuliner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Kuliner.Designer.cs">
+      <DependentUpon>Kuliner.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Map.cs">
       <SubType>UserControl</SubType>
@@ -150,11 +132,11 @@
     <Compile Include="UserControls\UserControl4.Designer.cs">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Riwayat.cs">
+    <Compile Include="UserControls\Riwayat_Admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Riwayat.Designer.cs">
-      <DependentUpon>Riwayat.cs</DependentUpon>
+    <Compile Include="UserControls\Riwayat_Admin.Designer.cs">
+      <DependentUpon>Riwayat_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Grafik_Pengunjung.cs">
       <SubType>UserControl</SubType>
@@ -201,23 +183,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControl2.resx">
-      <DependentUpon>UserControl2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Daftar Wisata.resx">
       <DependentUpon>Daftar Wisata.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl5.resx">
-      <DependentUpon>UserControl5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl6.resx">
-      <DependentUpon>UserControl6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl7.resx">
-      <DependentUpon>UserControl7.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Beranda_User.resx">
       <DependentUpon>Beranda_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Kuliner.resx">
+      <DependentUpon>Kuliner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Map.resx">
       <DependentUpon>Map.cs</DependentUpon>
@@ -234,8 +207,8 @@
     <EmbeddedResource Include="UserControls\UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Riwayat.resx">
-      <DependentUpon>Riwayat.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Riwayat_Admin.resx">
+      <DependentUpon>Riwayat_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Grafik_Pengunjung.resx">
       <DependentUpon>Grafik_Pengunjung.cs</DependentUpon>

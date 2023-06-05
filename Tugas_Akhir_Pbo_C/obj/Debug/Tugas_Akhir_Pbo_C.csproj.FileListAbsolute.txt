@@ -15,18 +15,9 @@ E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyCo
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form2.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl2.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl5.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl6.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl7.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Map.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl1.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl2.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl3.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl4.resources
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl5.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Pengunjung.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Keuangan.resources
@@ -37,3 +28,5 @@ E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Fasilitas.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Harga.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
+E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
+E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources

@@ -8,15 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using Tugas_Akhir_Pbo_C.UserControls;
 
 namespace Tugas_Akhir_Pbo_C
 {
     public partial class Form1 : KryptonForm
     {
-        UserControls.Data_Harga USserControl2 = new UserControls.Data_Harga();
-        UserControls.Rekomendasi USserControl3 = new UserControls.Rekomendasi();
+        UserControls.Data_Harga DataHarga = new UserControls.Data_Harga();
+        UserControls.Rekomendasi Rekomendasi = new UserControls.Rekomendasi();
         UserControls.UserControl4 USserControl4 = new UserControls.UserControl4();
         UserControls.Beranda_User Beranda_User = new UserControls.Beranda_User();
+        UserControls.Fasilitas fasilitas = new UserControls.Fasilitas();
+        UserControls.Kuliner Kuliner = new UserControls.Kuliner();
         public Form1()
         {
             InitializeComponent();
@@ -91,15 +94,15 @@ namespace Tugas_Akhir_Pbo_C
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             PanelUtama.Controls.Clear();
-            PanelUtama.Controls.Add(USserControl2);
-            USserControl2.Dock = DockStyle.Fill;
+            PanelUtama.Controls.Add(fasilitas);
+            fasilitas.Dock = DockStyle.Fill;
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
             PanelUtama.Controls.Clear();
-            PanelUtama.Controls.Add(USserControl3);
-            USserControl3.Dock = DockStyle.Fill;
+            PanelUtama.Controls.Add(Rekomendasi);
+            Rekomendasi.Dock = DockStyle.Fill;
         }
 
         private void PanelUtama_Paint(object sender, PaintEventArgs e)
@@ -117,6 +120,13 @@ namespace Tugas_Akhir_Pbo_C
             PanelUtama.Controls.Clear();
             PanelUtama.Controls.Add(Beranda_User);
             Beranda_User.Dock = DockStyle.Fill;
+        }
+
+        private void Button_Kuliner_Click(object sender, EventArgs e)
+        {
+            PanelUtama.Controls.Clear();
+            PanelUtama.Controls.Add(Kuliner);
+            Kuliner.Dock = DockStyle.Fill;
         }
     }
 }

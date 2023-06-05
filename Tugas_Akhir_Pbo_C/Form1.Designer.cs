@@ -34,6 +34,7 @@
             this.PanelUtama = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.beranda_User1 = new Tugas_Akhir_Pbo_C.UserControls.Beranda_User();
             this.Button_Map = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -80,6 +81,7 @@
             // PanelUtama
             // 
             this.PanelUtama.Controls.Add(this.kryptonPanel1);
+            this.PanelUtama.Controls.Add(this.beranda_User1);
             this.PanelUtama.Location = new System.Drawing.Point(318, 0);
             this.PanelUtama.Name = "PanelUtama";
             this.PanelUtama.Size = new System.Drawing.Size(1594, 1023);
@@ -105,6 +107,13 @@
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Swis721 Hv BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 4;
             this.kryptonLabel2.Values.Text = "Dashboard";
+            // 
+            // beranda_User1
+            // 
+            this.beranda_User1.Location = new System.Drawing.Point(0, 0);
+            this.beranda_User1.Name = "beranda_User1";
+            this.beranda_User1.Size = new System.Drawing.Size(1851, 1046);
+            this.beranda_User1.TabIndex = 88;
             // 
             // Button_Map
             // 
@@ -170,7 +179,7 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(115, 28);
+            this.kryptonLabel1.Location = new System.Drawing.Point(130, 28);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(135, 40);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -263,6 +272,7 @@
             this.Button_Kuliner.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.Button_Kuliner.TabIndex = 7;
             this.Button_Kuliner.Values.Text = "Kuliner";
+            this.Button_Kuliner.Click += new System.EventHandler(this.Button_Kuliner_Click);
             // 
             // pictureBox1
             // 
@@ -473,7 +483,6 @@
         #endregion
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
-        private Map userControl31;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel PanelUtama;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
@@ -493,5 +502,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private ComponentFactory.Krypton.Toolkit.KryptonButton Button_Darurat;
+        private UserControls.Beranda_User beranda_User1;
     }
 }

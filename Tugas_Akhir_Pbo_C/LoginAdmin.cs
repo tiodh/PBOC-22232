@@ -48,10 +48,10 @@ namespace Tugas_Akhir_Pbo_C
                 this.Hide();
 
                 // Membuat instance form baru yang akan ditampilkan setelah login
-                Dashboard_Admin mainForm = new Dashboard_Admin();
+                Dashboard_Admin Dashboard_Admin = new Dashboard_Admin();
 
                 // Menampilkan form utama
-                mainForm.Show();
+                Dashboard_Admin.Show();
             }
             else
             {

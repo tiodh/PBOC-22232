@@ -13,7 +13,8 @@ namespace Tugas_Akhir_Pbo_C
     public partial class Dashboard_Admin : Form
     {
         UserControls.Data_Pengunjung Data_Pengunjung = new UserControls.Data_Pengunjung();
-        
+        UserControls.Riwayat_Admin Riwayat_Admin = new UserControls.Riwayat_Admin();
+
 
         public Dashboard_Admin()
         {
@@ -37,6 +38,18 @@ namespace Tugas_Akhir_Pbo_C
         private void kryptonPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(Riwayat_Admin);
+            Riwayat_Admin.Dock = DockStyle.Fill;
         }
     }
 }

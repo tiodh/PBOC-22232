@@ -295,6 +295,7 @@
             this.kryptonButton3.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.kryptonButton3.TabIndex = 12;
             this.kryptonButton3.Values.Text = "Pengunjung";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // kryptonPanel2
             // 
@@ -375,6 +376,7 @@
             this.kryptonButton7.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.kryptonButton7.TabIndex = 14;
             this.kryptonButton7.Values.Text = "Rekapitulasi";
+            this.kryptonButton7.Click += new System.EventHandler(this.kryptonButton7_Click);
             // 
             // Dashboard_Admin
             // 

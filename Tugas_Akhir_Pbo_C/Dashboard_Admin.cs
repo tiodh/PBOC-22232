@@ -14,7 +14,8 @@ namespace Tugas_Akhir_Pbo_C
     {
         UserControls.Data_Pengunjung Data_Pengunjung = new UserControls.Data_Pengunjung();
         UserControls.Riwayat_Admin Riwayat_Admin = new UserControls.Riwayat_Admin();
-
+        UserControls.Pengunjung Pengunjung = new UserControls.Pengunjung();
+        UserControls.Pendapatan_Admin Pendapatan_Admin  = new UserControls.Pendapatan_Admin();
 
         public Dashboard_Admin()
         {
@@ -42,7 +43,9 @@ namespace Tugas_Akhir_Pbo_C
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(Pendapatan_Admin);
+            Pendapatan_Admin.Dock = DockStyle.Fill;
         }
 
         private void kryptonButton4_Click(object sender, EventArgs e)
@@ -50,6 +53,18 @@ namespace Tugas_Akhir_Pbo_C
             PanelUtamaAdmin.Controls.Clear();
             PanelUtamaAdmin.Controls.Add(Riwayat_Admin);
             Riwayat_Admin.Dock = DockStyle.Fill;
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(Pengunjung);
+            Pengunjung.Dock = DockStyle.Fill;
+        }
+
+        private void kryptonButton7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

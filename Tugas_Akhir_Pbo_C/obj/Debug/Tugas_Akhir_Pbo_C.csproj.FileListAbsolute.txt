@@ -14,7 +14,6 @@ E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCo
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
-E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form2.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl4.resources
@@ -30,3 +29,5 @@ E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
+E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
+E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources

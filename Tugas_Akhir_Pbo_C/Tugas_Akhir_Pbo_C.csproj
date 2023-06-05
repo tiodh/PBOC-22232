@@ -58,12 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +114,18 @@
     <Compile Include="UserControls\Data_Harga.Designer.cs">
       <DependentUpon>Data_Harga.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Pendapatan_Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pendapatan_Admin.Designer.cs">
+      <DependentUpon>Pendapatan_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Pengunjung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pengunjung.Designer.cs">
+      <DependentUpon>Pengunjung.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Rekomendasi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,9 +168,6 @@
     <Compile Include="UserControls\UserControl6.Designer.cs">
       <DependentUpon>UserControl6.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +203,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Data_Harga.resx">
       <DependentUpon>Data_Harga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Pendapatan_Admin.resx">
+      <DependentUpon>Pendapatan_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Pengunjung.resx">
+      <DependentUpon>Pengunjung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Rekomendasi.resx">
       <DependentUpon>Rekomendasi.cs</DependentUpon>

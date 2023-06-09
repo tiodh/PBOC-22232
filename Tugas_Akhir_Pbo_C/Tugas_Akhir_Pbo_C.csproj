@@ -132,6 +132,12 @@
     <Compile Include="UserControls\Rekomendasi.Designer.cs">
       <DependentUpon>Rekomendasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControl4.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Rekomendasi.resx">
       <DependentUpon>Rekomendasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>

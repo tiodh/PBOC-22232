@@ -531,7 +531,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Beranda_User";
-            this.Size = new System.Drawing.Size(1581, 1600);
+            this.Size = new System.Drawing.Size(1581, 1752);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();

@@ -42,7 +42,6 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -53,6 +52,8 @@
             this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton9 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton10 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonButton11 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -103,9 +104,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(29, 133);
+            this.pictureBox3.Location = new System.Drawing.Point(29, 264);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox3.Size = new System.Drawing.Size(267, 245);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 49;
             this.pictureBox3.TabStop = false;
@@ -113,9 +114,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(330, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(330, 264);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 245);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
@@ -123,9 +124,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(632, 133);
+            this.pictureBox4.Location = new System.Drawing.Point(632, 264);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox4.Size = new System.Drawing.Size(267, 245);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 51;
             this.pictureBox4.TabStop = false;
@@ -133,9 +134,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(956, 133);
+            this.pictureBox5.Location = new System.Drawing.Point(956, 264);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox5.Size = new System.Drawing.Size(267, 245);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 52;
             this.pictureBox5.TabStop = false;
@@ -143,9 +144,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1279, 133);
+            this.pictureBox6.Location = new System.Drawing.Point(1279, 264);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox6.Size = new System.Drawing.Size(267, 245);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 53;
             this.pictureBox6.TabStop = false;
@@ -153,9 +154,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1279, 544);
+            this.pictureBox7.Location = new System.Drawing.Point(1279, 628);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox7.Size = new System.Drawing.Size(267, 243);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 58;
             this.pictureBox7.TabStop = false;
@@ -163,9 +164,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(956, 544);
+            this.pictureBox8.Location = new System.Drawing.Point(956, 628);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox8.Size = new System.Drawing.Size(267, 243);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 57;
             this.pictureBox8.TabStop = false;
@@ -173,9 +174,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(632, 544);
+            this.pictureBox9.Location = new System.Drawing.Point(632, 628);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox9.Size = new System.Drawing.Size(267, 243);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 56;
             this.pictureBox9.TabStop = false;
@@ -183,9 +184,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(330, 544);
+            this.pictureBox10.Location = new System.Drawing.Point(330, 628);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox10.Size = new System.Drawing.Size(267, 243);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 55;
             this.pictureBox10.TabStop = false;
@@ -193,27 +194,18 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(29, 544);
+            this.pictureBox11.Location = new System.Drawing.Point(29, 628);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(267, 286);
+            this.pictureBox11.Size = new System.Drawing.Size(267, 243);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 54;
             this.pictureBox11.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1287, 552);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 59;
-            this.label1.Text = "label1";
-            // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(29, 414);
+            this.kryptonButton1.Location = new System.Drawing.Point(29, 502);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton1.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -222,107 +214,140 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(330, 414);
+            this.kryptonButton2.Location = new System.Drawing.Point(330, 502);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton2.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.TabIndex = 61;
+            this.kryptonButton2.TabIndex = 70;
             this.kryptonButton2.Values.Text = "kryptonButton2";
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(632, 414);
+            this.kryptonButton3.Location = new System.Drawing.Point(632, 502);
             this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton3.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton3.TabIndex = 62;
+            this.kryptonButton3.TabIndex = 71;
             this.kryptonButton3.Values.Text = "kryptonButton3";
             // 
             // kryptonButton4
             // 
-            this.kryptonButton4.Location = new System.Drawing.Point(956, 414);
+            this.kryptonButton4.Location = new System.Drawing.Point(956, 502);
             this.kryptonButton4.Name = "kryptonButton4";
-            this.kryptonButton4.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton4.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton4.TabIndex = 63;
+            this.kryptonButton4.TabIndex = 72;
             this.kryptonButton4.Values.Text = "kryptonButton4";
             // 
             // kryptonButton5
             // 
-            this.kryptonButton5.Location = new System.Drawing.Point(1279, 414);
+            this.kryptonButton5.Location = new System.Drawing.Point(1279, 502);
             this.kryptonButton5.Name = "kryptonButton5";
-            this.kryptonButton5.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton5.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton5.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton5.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton5.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton5.TabIndex = 64;
+            this.kryptonButton5.TabIndex = 73;
             this.kryptonButton5.Values.Text = "kryptonButton5";
             // 
             // kryptonButton6
             // 
-            this.kryptonButton6.Location = new System.Drawing.Point(29, 826);
+            this.kryptonButton6.Location = new System.Drawing.Point(29, 867);
             this.kryptonButton6.Name = "kryptonButton6";
-            this.kryptonButton6.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton6.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.TabIndex = 65;
+            this.kryptonButton6.TabIndex = 74;
             this.kryptonButton6.Values.Text = "kryptonButton6";
             // 
             // kryptonButton7
             // 
-            this.kryptonButton7.Location = new System.Drawing.Point(330, 826);
+            this.kryptonButton7.Location = new System.Drawing.Point(330, 867);
             this.kryptonButton7.Name = "kryptonButton7";
-            this.kryptonButton7.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton7.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton7.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton7.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton7.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton7.TabIndex = 66;
+            this.kryptonButton7.TabIndex = 75;
             this.kryptonButton7.Values.Text = "kryptonButton7";
             // 
             // kryptonButton8
             // 
-            this.kryptonButton8.Location = new System.Drawing.Point(632, 826);
+            this.kryptonButton8.Location = new System.Drawing.Point(632, 867);
             this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton8.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton8.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton8.TabIndex = 67;
+            this.kryptonButton8.TabIndex = 76;
             this.kryptonButton8.Values.Text = "kryptonButton8";
             // 
             // kryptonButton9
             // 
-            this.kryptonButton9.Location = new System.Drawing.Point(956, 826);
+            this.kryptonButton9.Location = new System.Drawing.Point(956, 867);
             this.kryptonButton9.Name = "kryptonButton9";
-            this.kryptonButton9.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton9.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton9.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton9.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton9.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton9.TabIndex = 68;
+            this.kryptonButton9.TabIndex = 77;
             this.kryptonButton9.Values.Text = "kryptonButton9";
             // 
             // kryptonButton10
             // 
-            this.kryptonButton10.Location = new System.Drawing.Point(1279, 826);
+            this.kryptonButton10.Location = new System.Drawing.Point(1279, 867);
             this.kryptonButton10.Name = "kryptonButton10";
-            this.kryptonButton10.Size = new System.Drawing.Size(267, 67);
+            this.kryptonButton10.Size = new System.Drawing.Size(267, 69);
             this.kryptonButton10.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton10.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton10.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton10.TabIndex = 69;
+            this.kryptonButton10.TabIndex = 78;
             this.kryptonButton10.Values.Text = "kryptonButton10";
             // 
-            // UserControl1
+            // kryptonButton11
+            // 
+            this.kryptonButton11.Location = new System.Drawing.Point(475, 143);
+            this.kryptonButton11.Name = "kryptonButton11";
+            this.kryptonButton11.Size = new System.Drawing.Size(175, 47);
+            this.kryptonButton11.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonButton11.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonButton11.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton11.StateCommon.Border.Rounding = 20;
+            this.kryptonButton11.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton11.TabIndex = 80;
+            this.kryptonButton11.Values.Text = "Cari";
+            // 
+            // Username_Login
+            // 
+            this.Username_Login.Location = new System.Drawing.Point(29, 143);
+            this.Username_Login.Name = "Username_Login";
+            this.Username_Login.Size = new System.Drawing.Size(428, 47);
+            this.Username_Login.StateCommon.Border.Color1 = System.Drawing.Color.DimGray;
+            this.Username_Login.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.Username_Login.StateCommon.Border.Rounding = 30;
+            this.Username_Login.StateCommon.Content.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username_Login.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
+            this.Username_Login.TabIndex = 79;
+            this.Username_Login.Text = "Cari";
+            this.Username_Login.UseWaitCursor = true;
+            // 
+            // Fasilitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.kryptonButton11);
+            this.Controls.Add(this.Username_Login);
             this.Controls.Add(this.kryptonButton10);
             this.Controls.Add(this.kryptonButton9);
             this.Controls.Add(this.kryptonButton8);
@@ -333,7 +358,6 @@
             this.Controls.Add(this.kryptonButton3);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.kryptonButton1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);
@@ -345,8 +369,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "UserControl1";
+            this.Name = "Fasilitas";
             this.Size = new System.Drawing.Size(1581, 952);
+            this.Load += new System.EventHandler(this.Fasilitas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -381,7 +406,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
@@ -392,5 +416,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton8;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton9;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton10;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton11;
+        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox Username_Login;
     }
 }

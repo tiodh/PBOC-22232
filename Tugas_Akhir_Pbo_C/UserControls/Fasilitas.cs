@@ -16,5 +16,10 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         {
             InitializeComponent();
         }
+
+        private void Fasilitas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

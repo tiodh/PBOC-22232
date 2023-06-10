@@ -20,6 +20,7 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Beranda_User Beranda_User = new UserControls.Beranda_User();
         UserControls.Fasilitas fasilitas = new UserControls.Fasilitas();
         UserControls.Kuliner Kuliner = new UserControls.Kuliner();
+        UserControls.Kontak_Darurat Darurat = new UserControls.Kontak_Darurat();
         public Form1()
         {
             InitializeComponent();
@@ -33,8 +34,8 @@ namespace Tugas_Akhir_Pbo_C
         private void kryptonButton5_Click(object sender, EventArgs e)
         {
             PanelUtama.Controls.Clear();
-            PanelUtama.Controls.Add(USserControl4);
-            USserControl4.Dock = DockStyle.Fill;
+            PanelUtama.Controls.Add(Darurat);
+            Darurat.Dock = DockStyle.Fill;
         }
 
 

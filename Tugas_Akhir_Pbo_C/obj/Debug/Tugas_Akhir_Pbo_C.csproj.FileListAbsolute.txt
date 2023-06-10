@@ -31,3 +31,4 @@ E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
 E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources
+E:\Tugas_Akhir_Pbo_C\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kontak_Darurat.resources

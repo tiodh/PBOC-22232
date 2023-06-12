@@ -21,5 +21,15 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         {
 
         }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

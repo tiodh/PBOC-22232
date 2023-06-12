@@ -16,7 +16,7 @@ namespace Tugas_Akhir_Pbo_C
     {
         UserControls.Data_Harga DataHarga = new UserControls.Data_Harga();
         UserControls.Rekomendasi Rekomendasi = new UserControls.Rekomendasi();
-        UserControls.UserControl4 USserControl4 = new UserControls.UserControl4();
+        UserControls.Review USserControl4 = new UserControls.Review();
         UserControls.Beranda_User Beranda_User = new UserControls.Beranda_User();
         UserControls.Fasilitas fasilitas = new UserControls.Fasilitas();
         UserControls.Kuliner Kuliner = new UserControls.Kuliner();

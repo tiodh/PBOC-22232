@@ -16,6 +16,7 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Riwayat_Admin Riwayat_Admin = new UserControls.Riwayat_Admin();
         UserControls.Pengunjung Pengunjung = new UserControls.Pengunjung();
         UserControls.Pendapatan_Admin Pendapatan_Admin  = new UserControls.Pendapatan_Admin();
+        UserControls.Review Review = new UserControls.Review();
 
         public Dashboard_Admin()
         {
@@ -64,7 +65,9 @@ namespace Tugas_Akhir_Pbo_C
 
         private void kryptonButton7_Click(object sender, EventArgs e)
         {
-
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(Review);
+            Review.Dock = DockStyle.Fill;
         }
     }
 }

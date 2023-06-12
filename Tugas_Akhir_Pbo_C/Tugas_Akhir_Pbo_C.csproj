@@ -138,11 +138,11 @@
     <Compile Include="UserControls\Kontak_Darurat.Designer.cs">
       <DependentUpon>Kontak_Darurat.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UserControl4.cs">
+    <Compile Include="UserControls\Review.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UserControl4.Designer.cs">
-      <DependentUpon>UserControl4.cs</DependentUpon>
+    <Compile Include="UserControls\Review.Designer.cs">
+      <DependentUpon>Review.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Riwayat_Admin.cs">
       <SubType>UserControl</SubType>
@@ -222,8 +222,8 @@
     <EmbeddedResource Include="UserControls\Kontak_Darurat.resx">
       <DependentUpon>Kontak_Darurat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserControl4.resx">
-      <DependentUpon>UserControl4.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Review.resx">
+      <DependentUpon>Review.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Riwayat_Admin.resx">
       <DependentUpon>Riwayat_Admin.cs</DependentUpon>

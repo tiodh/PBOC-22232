@@ -21,6 +21,7 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Fasilitas fasilitas = new UserControls.Fasilitas();
         UserControls.Kuliner Kuliner = new UserControls.Kuliner();
         UserControls.Kontak_Darurat Darurat = new UserControls.Kontak_Darurat();
+        UserControls.Map Map = new UserControls.Map();
         public Form1()
         {
             InitializeComponent();
@@ -89,7 +90,9 @@ namespace Tugas_Akhir_Pbo_C
 
         private void kryptonButton3_Click(object sender, EventArgs e)
         {
-            
+            PanelUtama.Controls.Clear();
+            PanelUtama.Controls.Add(Map);
+            Map.Dock = DockStyle.Fill;
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)

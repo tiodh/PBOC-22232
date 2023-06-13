@@ -21,5 +21,10 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         {
 
         }
+
+        private void kryptonCheckButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

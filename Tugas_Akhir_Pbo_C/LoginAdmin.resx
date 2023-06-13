@@ -2170,10 +2170,13 @@
   <metadata name="kryptonPalette1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="kryptonPalette1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABApJREFUaEPtmUerFEEURkfMKOa406Uo6p8wZ3emnaIbA+pWn2t1JQj+DkVFQcWc
+        DAAACwwBP0AiyAAABApJREFUaEPtmUerFEEURkfMKOa406Uo6p8wZ3emnaIbA+pWn2t1JQj+DkVFQcWc
         M5hdGTaKOxMq+p3iXRj6dfdUVdf0jMP74DBT3VXV1RVu3brdGFQPa5JYK46I0+KF+CJ+9sP/54J75Fkj
         Joqu0CixRZwXf8TfQH6Lc2KzGClq12ixT3wU1qgf4qI4IBiZOYIeH94P/7nGvYPikqCMlf8g9go6pxat
         EG+FNeCu2CrGi1BNENvEPWH1vRHLRNtET50Q9sD7YrFIpaXiobD6j4vkozND0HAe8FXsFENFalHnbvFN

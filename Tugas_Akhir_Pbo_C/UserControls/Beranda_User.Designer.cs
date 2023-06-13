@@ -477,7 +477,7 @@
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1555, 72);
+            this.vScrollBar1.Location = new System.Drawing.Point(1555, 81);
             this.vScrollBar1.Name = "vScrollBar1";
             this.vScrollBar1.Size = new System.Drawing.Size(26, 1619);
             this.vScrollBar1.TabIndex = 88;

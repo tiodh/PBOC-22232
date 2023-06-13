@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tugas_Akhir_Pbo_C.UserControls
 {
-    public partial class UserControl4 : UserControl
+    public partial class Review : UserControl
     {
-        public UserControl4()
+        public Review()
         {
             InitializeComponent();
         }

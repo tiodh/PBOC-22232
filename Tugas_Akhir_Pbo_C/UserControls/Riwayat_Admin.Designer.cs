@@ -45,6 +45,7 @@
             this.Nominal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+            this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -85,9 +86,9 @@
             // 
             // kryptonCheckButton2
             // 
-            this.kryptonCheckButton2.Location = new System.Drawing.Point(1260, 122);
+            this.kryptonCheckButton2.Location = new System.Drawing.Point(1326, 122);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
-            this.kryptonCheckButton2.Size = new System.Drawing.Size(304, 47);
+            this.kryptonCheckButton2.Size = new System.Drawing.Size(238, 47);
             this.kryptonCheckButton2.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -101,9 +102,9 @@
             // 
             // kryptonCheckButton1
             // 
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(950, 122);
+            this.kryptonCheckButton1.Location = new System.Drawing.Point(1065, 122);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(304, 47);
+            this.kryptonCheckButton1.Size = new System.Drawing.Size(244, 47);
             this.kryptonCheckButton1.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -222,17 +223,34 @@
             this.Username_Login.Text = "Cari";
             this.Username_Login.UseWaitCursor = true;
             // 
-            // Riwayat
+            // kryptonCheckButton3
+            // 
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(1281, 853);
+            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(244, 47);
+            this.kryptonCheckButton3.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonCheckButton3.StateCheckedNormal.Border.Rounding = 30;
+            this.kryptonCheckButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonCheckButton3.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonCheckButton3.TabIndex = 54;
+            this.kryptonCheckButton3.Values.Text = "Convert ";
+            // 
+            // Riwayat_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.kryptonCheckButton3);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.Username_Login);
             this.Controls.Add(this.kryptonCheckButton2);
             this.Controls.Add(this.kryptonCheckButton1);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonDataGridView1);
-            this.Name = "Riwayat";
+            this.Name = "Riwayat_Admin";
             this.Size = new System.Drawing.Size(1581, 952);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
@@ -262,5 +280,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nominal;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox Username_Login;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
     }
 }

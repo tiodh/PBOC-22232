@@ -379,7 +379,7 @@
             this.kryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton6.TabIndex = 85;
-            this.kryptonButton6.Values.Text = "kryptonButton6";
+            this.kryptonButton6.Values.Text = "Lalapan Tahu Penyet";
             // 
             // kryptonButton7
             // 
@@ -390,7 +390,7 @@
             this.kryptonButton7.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton7.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton7.TabIndex = 84;
-            this.kryptonButton7.Values.Text = "kryptonButton7";
+            this.kryptonButton7.Values.Text = "Lalapan Tahu Penyet";
             // 
             // kryptonButton8
             // 
@@ -401,7 +401,7 @@
             this.kryptonButton8.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton8.TabIndex = 83;
-            this.kryptonButton8.Values.Text = "kryptonButton8";
+            this.kryptonButton8.Values.Text = "Lalapan Ayam Potong";
             // 
             // kryptonButton9
             // 
@@ -412,7 +412,7 @@
             this.kryptonButton9.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton9.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton9.TabIndex = 82;
-            this.kryptonButton9.Values.Text = "kryptonButton9";
+            this.kryptonButton9.Values.Text = "Lalapan Ayam kampung";
             // 
             // kryptonButton10
             // 
@@ -423,7 +423,7 @@
             this.kryptonButton10.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton10.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton10.TabIndex = 81;
-            this.kryptonButton10.Values.Text = "kryptonButton10";
+            this.kryptonButton10.Values.Text = "Bakso";
             // 
             // pictureBox8
             // 

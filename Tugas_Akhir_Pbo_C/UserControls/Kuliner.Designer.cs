@@ -33,16 +33,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Asal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jenis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jenis_Kelamin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jumlah_Transaksi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nominal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -87,14 +84,11 @@
             this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.kryptonDataGridView1.ColumnHeadersHeight = 34;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
             this.Nama,
             this.Asal,
             this.Jenis,
             this.Tanggal,
-            this.Jenis_Kelamin,
-            this.Jumlah_Transaksi,
-            this.Nominal});
+            this.Jenis_Kelamin});
             this.kryptonDataGridView1.HideOuterBorders = true;
             this.kryptonDataGridView1.Location = new System.Drawing.Point(13, 204);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
@@ -108,54 +102,6 @@
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.White;
             this.kryptonDataGridView1.TabIndex = 48;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            // 
-            // Nama
-            // 
-            this.Nama.HeaderText = "Nama";
-            this.Nama.MinimumWidth = 8;
-            this.Nama.Name = "Nama";
-            // 
-            // Asal
-            // 
-            this.Asal.HeaderText = "Asal";
-            this.Asal.MinimumWidth = 8;
-            this.Asal.Name = "Asal";
-            // 
-            // Jenis
-            // 
-            this.Jenis.HeaderText = "Jenis";
-            this.Jenis.MinimumWidth = 8;
-            this.Jenis.Name = "Jenis";
-            // 
-            // Tanggal
-            // 
-            this.Tanggal.HeaderText = "Tanggal";
-            this.Tanggal.MinimumWidth = 8;
-            this.Tanggal.Name = "Tanggal";
-            // 
-            // Jenis_Kelamin
-            // 
-            this.Jenis_Kelamin.HeaderText = "Jenis Kelamin";
-            this.Jenis_Kelamin.MinimumWidth = 8;
-            this.Jenis_Kelamin.Name = "Jenis_Kelamin";
-            // 
-            // Jumlah_Transaksi
-            // 
-            this.Jumlah_Transaksi.HeaderText = "Jumlah Transaksi";
-            this.Jumlah_Transaksi.MinimumWidth = 8;
-            this.Jumlah_Transaksi.Name = "Jumlah_Transaksi";
-            // 
-            // Nominal
-            // 
-            this.Nominal.HeaderText = "Nominal";
-            this.Nominal.MinimumWidth = 8;
-            this.Nominal.Name = "Nominal";
             // 
             // Username_Login
             // 
@@ -188,6 +134,36 @@
             this.kryptonButton1.TabIndex = 51;
             this.kryptonButton1.Values.Text = "Cari";
             // 
+            // Nama
+            // 
+            this.Nama.HeaderText = "Nama Tempat";
+            this.Nama.MinimumWidth = 8;
+            this.Nama.Name = "Nama";
+            // 
+            // Asal
+            // 
+            this.Asal.HeaderText = "Jenis makanan";
+            this.Asal.MinimumWidth = 8;
+            this.Asal.Name = "Asal";
+            // 
+            // Jenis
+            // 
+            this.Jenis.HeaderText = "Nama makanan";
+            this.Jenis.MinimumWidth = 8;
+            this.Jenis.Name = "Jenis";
+            // 
+            // Tanggal
+            // 
+            this.Tanggal.HeaderText = "Harga";
+            this.Tanggal.MinimumWidth = 8;
+            this.Tanggal.Name = "Tanggal";
+            // 
+            // Jenis_Kelamin
+            // 
+            this.Jenis_Kelamin.HeaderText = "Foto";
+            this.Jenis_Kelamin.MinimumWidth = 8;
+            this.Jenis_Kelamin.Name = "Jenis_Kelamin";
+            // 
             // Kuliner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -214,15 +190,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox Username_Login;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
         private System.Windows.Forms.DataGridViewTextBoxColumn Asal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Jenis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tanggal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Jenis_Kelamin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jumlah_Transaksi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nominal;
-        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox Username_Login;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }

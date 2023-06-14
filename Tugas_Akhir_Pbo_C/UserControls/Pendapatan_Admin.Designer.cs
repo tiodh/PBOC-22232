@@ -50,6 +50,8 @@
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart6 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.kryptonCheckButton4 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +62,8 @@
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.kryptonCheckButton4);
+            this.kryptonPanel1.Controls.Add(this.kryptonCheckButton3);
             this.kryptonPanel1.Controls.Add(this.pictureBox2);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
@@ -92,7 +96,7 @@
             // 
             // kryptonButton3
             // 
-            this.kryptonButton3.Location = new System.Drawing.Point(462, 527);
+            this.kryptonButton3.Location = new System.Drawing.Point(462, 571);
             this.kryptonButton3.Name = "kryptonButton3";
             this.kryptonButton3.Size = new System.Drawing.Size(175, 47);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -107,7 +111,7 @@
             // 
             // kryptonMaskedTextBox2
             // 
-            this.kryptonMaskedTextBox2.Location = new System.Drawing.Point(16, 527);
+            this.kryptonMaskedTextBox2.Location = new System.Drawing.Point(16, 571);
             this.kryptonMaskedTextBox2.Name = "kryptonMaskedTextBox2";
             this.kryptonMaskedTextBox2.Size = new System.Drawing.Size(428, 47);
             this.kryptonMaskedTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.DimGray;
@@ -123,7 +127,7 @@
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(1219, 102);
+            this.kryptonButton2.Location = new System.Drawing.Point(1216, 127);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.Size = new System.Drawing.Size(175, 47);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -138,7 +142,7 @@
             // 
             // kryptonMaskedTextBox1
             // 
-            this.kryptonMaskedTextBox1.Location = new System.Drawing.Point(770, 102);
+            this.kryptonMaskedTextBox1.Location = new System.Drawing.Point(767, 127);
             this.kryptonMaskedTextBox1.Name = "kryptonMaskedTextBox1";
             this.kryptonMaskedTextBox1.Size = new System.Drawing.Size(428, 47);
             this.kryptonMaskedTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.DimGray;
@@ -154,7 +158,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(462, 102);
+            this.kryptonButton1.Location = new System.Drawing.Point(462, 127);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(175, 47);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -169,7 +173,7 @@
             // 
             // Username_Login
             // 
-            this.Username_Login.Location = new System.Drawing.Point(16, 102);
+            this.Username_Login.Location = new System.Drawing.Point(16, 127);
             this.Username_Login.Name = "Username_Login";
             this.Username_Login.Size = new System.Drawing.Size(428, 47);
             this.Username_Login.StateCommon.Border.Color1 = System.Drawing.Color.DimGray;
@@ -189,7 +193,7 @@
             this.chart4.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart4.Legends.Add(legend1);
-            this.chart4.Location = new System.Drawing.Point(13, 595);
+            this.chart4.Location = new System.Drawing.Point(16, 624);
             this.chart4.Name = "chart4";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -205,7 +209,7 @@
             this.chart5.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart5.Legends.Add(legend2);
-            this.chart5.Location = new System.Drawing.Point(770, 165);
+            this.chart5.Location = new System.Drawing.Point(770, 191);
             this.chart5.Name = "chart5";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
@@ -221,7 +225,7 @@
             this.chart6.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart6.Legends.Add(legend3);
-            this.chart6.Location = new System.Drawing.Point(13, 165);
+            this.chart6.Location = new System.Drawing.Point(16, 191);
             this.chart6.Name = "chart6";
             series3.ChartArea = "ChartArea1";
             series3.Legend = "Legend1";
@@ -230,6 +234,38 @@
             this.chart6.Size = new System.Drawing.Size(737, 345);
             this.chart6.TabIndex = 58;
             this.chart6.Text = "chart6";
+            // 
+            // kryptonCheckButton4
+            // 
+            this.kryptonCheckButton4.Location = new System.Drawing.Point(1270, 13);
+            this.kryptonCheckButton4.Name = "kryptonCheckButton4";
+            this.kryptonCheckButton4.Size = new System.Drawing.Size(244, 47);
+            this.kryptonCheckButton4.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonCheckButton4.StateCheckedNormal.Border.Rounding = 30;
+            this.kryptonCheckButton4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton4.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonCheckButton4.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonCheckButton4.TabIndex = 68;
+            this.kryptonCheckButton4.Values.Text = "Convert excel";
+            // 
+            // kryptonCheckButton3
+            // 
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(1020, 13);
+            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(244, 47);
+            this.kryptonCheckButton3.StateCheckedNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonCheckButton3.StateCheckedNormal.Border.Rounding = 30;
+            this.kryptonCheckButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonCheckButton3.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonCheckButton3.TabIndex = 67;
+            this.kryptonCheckButton3.Values.Text = "Convert pdf";
             // 
             // Pendapatan_Admin
             // 
@@ -273,5 +309,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart6;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
     }
 }

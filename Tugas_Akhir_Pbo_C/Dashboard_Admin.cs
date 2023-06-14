@@ -17,6 +17,7 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Pengunjung Pengunjung = new UserControls.Pengunjung();
         UserControls.Pendapatan_Admin Pendapatan_Admin  = new UserControls.Pendapatan_Admin();
         UserControls.Review Review = new UserControls.Review();
+        UserControls.Registrasi_Admin Registrasi = new UserControls.Registrasi_Admin();
 
         public Dashboard_Admin()
         {
@@ -68,6 +69,13 @@ namespace Tugas_Akhir_Pbo_C
             PanelUtamaAdmin.Controls.Clear();
             PanelUtamaAdmin.Controls.Add(Review);
             Review.Dock = DockStyle.Fill;
+        }
+
+        private void kryptonButton5_Click(object sender, EventArgs e)
+        {
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(Registrasi);
+            Registrasi.Dock = DockStyle.Fill;
         }
     }
 }

@@ -68,6 +68,11 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.kryptonButton11 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -501,10 +506,63 @@
             this.panel1.Size = new System.Drawing.Size(1581, 952);
             this.panel1.TabIndex = 86;
             // 
+            // kryptonButton11
+            // 
+            this.kryptonButton11.Location = new System.Drawing.Point(21, 1897);
+            this.kryptonButton11.Name = "kryptonButton11";
+            this.kryptonButton11.Size = new System.Drawing.Size(578, 72);
+            this.kryptonButton11.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonButton11.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonButton11.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton11.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton11.TabIndex = 90;
+            this.kryptonButton11.Values.Text = "Kirim";
+            // 
+            // kryptonRichTextBox1
+            // 
+            this.kryptonRichTextBox1.Location = new System.Drawing.Point(21, 1726);
+            this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
+            this.kryptonRichTextBox1.Size = new System.Drawing.Size(578, 144);
+            this.kryptonRichTextBox1.TabIndex = 89;
+            this.kryptonRichTextBox1.Text = "";
+            // 
+            // kryptonTextBox2
+            // 
+            this.kryptonTextBox2.Location = new System.Drawing.Point(22, 1659);
+            this.kryptonTextBox2.Name = "kryptonTextBox2";
+            this.kryptonTextBox2.Size = new System.Drawing.Size(578, 47);
+            this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
+            this.kryptonTextBox2.TabIndex = 88;
+            this.kryptonTextBox2.Text = "Email";
+            // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(21, 1600);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(578, 47);
+            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
+            this.kryptonTextBox1.TabIndex = 87;
+            this.kryptonTextBox1.Text = "Nama";
+            // 
+            // kryptonLabel5
+            // 
+            this.kryptonLabel5.Location = new System.Drawing.Point(22, 1528);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(171, 40);
+            this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Swis721 Hv BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel5.TabIndex = 10;
+            this.kryptonLabel5.Values.Text = "Contact us";
+            // 
             // Beranda_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.kryptonLabel5);
+            this.Controls.Add(this.kryptonButton11);
+            this.Controls.Add(this.kryptonRichTextBox1);
+            this.Controls.Add(this.kryptonTextBox2);
+            this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.kryptonButton6);
             this.Controls.Add(this.kryptonButton7);
             this.Controls.Add(this.kryptonButton8);
@@ -531,7 +589,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Beranda_User";
-            this.Size = new System.Drawing.Size(1581, 1752);
+            this.Size = new System.Drawing.Size(1581, 2000);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -595,5 +653,10 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Panel panel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton11;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
     }
 }

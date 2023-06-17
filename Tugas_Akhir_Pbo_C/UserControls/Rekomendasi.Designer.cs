@@ -332,7 +332,7 @@
             this.label15.Text = "Rembangan terletak kurang lebih 12 kilometer (7,5 mi) di sebelah utara kota Jembe" +
     "r, tepatnya di kaki Gunung Argopuro.";
             // 
-            // UserControl3
+            // Rekomendasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -357,7 +357,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "UserControl3";
+            this.Name = "Rekomendasi";
             this.Size = new System.Drawing.Size(1581, 952);
             this.Load += new System.EventHandler(this.UserControl3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

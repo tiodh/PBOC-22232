@@ -137,7 +137,7 @@
             this.kryptonCheckButton1.TabIndex = 58;
             this.kryptonCheckButton1.Values.Text = "Simpan";
             // 
-            // UserControl1
+            // Registrasi_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,7 +148,7 @@
             this.Controls.Add(this.kryptonTextBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "UserControl1";
+            this.Name = "Registrasi_Admin";
             this.Size = new System.Drawing.Size(1851, 952);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

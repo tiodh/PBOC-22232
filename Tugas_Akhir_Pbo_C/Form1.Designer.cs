@@ -34,7 +34,6 @@
             this.PanelUtama = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.beranda_User1 = new Tugas_Akhir_Pbo_C.UserControls.Beranda_User();
             this.Button_Map = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -51,6 +50,7 @@
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.Button_Darurat = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.beranda_User1 = new Tugas_Akhir_Pbo_C.UserControls.Beranda_User();
             ((System.ComponentModel.ISupportInitialize)(this.PanelUtama)).BeginInit();
             this.PanelUtama.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -107,13 +107,6 @@
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Swis721 Hv BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 4;
             this.kryptonLabel2.Values.Text = "Dashboard";
-            // 
-            // beranda_User1
-            // 
-            this.beranda_User1.Location = new System.Drawing.Point(0, 0);
-            this.beranda_User1.Name = "beranda_User1";
-            this.beranda_User1.Size = new System.Drawing.Size(1851, 1046);
-            this.beranda_User1.TabIndex = 88;
             // 
             // Button_Map
             // 
@@ -443,6 +436,13 @@
             this.Button_Darurat.TabIndex = 6;
             this.Button_Darurat.Values.Text = "Darurat";
             this.Button_Darurat.Click += new System.EventHandler(this.kryptonButton5_Click);
+            // 
+            // beranda_User1
+            // 
+            this.beranda_User1.Location = new System.Drawing.Point(0, 0);
+            this.beranda_User1.Name = "beranda_User1";
+            this.beranda_User1.Size = new System.Drawing.Size(1851, 1046);
+            this.beranda_User1.TabIndex = 88;
             // 
             // Form1
             // 

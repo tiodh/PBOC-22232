@@ -273,7 +273,7 @@
             this.pictureBox11.TabIndex = 21;
             this.pictureBox11.TabStop = false;
             // 
-            // UserControl4
+            // Review
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -296,7 +296,7 @@
             this.Controls.Add(this.kryptonTextBox1);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "UserControl4";
+            this.Name = "Review";
             this.Size = new System.Drawing.Size(1581, 952);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();

@@ -239,7 +239,7 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "08900000";
             // 
-            // UserControl1
+            // Kontak_Darurat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -259,7 +259,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.kryptonPanel1);
-            this.Name = "UserControl1";
+            this.Name = "Kontak_Darurat";
             this.Size = new System.Drawing.Size(1581, 952);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

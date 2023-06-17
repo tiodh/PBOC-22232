@@ -33,13 +33,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Asal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jenis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jenis_Kelamin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -103,6 +103,36 @@
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.White;
             this.kryptonDataGridView1.TabIndex = 48;
             // 
+            // Nama
+            // 
+            this.Nama.HeaderText = "Nama Tempat";
+            this.Nama.MinimumWidth = 8;
+            this.Nama.Name = "Nama";
+            // 
+            // Asal
+            // 
+            this.Asal.HeaderText = "Jenis makanan";
+            this.Asal.MinimumWidth = 8;
+            this.Asal.Name = "Asal";
+            // 
+            // Jenis
+            // 
+            this.Jenis.HeaderText = "Nama makanan";
+            this.Jenis.MinimumWidth = 8;
+            this.Jenis.Name = "Jenis";
+            // 
+            // Tanggal
+            // 
+            this.Tanggal.HeaderText = "Harga";
+            this.Tanggal.MinimumWidth = 8;
+            this.Tanggal.Name = "Tanggal";
+            // 
+            // Jenis_Kelamin
+            // 
+            this.Jenis_Kelamin.HeaderText = "Foto";
+            this.Jenis_Kelamin.MinimumWidth = 8;
+            this.Jenis_Kelamin.Name = "Jenis_Kelamin";
+            // 
             // Username_Login
             // 
             this.Username_Login.Location = new System.Drawing.Point(13, 121);
@@ -133,36 +163,6 @@
             this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.TabIndex = 51;
             this.kryptonButton1.Values.Text = "Cari";
-            // 
-            // Nama
-            // 
-            this.Nama.HeaderText = "Nama Tempat";
-            this.Nama.MinimumWidth = 8;
-            this.Nama.Name = "Nama";
-            // 
-            // Asal
-            // 
-            this.Asal.HeaderText = "Jenis makanan";
-            this.Asal.MinimumWidth = 8;
-            this.Asal.Name = "Asal";
-            // 
-            // Jenis
-            // 
-            this.Jenis.HeaderText = "Nama makanan";
-            this.Jenis.MinimumWidth = 8;
-            this.Jenis.Name = "Jenis";
-            // 
-            // Tanggal
-            // 
-            this.Tanggal.HeaderText = "Harga";
-            this.Tanggal.MinimumWidth = 8;
-            this.Tanggal.Name = "Tanggal";
-            // 
-            // Jenis_Kelamin
-            // 
-            this.Jenis_Kelamin.HeaderText = "Foto";
-            this.Jenis_Kelamin.MinimumWidth = 8;
-            this.Jenis_Kelamin.Name = "Jenis_Kelamin";
             // 
             // Kuliner
             // 

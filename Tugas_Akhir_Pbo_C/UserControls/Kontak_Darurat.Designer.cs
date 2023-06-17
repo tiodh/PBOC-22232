@@ -33,13 +33,13 @@
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Asal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jenis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jenis_Kelamin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+            this.Id_layanan_darurat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nama_layanan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.no_telp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Deskripsi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -84,11 +84,11 @@
             this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.kryptonDataGridView1.ColumnHeadersHeight = 34;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nama,
-            this.Asal,
-            this.Jenis,
-            this.Tanggal,
-            this.Jenis_Kelamin});
+            this.Id_layanan_darurat,
+            this.Nama_layanan,
+            this.no_telp,
+            this.Email,
+            this.Deskripsi});
             this.kryptonDataGridView1.HideOuterBorders = true;
             this.kryptonDataGridView1.Location = new System.Drawing.Point(13, 162);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
@@ -102,36 +102,6 @@
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.White;
             this.kryptonDataGridView1.TabIndex = 49;
-            // 
-            // Nama
-            // 
-            this.Nama.HeaderText = "ID";
-            this.Nama.MinimumWidth = 8;
-            this.Nama.Name = "Nama";
-            // 
-            // Asal
-            // 
-            this.Asal.HeaderText = "Nama";
-            this.Asal.MinimumWidth = 8;
-            this.Asal.Name = "Asal";
-            // 
-            // Jenis
-            // 
-            this.Jenis.HeaderText = "No.Telp";
-            this.Jenis.MinimumWidth = 8;
-            this.Jenis.Name = "Jenis";
-            // 
-            // Tanggal
-            // 
-            this.Tanggal.HeaderText = "Email";
-            this.Tanggal.MinimumWidth = 8;
-            this.Tanggal.Name = "Tanggal";
-            // 
-            // Jenis_Kelamin
-            // 
-            this.Jenis_Kelamin.HeaderText = "Alamat";
-            this.Jenis_Kelamin.MinimumWidth = 8;
-            this.Jenis_Kelamin.Name = "Jenis_Kelamin";
             // 
             // kryptonButton1
             // 
@@ -164,6 +134,36 @@
             this.Username_Login.Text = "Cari";
             this.Username_Login.UseWaitCursor = true;
             // 
+            // Id_layanan_darurat
+            // 
+            this.Id_layanan_darurat.HeaderText = "ID";
+            this.Id_layanan_darurat.MinimumWidth = 8;
+            this.Id_layanan_darurat.Name = "Id_layanan_darurat";
+            // 
+            // Nama_layanan
+            // 
+            this.Nama_layanan.HeaderText = "Nama";
+            this.Nama_layanan.MinimumWidth = 8;
+            this.Nama_layanan.Name = "Nama_layanan";
+            // 
+            // no_telp
+            // 
+            this.no_telp.HeaderText = "No.Telp";
+            this.no_telp.MinimumWidth = 8;
+            this.no_telp.Name = "no_telp";
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 8;
+            this.Email.Name = "Email";
+            // 
+            // Deskripsi
+            // 
+            this.Deskripsi.HeaderText = "Deskripsi";
+            this.Deskripsi.MinimumWidth = 8;
+            this.Deskripsi.Name = "Deskripsi";
+            // 
             // Kontak_Darurat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -190,12 +190,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Asal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jenis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tanggal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jenis_Kelamin;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox Username_Login;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_layanan_darurat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nama_layanan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn no_telp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Deskripsi;
     }
 }

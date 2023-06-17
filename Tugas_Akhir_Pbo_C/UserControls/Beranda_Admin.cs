@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Tugas_Akhir_Pbo_C.UserControls
 {
-    public partial class UserControl5 : UserControl
+    public partial class Beranda_Admin : UserControl
     {
-        public UserControl5()
+        public Beranda_Admin()
         {
             InitializeComponent();
         }
 
-        private void chart1_Click(object sender, EventArgs e)
+        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

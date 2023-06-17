@@ -225,6 +225,18 @@
     <Compile Include="UserControls\Registrasi_Admin.Designer.cs">
       <DependentUpon>Registrasi_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Beranda_Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Beranda_Admin.Designer.cs">
+      <DependentUpon>Beranda_Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControl6.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -296,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Registrasi_Admin.resx">
       <DependentUpon>Registrasi_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Beranda_Admin.resx">
+      <DependentUpon>Beranda_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl6.resx">
       <DependentUpon>UserControl6.cs</DependentUpon>

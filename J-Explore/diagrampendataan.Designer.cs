@@ -90,7 +90,7 @@
             Controls.Add(cartDataMinggu);
             Controls.Add(cartDataHari);
             Name = "diagrampendataan";
-            Text = "diagrampendataan";
+            Text = "DIAGRAM PENDATAAN";
             ResumeLayout(false);
         }
 

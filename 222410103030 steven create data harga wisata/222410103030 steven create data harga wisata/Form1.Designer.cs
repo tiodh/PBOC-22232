@@ -38,6 +38,7 @@
             button3 = new Button();
             label1 = new Label();
             label2 = new Label();
+            npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             dataGridView1.RowTemplate.Height = 33;
             dataGridView1.Size = new Size(365, 225);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Column1
             // 
@@ -72,6 +74,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(150, 31);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -79,6 +82,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(150, 31);
             textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button1
             // 
@@ -88,6 +92,7 @@
             button1.TabIndex = 3;
             button1.Text = "Create";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -97,6 +102,7 @@
             button2.TabIndex = 4;
             button2.Text = "Update";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -106,6 +112,7 @@
             button3.TabIndex = 5;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label1
             // 
@@ -124,6 +131,13 @@
             label2.Size = new Size(102, 25);
             label2.TabIndex = 7;
             label2.Text = "Harga Tiket";
+            // 
+            // npgsqlDataAdapter1
+            // 
+            npgsqlDataAdapter1.DeleteCommand = null;
+            npgsqlDataAdapter1.InsertCommand = null;
+            npgsqlDataAdapter1.SelectCommand = null;
+            npgsqlDataAdapter1.UpdateCommand = null;
             // 
             // Form1
             // 
@@ -157,5 +171,6 @@
         private Button button3;
         private Label label1;
         private Label label2;
+        private Npgsql.NpgsqlDataAdapter npgsqlDataAdapter1;
     }
 }

@@ -1,3 +1,7 @@
+using J_Explore.Services;
+using Npgsql;
+using System.Data;
+
 namespace J_Explore
 {
     internal static class Program
@@ -12,6 +16,7 @@ namespace J_Explore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+            //PrintHelper.Print(new PrintingArgumentsTransaction(), new PrintPreviewDialog());
         }
     }
 }

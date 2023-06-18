@@ -169,6 +169,12 @@
       <DependentUpon>Daftar Wisata.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\PrintHelper.cs" />
+    <Compile Include="Ulasan__Rating__dan_Reviewcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ulasan__Rating__dan_Reviewcs.Designer.cs">
+      <DependentUpon>Ulasan__Rating__dan_Reviewcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Beranda_User.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,6 +304,9 @@
     </Compile>
     <EmbeddedResource Include="Daftar Wisata.resx">
       <DependentUpon>Daftar Wisata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulasan__Rating__dan_Reviewcs.resx">
+      <DependentUpon>Ulasan__Rating__dan_Reviewcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Beranda_User.resx">
       <DependentUpon>Beranda_User.cs</DependentUpon>

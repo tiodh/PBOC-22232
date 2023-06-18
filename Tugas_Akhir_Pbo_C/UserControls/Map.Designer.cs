@@ -1,6 +1,6 @@
 ﻿namespace Tugas_Akhir_Pbo_C.UserControls
 {
-    partial class Map
+    partial class Ulasan__Rating__dan_Review
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Map));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ulasan__Rating__dan_Review));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();

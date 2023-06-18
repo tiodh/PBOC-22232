@@ -19,9 +19,10 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Review USserControl4 = new UserControls.Review();
         UserControls.Beranda_User Beranda_User = new UserControls.Beranda_User();
         UserControls.Fasilitas fasilitas = new UserControls.Fasilitas();
-        UserControls.Kuliner Kuliner = new UserControls.Kuliner();
+        UserControls.Kuliner Ulasan__Rating__dan_Review = new UserControls.Kuliner();
         UserControls.Kontak_Darurat Darurat = new UserControls.Kontak_Darurat();
         UserControls.Map Map = new UserControls.Map();
+        UserControls.Ulasan__Rating__dan_Review Ulasan__Rating__dan_Review = new UserControls.Ulasan__Rating__dan_Review();
         public Form1()
         {
             InitializeComponent();
@@ -129,8 +130,15 @@ namespace Tugas_Akhir_Pbo_C
         private void Button_Kuliner_Click(object sender, EventArgs e)
         {
             PanelUtama.Controls.Clear();
-            PanelUtama.Controls.Add(Kuliner);
-            Kuliner.Dock = DockStyle.Fill;
+            PanelUtama.Controls.Add(Ulasan__Rating__dan_Review);
+            Ulasan__Rating__dan_Review.Dock = DockStyle.Fill;
+        }
+
+        private void kryptonButton2_Click_1(object sender, EventArgs e)
+        {
+            PanelUtama.Controls.Clear();
+            PanelUtama.Controls.Add(Ulasan__Rating__dan_Review);
+            Ulasan__Rating__dan_Review.Dock = DockStyle.Fill;
         }
     }
 }

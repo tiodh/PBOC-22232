@@ -49,10 +49,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox9 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox10 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -262,33 +262,6 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "Jumlah Transaksi";
             // 
-            // kryptonTextBox6
-            // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(42, 565);
-            this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(185, 47);
-            this.kryptonTextBox6.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonTextBox6.TabIndex = 35;
-            this.kryptonTextBox6.Text = "Dewasa";
-            // 
-            // kryptonTextBox9
-            // 
-            this.kryptonTextBox9.Location = new System.Drawing.Point(249, 565);
-            this.kryptonTextBox9.Name = "kryptonTextBox9";
-            this.kryptonTextBox9.Size = new System.Drawing.Size(182, 47);
-            this.kryptonTextBox9.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonTextBox9.TabIndex = 36;
-            this.kryptonTextBox9.Text = "Remaja";
-            // 
-            // kryptonTextBox10
-            // 
-            this.kryptonTextBox10.Location = new System.Drawing.Point(458, 565);
-            this.kryptonTextBox10.Name = "kryptonTextBox10";
-            this.kryptonTextBox10.Size = new System.Drawing.Size(162, 47);
-            this.kryptonTextBox10.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
-            this.kryptonTextBox10.TabIndex = 37;
-            this.kryptonTextBox10.Text = "Anak-Anak";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -299,14 +272,49 @@
             this.label8.TabIndex = 38;
             this.label8.Text = "Jenis";
             // 
+            // kryptonCheckButton3
+            // 
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(371, 830);
+            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(304, 65);
+            this.kryptonCheckButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonCheckButton3.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonCheckButton3.TabIndex = 39;
+            this.kryptonCheckButton3.Values.Text = "Perbarui";
+            this.kryptonCheckButton3.Click += new System.EventHandler(this.kryptonCheckButton3_Click);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(130, 551);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(163, 61);
+            this.radioButton3.TabIndex = 40;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Dewasa";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(299, 551);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(163, 61);
+            this.radioButton4.TabIndex = 41;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Anak - anak";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
             // Data_Pengunjung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.kryptonCheckButton3);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.kryptonTextBox10);
-            this.Controls.Add(this.kryptonTextBox9);
-            this.Controls.Add(this.kryptonTextBox6);
             this.Controls.Add(this.kryptonTextBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.kryptonTextBox5);
@@ -359,9 +367,9 @@
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
         private System.Windows.Forms.Label label4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox10;
         private System.Windows.Forms.Label label8;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
     }
 }

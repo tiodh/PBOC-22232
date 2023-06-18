@@ -26,5 +26,10 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         {
 
         }
+
+        private void kryptonDataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                 using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
                 {
                     command.CommandText = sql;
-                    NpgsqlDataReader reader = cmd.ExecuteReader();
+                    NpgsqlDataReader reader = command.ExecuteReader();
 
                     while (reader.Read())
                     {
@@ -41,7 +41,7 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                         string phone = reader.GetString(2);
                         string deskripsi = reader.GetString(3);
 
-                        DataGridView1.Rows.Add(name, email, phone, deskripsi);
+                        kryptonDataGridView1.Rows.Add(name, email, phone, deskripsi);
                     }
                 }
             }

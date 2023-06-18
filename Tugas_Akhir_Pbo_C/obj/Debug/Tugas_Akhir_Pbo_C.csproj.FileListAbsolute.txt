@@ -179,3 +179,32 @@ D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug
 D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl6.resources
 D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.GenerateResource.cache
 D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.AssemblyReference.cache
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.SuggestedBindingRedirects.cache
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form1.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Dashboard_Admin.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Properties.Resources.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_User.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Map.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Fasilitas.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Harga.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kontak_Darurat.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Review.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Pengunjung.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Pengunjung.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Keuangan.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Registrasi_Admin.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Contact_Darurat.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_Admin.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl6.resources
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.GenerateResource.cache
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
+D:\COLLEGE SEMESTER 2\PEMROGRAMAN BERORIENTASI OBYEK\TATAP MUKA\TUGAS\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb

@@ -1,0 +1,21 @@
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\222410103030 steven create data harga wisata.exe
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\222410103030 steven create data harga wisata.deps.json
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\222410103030 steven create data harga wisata.runtimeconfig.json
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\222410103030 steven create data harga wisata.dll
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\222410103030 steven create data harga wisata.pdb
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\_222410103030_steven_create_data_harga_wisata.Form1.resources
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.csproj.GenerateResource.cache
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.AssemblyInfo.cs
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.csproj.CopyComplete
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.dll
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\refint\222410103030 steven create data harga wisata.dll
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.pdb
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\222410103030 steven create data harga wisata.genruntimeconfig.cache
+C:\Users\admin\Documents\222410103030 steven create data harga wisata\222410103030 steven create data harga wisata\obj\Debug\net6.0-windows\ref\222410103030 steven create data harga wisata.dll

@@ -49,7 +49,6 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                         // Menjalankan perintah SQL
                         command.ExecuteNonQuery();
                     }
-                    }
                         connection.Close();
                 }
 
@@ -58,7 +57,7 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                 email_layanan_darurat.Text = string.Empty;
                 no_telp.Text = string.Empty;
                 deskripsi_layanan_darurat.Text = string.Empty;
-            
+    
         }
     }
 }   

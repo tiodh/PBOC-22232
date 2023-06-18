@@ -165,7 +165,6 @@
             this.DGV_Data_Harga.RowTemplate.Height = 28;
             this.DGV_Data_Harga.Size = new System.Drawing.Size(857, 347);
             this.DGV_Data_Harga.TabIndex = 16;
-            this.DGV_Data_Harga.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Data_Harga_CellContentClick);
             // 
             // Column1
             // 
@@ -193,7 +192,6 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "Data_Harga";
             this.Size = new System.Drawing.Size(1581, 952);
-            this.Load += new System.EventHandler(this.UserControl2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();

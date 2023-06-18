@@ -15,8 +15,22 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         public Data_Harga()
         {
             InitializeComponent();
+            ShowDataHargaWisata();
         }
+        private void ShowDataHargaWisata()
+        {
+            var db = new DatabaseHelper();
+            var reader = db.Select("SELECT id_harga_tiket, harga_tiket, FROM public.harga_tiket;");
+            DGV_Data_Harga.Rows.Clear();
 
 
+            while (reader.Read())
+            {
+                DGV_Data_Harga.Rows.Add((int)reader["id_harga_tiket"], (int)reader["harga_tiket"]);
+            }
+
+            reader.Close();
+
+        }
     }
 }

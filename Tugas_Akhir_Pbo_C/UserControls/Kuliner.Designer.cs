@@ -33,14 +33,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.id_kuliner = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Asal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jenis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jenis_Kelamin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnDelete = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -84,20 +84,23 @@
             // 
             // kryptonDataGridView1
             // 
+            this.kryptonDataGridView1.AllowUserToAddRows = false;
+            this.kryptonDataGridView1.AllowUserToDeleteRows = false;
             this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.kryptonDataGridView1.ColumnHeadersHeight = 34;
             this.kryptonDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_kuliner,
             this.Nama,
             this.Asal,
             this.Jenis,
-            this.Tanggal,
-            this.Jenis_Kelamin});
+            this.Tanggal});
             this.kryptonDataGridView1.HideOuterBorders = true;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(12, 163);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(0, 159);
             this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonDataGridView1.ReadOnly = true;
             this.kryptonDataGridView1.RowHeadersWidth = 62;
             this.kryptonDataGridView1.RowTemplate.Height = 28;
             this.kryptonDataGridView1.Size = new System.Drawing.Size(1369, 586);
@@ -107,36 +110,6 @@
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.kryptonDataGridView1.StateCommon.HeaderColumn.Content.Color1 = System.Drawing.Color.White;
             this.kryptonDataGridView1.TabIndex = 48;
-            // 
-            // Nama
-            // 
-            this.Nama.HeaderText = "Nama Tempat";
-            this.Nama.MinimumWidth = 8;
-            this.Nama.Name = "Nama";
-            // 
-            // Asal
-            // 
-            this.Asal.HeaderText = "Jenis makanan";
-            this.Asal.MinimumWidth = 8;
-            this.Asal.Name = "Asal";
-            // 
-            // Jenis
-            // 
-            this.Jenis.HeaderText = "Nama makanan";
-            this.Jenis.MinimumWidth = 8;
-            this.Jenis.Name = "Jenis";
-            // 
-            // Tanggal
-            // 
-            this.Tanggal.HeaderText = "Harga";
-            this.Tanggal.MinimumWidth = 8;
-            this.Tanggal.Name = "Tanggal";
-            // 
-            // Jenis_Kelamin
-            // 
-            this.Jenis_Kelamin.HeaderText = "Foto";
-            this.Jenis_Kelamin.MinimumWidth = 8;
-            this.Jenis_Kelamin.Name = "Jenis_Kelamin";
             // 
             // Username_Login
             // 
@@ -171,15 +144,62 @@
             this.kryptonButton1.TabIndex = 51;
             this.kryptonButton1.Values.Text = "Cari";
             // 
+            // id_kuliner
+            // 
+            this.id_kuliner.FillWeight = 30F;
+            this.id_kuliner.HeaderText = "ID";
+            this.id_kuliner.MinimumWidth = 6;
+            this.id_kuliner.Name = "id_kuliner";
+            this.id_kuliner.ReadOnly = true;
+            this.id_kuliner.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Nama
+            // 
+            this.Nama.HeaderText = "Nama Tempat";
+            this.Nama.MinimumWidth = 8;
+            this.Nama.Name = "Nama";
+            this.Nama.ReadOnly = true;
+            this.Nama.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Asal
+            // 
+            this.Asal.HeaderText = "Jenis makanan";
+            this.Asal.MinimumWidth = 8;
+            this.Asal.Name = "Asal";
+            this.Asal.ReadOnly = true;
+            this.Asal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Jenis
+            // 
+            this.Jenis.HeaderText = "Nama makanan";
+            this.Jenis.MinimumWidth = 8;
+            this.Jenis.Name = "Jenis";
+            this.Jenis.ReadOnly = true;
+            this.Jenis.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Tanggal
+            // 
+            this.Tanggal.HeaderText = "Harga";
+            this.Tanggal.MinimumWidth = 8;
+            this.Tanggal.Name = "Tanggal";
+            this.Tanggal.ReadOnly = true;
+            this.Tanggal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(586, 97);
+            this.btnDelete.Location = new System.Drawing.Point(1147, 101);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(105, 42);
-            this.btnDelete.TabIndex = 52;
-            this.btnDelete.Text = "Hapus";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Size = new System.Drawing.Size(156, 38);
+            this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDelete.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDelete.StateCommon.Border.Rounding = 20;
+            this.btnDelete.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDelete.TabIndex = 53;
+            this.btnDelete.Values.Text = "Hapus";
             // 
             // Kuliner
             // 
@@ -211,11 +231,11 @@
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
         private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox Username_Login;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_kuliner;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
         private System.Windows.Forms.DataGridViewTextBoxColumn Asal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Jenis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tanggal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jenis_Kelamin;
-        private System.Windows.Forms.Button btnDelete;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDelete;
     }
 }

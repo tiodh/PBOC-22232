@@ -15,7 +15,7 @@ namespace Tugas_Akhir_Pbo_C.UserControls
 {
     public partial class Contact_Darurat : UserControl
     {
-        private const string connectionString = "Server = localhost; Port = 5432; User Id = postgres; Password = geral; Database = Laptop;";
+        private const string connectionString = "Server = localhost; Port = 5432; User Id = postgres; Password = 123456; Database = Laptop;";
         public Contact_Darurat()
         {
             InitializeComponent();

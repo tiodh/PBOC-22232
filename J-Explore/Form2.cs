@@ -34,8 +34,7 @@ namespace J_Explore
 
         private void pendataan(object sender, EventArgs e)
         {
-            Pendataan pendataan = new Pendataan();
-            pendataan.Load();
+
         }
 
         private void diagrampendataan(object sender, EventArgs e)

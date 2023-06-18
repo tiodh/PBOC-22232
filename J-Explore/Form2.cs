@@ -21,5 +21,26 @@ namespace J_Explore
         {
             MessageBox.Show("Hello World");
         }
+
+        private void pendapatan(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void diagrampendapatan(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pendataan(object sender, EventArgs e)
+        {
+            Pendataan pendataan = new Pendataan();
+            pendataan.Load();
+        }
+
+        private void diagrampendataan(object sender, EventArgs e)
+        {
+
+        }
     }
 }

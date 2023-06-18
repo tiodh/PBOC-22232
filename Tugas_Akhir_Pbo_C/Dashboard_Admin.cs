@@ -18,6 +18,7 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Pendapatan_Admin Pendapatan_Admin  = new UserControls.Pendapatan_Admin();
         UserControls.Review Review = new UserControls.Review();
         UserControls.Registrasi_Admin Registrasi = new UserControls.Registrasi_Admin();
+        UserControls.Contact_Darurat Contact = new UserControls.Contact_Darurat();
 
         public Dashboard_Admin()
         {
@@ -76,6 +77,13 @@ namespace Tugas_Akhir_Pbo_C
             PanelUtamaAdmin.Controls.Clear();
             PanelUtamaAdmin.Controls.Add(Registrasi);
             Registrasi.Dock = DockStyle.Fill;
+        }
+
+        private void Button_Darurat_Click(object sender, EventArgs e)
+        {
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(Contact);
+            Contact.Dock = DockStyle.Fill;
         }
     }
 }

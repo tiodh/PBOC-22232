@@ -49,8 +49,8 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                         // Menjalankan perintah SQL
                         command.ExecuteNonQuery();
                     }
-
-                    connection.Close();
+                    }
+                        connection.Close();
                 }
 
             }

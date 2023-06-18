@@ -148,3 +148,5 @@ C:\Kuliah\Semester 2\PBO\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_
 C:\Kuliah\Semester 2\PBO\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete
 C:\Kuliah\Semester 2\PBO\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 C:\Kuliah\Semester 2\PBO\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Users\acer\Source\Repos\PBOC-22232c\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
+C:\Users\acer\Source\Repos\PBOC-22232c\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb

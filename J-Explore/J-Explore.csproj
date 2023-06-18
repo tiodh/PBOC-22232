@@ -9,4 +9,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WinForms" Version="2.0.0-beta.801" />
+    <PackageReference Include="Npgsql" Version="7.0.4" />
+  </ItemGroup>
+
 </Project>

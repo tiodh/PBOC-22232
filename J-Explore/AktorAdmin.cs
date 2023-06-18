@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class AkunAdmin : Form
+    public partial class AktorAdmin : Form
     {
-        public AkunAdmin()
+        public AktorAdmin()
         {
             InitializeComponent();
+        }
+
+        private void AkunAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

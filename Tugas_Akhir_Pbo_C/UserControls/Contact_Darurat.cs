@@ -60,5 +60,10 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                 deskripsi_layanan_darurat.Text = string.Empty;
             
         }
+
+        private void nama_layanan_darurat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }   

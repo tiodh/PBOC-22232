@@ -51,20 +51,22 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(13, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(9, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(54, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(85, 18);
+            this.kryptonLabel1.Location = new System.Drawing.Point(57, 12);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(128, 40);
+            this.kryptonLabel1.Size = new System.Drawing.Size(79, 26);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Swis721 Hv BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 3;
             this.kryptonLabel1.Values.Text = "Contact";
             // 
@@ -73,53 +75,60 @@
             this.kryptonPanel1.Controls.Add(this.pictureBox2);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1676, 78);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1117, 51);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonPanel1.TabIndex = 7;
             // 
             // nama_layanan_darurat
             // 
-            this.nama_layanan_darurat.Location = new System.Drawing.Point(35, 167);
+            this.nama_layanan_darurat.Location = new System.Drawing.Point(23, 109);
+            this.nama_layanan_darurat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nama_layanan_darurat.Name = "nama_layanan_darurat";
-            this.nama_layanan_darurat.Size = new System.Drawing.Size(578, 47);
+            this.nama_layanan_darurat.Size = new System.Drawing.Size(385, 38);
             this.nama_layanan_darurat.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.nama_layanan_darurat.TabIndex = 30;
             this.nama_layanan_darurat.Text = "Nama";
+            this.nama_layanan_darurat.TextChanged += new System.EventHandler(this.nama_layanan_darurat_TextChanged);
             // 
             // email_layanan_darurat
             // 
-            this.email_layanan_darurat.Location = new System.Drawing.Point(35, 389);
+            this.email_layanan_darurat.Location = new System.Drawing.Point(23, 253);
+            this.email_layanan_darurat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.email_layanan_darurat.Name = "email_layanan_darurat";
-            this.email_layanan_darurat.Size = new System.Drawing.Size(578, 47);
+            this.email_layanan_darurat.Size = new System.Drawing.Size(385, 38);
             this.email_layanan_darurat.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.email_layanan_darurat.TabIndex = 29;
             this.email_layanan_darurat.Text = "Email";
             // 
             // no_telp
             // 
-            this.no_telp.Location = new System.Drawing.Point(35, 278);
+            this.no_telp.Location = new System.Drawing.Point(23, 181);
+            this.no_telp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.no_telp.Name = "no_telp";
-            this.no_telp.Size = new System.Drawing.Size(578, 47);
+            this.no_telp.Size = new System.Drawing.Size(385, 38);
             this.no_telp.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.no_telp.TabIndex = 28;
             this.no_telp.Text = "No.telp";
             // 
             // deskripsi_layanan_darurat
             // 
-            this.deskripsi_layanan_darurat.Location = new System.Drawing.Point(35, 508);
+            this.deskripsi_layanan_darurat.Location = new System.Drawing.Point(23, 330);
+            this.deskripsi_layanan_darurat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deskripsi_layanan_darurat.Name = "deskripsi_layanan_darurat";
-            this.deskripsi_layanan_darurat.Size = new System.Drawing.Size(578, 47);
+            this.deskripsi_layanan_darurat.Size = new System.Drawing.Size(385, 38);
             this.deskripsi_layanan_darurat.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.deskripsi_layanan_darurat.TabIndex = 31;
             this.deskripsi_layanan_darurat.Text = "Deskripsi";
             // 
             // kryptonCheckButton2
             // 
-            this.kryptonCheckButton2.Location = new System.Drawing.Point(375, 670);
+            this.kryptonCheckButton2.Location = new System.Drawing.Point(250, 435);
+            this.kryptonCheckButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonCheckButton2.Name = "kryptonCheckButton2";
-            this.kryptonCheckButton2.Size = new System.Drawing.Size(304, 65);
+            this.kryptonCheckButton2.Size = new System.Drawing.Size(203, 42);
             this.kryptonCheckButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonCheckButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonCheckButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -129,9 +138,10 @@
             // 
             // kryptonCheckButton1
             // 
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(35, 670);
+            this.kryptonCheckButton1.Location = new System.Drawing.Point(23, 435);
+            this.kryptonCheckButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(304, 65);
+            this.kryptonCheckButton1.Size = new System.Drawing.Size(203, 42);
             this.kryptonCheckButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonCheckButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonCheckButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -144,9 +154,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 135);
+            this.label3.Location = new System.Drawing.Point(20, 88);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 29);
+            this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 34;
             this.label3.Text = "Nama";
             // 
@@ -154,9 +165,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 246);
+            this.label1.Location = new System.Drawing.Point(20, 160);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 29);
+            this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 35;
             this.label1.Text = "No.telp";
             // 
@@ -164,9 +176,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 357);
+            this.label2.Location = new System.Drawing.Point(20, 232);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 29);
+            this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 36;
             this.label2.Text = "Email";
             // 
@@ -174,15 +187,16 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 476);
+            this.label4.Location = new System.Drawing.Point(20, 309);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 29);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 37;
             this.label4.Text = "Deskripsi";
             // 
             // Contact_Darurat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -195,8 +209,9 @@
             this.Controls.Add(this.email_layanan_darurat);
             this.Controls.Add(this.no_telp);
             this.Controls.Add(this.kryptonPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Contact_Darurat";
-            this.Size = new System.Drawing.Size(1581, 952);
+            this.Size = new System.Drawing.Size(1054, 619);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

@@ -1,0 +1,12 @@
+D:\frond end\frondend\frondend\bin\Debug\frondend.exe.config
+D:\frond end\frondend\frondend\bin\Debug\frondend.exe
+D:\frond end\frondend\frondend\bin\Debug\frondend.pdb
+D:\frond end\frondend\frondend\obj\Debug\frondend.csproj.AssemblyReference.cache
+D:\frond end\frondend\frondend\obj\Debug\frondend.csproj.SuggestedBindingRedirects.cache
+D:\frond end\frondend\frondend\obj\Debug\frondend.Form1.resources
+D:\frond end\frondend\frondend\obj\Debug\frondend.Form2.resources
+D:\frond end\frondend\frondend\obj\Debug\frondend.Properties.Resources.resources
+D:\frond end\frondend\frondend\obj\Debug\frondend.csproj.GenerateResource.cache
+D:\frond end\frondend\frondend\obj\Debug\frondend.csproj.CoreCompileInputs.cache
+D:\frond end\frondend\frondend\obj\Debug\frondend.exe
+D:\frond end\frondend\frondend\obj\Debug\frondend.pdb

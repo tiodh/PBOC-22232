@@ -41,7 +41,7 @@ namespace Tugas_Akhir_Pbo_C
             string inputUsername = Username_Login.Text;
             string inputPassword = Password_Login.Text;
             try
-            {
+            {   
                 String query = $"select * from akun_admin where username = '{Username_Login.Text}' and password = '{Password_Login.Text}'";
                 NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, conn);
 

@@ -43,7 +43,7 @@
             this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.buttonSave = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonTextBox5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(1676, 78);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonPanel1.StateCommon.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel1.TabIndex = 6;
             // 
             // pictureBox2
@@ -84,9 +85,11 @@
             // 
             this.kryptonLabel1.Location = new System.Drawing.Point(85, 18);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(263, 40);
+            this.kryptonLabel1.Size = new System.Drawing.Size(239, 38);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Swis721 Hv BT", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonLabel1.StateCommon.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel1.TabIndex = 3;
             this.kryptonLabel1.Values.Text = "Data Pengunjung";
             // 
@@ -96,6 +99,7 @@
             this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.kryptonDateTimePicker1.Location = new System.Drawing.Point(775, 208);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
+            this.kryptonDateTimePicker1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Global;
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(578, 34);
             this.kryptonDateTimePicker1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDateTimePicker1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
@@ -200,17 +204,21 @@
             this.kryptonTextBox4.TabIndex = 23;
             this.kryptonTextBox4.Text = "Rp.000";
             // 
-            // kryptonCheckButton1
+            // buttonSave
             // 
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(709, 830);
-            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(304, 65);
-            this.kryptonCheckButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonCheckButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonCheckButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonCheckButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonCheckButton1.TabIndex = 24;
-            this.kryptonCheckButton1.Values.Text = "Simpan";
+            this.buttonSave.Location = new System.Drawing.Point(709, 830);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(304, 65);
+            this.buttonSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonSave.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.buttonSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.buttonSave.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.buttonSave.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.buttonSave.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
+            this.buttonSave.TabIndex = 24;
+            this.buttonSave.Values.Text = "Simpan";
+            this.buttonSave.Click += new System.EventHandler(this.OnButtonSaveClick);
             // 
             // kryptonCheckButton2
             // 
@@ -219,8 +227,11 @@
             this.kryptonCheckButton2.Size = new System.Drawing.Size(304, 65);
             this.kryptonCheckButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonCheckButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonCheckButton2.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonCheckButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonCheckButton2.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonCheckButton2.StateCommon.Content.ShortText.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
+            this.kryptonCheckButton2.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonCheckButton2.TabIndex = 25;
             this.kryptonCheckButton2.Values.Text = "Hapus";
             // 
@@ -312,7 +323,7 @@
             this.Controls.Add(this.kryptonTextBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kryptonCheckButton2);
-            this.Controls.Add(this.kryptonCheckButton1);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.kryptonTextBox4);
             this.Controls.Add(this.kryptonTextBox2);
             this.Controls.Add(this.kryptonTextBox1);
@@ -353,7 +364,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton buttonSave;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox5;
         private System.Windows.Forms.Label label1;

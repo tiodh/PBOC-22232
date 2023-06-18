@@ -135,6 +135,7 @@
     <Compile Include="Daftar Wisata.Designer.cs">
       <DependentUpon>Daftar Wisata.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\PrintHelper.cs" />
     <Compile Include="UserControls\Beranda_User.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -243,6 +244,7 @@
     <Compile Include="UserControls\UserControl6.Designer.cs">
       <DependentUpon>UserControl6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Global.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

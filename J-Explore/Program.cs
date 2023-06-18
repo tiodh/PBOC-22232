@@ -15,8 +15,7 @@ namespace J_Explore
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new diagrampengunjung());
-            //PrintHelper.Print(new PrintingArgumentsTransaction(), new PrintPreviewDialog());
+            Application.Run(new Form1());
         }
     }
 }

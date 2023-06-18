@@ -10,7 +10,7 @@ namespace J_Explore.Services
 {
     public class PrintHelper
     {
-        private static readonly Font font = new Font("Consolas", 10);
+        private static readonly Font font = new Font("Consolas", 8);
         private static readonly Brush brush = Brushes.Black;
 
         public static void Print(PrintingArguments args, PrintPreviewDialog dialog)
@@ -52,7 +52,7 @@ namespace J_Explore.Services
 
             float spacing = 0;
             float spacingBetweenItem = 10;
-            int maxLength = 22;
+            int maxLength = 28;
             char separator = '=';
 
             if (args is PrintingArgumentsMessage)
@@ -68,7 +68,13 @@ namespace J_Explore.Services
 
 
                 AddText("Rembangan", e, ref y, spacing);
+                AddText("1/kasir".PadRight(maxLength), e, ref y, spacing);
+                AddText(Global.GetFormattedDate(DateTime.Now, withDayOfWeek: true), e, ref y, spacing);
                 AddText("".PadRight(maxLength, separator), e, ref y, spacing);
+                AddText("Anak-Anak" + "".PadRight(maxLength - 9 - 2) + Global.PadLeft(1), e, ref y, spacing);
+                AddText("Dewasa" + "".PadRight(maxLength - 6 - 2) + Global.PadLeft(2), e, ref y, spacing);
+                AddText("".PadRight(maxLength, separator), e, ref y, spacing);
+                AddText("Jmlh Transaksi" + "".PadRight(maxLength - 14 - 4) + 1000.ToString("N0"), e, ref y, spacing);
 
                 //e.Graphics.DrawString("Rembangan", font, brush, GetCenterX(e, "Tokoku"), y);
                 //y += AddNewLine(e, spacing);

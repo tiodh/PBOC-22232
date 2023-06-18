@@ -10,24 +10,15 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class PanelUtama : Form
+    public partial class Dashboard_Admin : Form
     {
-        Fitur.Kuliner Kuliner = new Fitur.Kuliner();
-        public PanelUtama()
+        public Dashboard_Admin()
         {
             InitializeComponent();
         }
 
         private void panel5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World");
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-            panel10.Controls.Clear();
-            panel10.Controls.Add(Kuliner);
-            Kuliner.Dock = DockStyle.Fill;
             MessageBox.Show("Hello World");
         }
 

@@ -16,6 +16,10 @@ namespace J_Explore
         {
             InitializeComponent();
         }
+        private void tes()
+        {
+           
+        }
 
         private void AkunAdmin_Load(object sender, EventArgs e)
         {

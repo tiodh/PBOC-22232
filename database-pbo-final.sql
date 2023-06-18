@@ -12,8 +12,6 @@ VALUES
 (DEFAULT,'zaidan','zaidan123','zaidan@gmail.com',6281231412421),
 (DEFAULT,'wildan','wildan123','wildan@gmail.com',6281241579231);
 
-select * from akun_admin
-
 
 CREATE TABLE IF NOT EXISTS akun_user (
     id_akun_user SERIAL PRIMARY KEY,
@@ -26,8 +24,6 @@ VALUES
 (DEFAULT,'yuda123'),
 (DEFAULT,'handoko');
 
-select * from akun_user
-
 CREATE TABLE IF NOT EXISTS transaksi (
     id_transaksi SERIAL PRIMARY KEY,
     tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP
@@ -39,8 +35,6 @@ VALUES ('2023-06-10 07:44:00'),
        ('2023-06-10 07:53:00'),
        ('2023-06-10 07:58:00'),
        ('2023-06-10 08:11:00');
-
-select * from transaksi
 
 CREATE TABLE IF NOT EXISTS layanan_darurat (
     id_layanan_darurat SERIAL PRIMARY KEY,
@@ -56,8 +50,6 @@ VALUES
 (DEFAULT,'Pertolongan Medis','62814-8214-9724','medis@gmail.com','Layanan darurat untuk Pertolongan Medis'),
 (DEFAULT,'Bantuan Wisata','62817-4215-2156','bantuan@gmail.com','Layanan darurat untuk Bantuan Wisata');
 
-select * from layanan_darurat
-
 CREATE TABLE IF NOT EXISTS harga_tiket (
     id_harga_tiket SERIAL PRIMARY KEY,
     harga_tiket INT NOT NULL
@@ -66,9 +58,6 @@ CREATE TABLE IF NOT EXISTS harga_tiket (
 INSERT INTO harga_tiket (harga_tiket)
 VALUES (7500),
        (10000);
-
-select * from harga_tiket
-
 
 CREATE TABLE IF NOT EXISTS jenis_fasilitas (
     id_jenis_fasilitas SERIAL PRIMARY KEY,
@@ -84,8 +73,6 @@ INSERT INTO jenis_fasilitas(id_jenis_fasilitas, nama_jenis_fasilitas, deskripsi_
 		   (5, 'Restoran', 'Restoran ini membuat pengunjung dapat menikmati makanan yang lezat disertai pemandangan yang indah'),
 		   (6, 'Cafe', 'Tempat yang nyaman untuk pengunjung menikmati makanan ringan dengan pemandangan dari puncak yang memanjakan mata');
 
-select * from jenis_fasilitas
-
 CREATE TABLE IF NOT EXISTS nama_tempat (
     id_nama_tempat SERIAL PRIMARY KEY,
     nama_tempat VARCHAR(255) NOT NULL,
@@ -97,8 +84,6 @@ VALUES
     (1, 'Resto Rembangan', 'Tempat makan yang pas untuk bersantai bersama keluarga, teman, pacar dengan view puncak kota jember yang memukau'),
     (2, 'Cafe Buah Naga', 'Cafe buah naga, cafe yang pas untuk bersantai di daerah puncak dengan ditemani kebun buah naga di sekitar cafe serta view puncak kota jember yang menyejukkan mata');
 
-select * from nama_tempat
-
 CREATE TYPE jenis_pengunjung_type AS ENUM('anak-anak','dewasa');
 CREATE TABLE IF NOT EXISTS jenis_pengunjung (
     id_jenis_pengunjung SERIAL PRIMARY KEY,
@@ -108,9 +93,6 @@ CREATE TABLE IF NOT EXISTS jenis_pengunjung (
 INSERT INTO jenis_pengunjung (kelompok_usia) VALUES
     ('anak-anak'),
     ('dewasa');
-
-select * from jenis_pengunjung
-
 
 CREATE TABLE IF NOT EXISTS data_pengunjung (
     id_data_pengunjung SERIAL PRIMARY KEY,
@@ -133,8 +115,6 @@ VALUES
     (8, 'Fiki', 'Arjasa', 1, 2),
     (9, 'Suyono', 'Bintaro', 1,2),
     (10, 'Mulyadi', 'Jember', 1, 2);
-
-select * from data_pengunjung
 
 CREATE TABLE IF NOT EXISTS detail_transaksi (
     id_detail_transaksi SERIAL PRIMARY KEY,
@@ -161,8 +141,6 @@ VALUES
 	('10000',10,2,2)
 ;
 
-select * from detail_transaksi
-
 CREATE TABLE IF NOT EXISTS cetak_nota (
     id_cetak_nota SERIAL PRIMARY KEY,
     id_detail_transaksi INT NOT NULL,
@@ -182,8 +160,6 @@ VALUES
 	(9,9),
 	(10,10)
 ;
-
-select * from cetak_nota
 
 CREATE TABLE IF NOT EXISTS fasilitas (
     id_fasilitas SERIAL PRIMARY KEY,
@@ -213,8 +189,6 @@ VALUES
 (13,'Musik Corner',1,'Free','07-00-22.00',DEFAULT,3),
 (14,'Camping Ground',1,'50000-200000','24 Jam',DEFAULT,4);
 
-select * from fasilitas
-
 CREATE TABLE IF NOT EXISTS feedback_user (
     id_feedback_user SERIAL PRIMARY KEY,
     ulasan VARCHAR(255) DEFAULT NULL,
@@ -229,9 +203,6 @@ VALUES
 	('Pelayanan sangat memuaskan!', 5, '2023-06-14', 1),
 	('Perlu peningkatan dalam kecepatan respon.', 3, '2023-06-12', 2),
 	('Sangat puas dengan produk yang ditawarkan!', 4, '2023-06-10', 3);
-	
-select * from feedback_user
-
 
 CREATE TABLE IF NOT EXISTS kuliner (
     id_kuliner SERIAL PRIMARY KEY,
@@ -413,5 +384,3 @@ INSERT INTO kuliner(
 		   (168, 'Energen', 5000,2),
 		   (169, 'Kopi Lanang', 7000,2),
 		   (170, 'Robusta Gunung Ijen', 5000,2);
-		   
-select * from kuliner

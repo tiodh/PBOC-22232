@@ -175,6 +175,7 @@
     <Compile Include="UserControls\Beranda_User.Designer.cs">
       <DependentUpon>Beranda_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DatabaseHelper.cs" />
     <Compile Include="UserControls\Kuliner.cs">
       <SubType>UserControl</SubType>
     </Compile>

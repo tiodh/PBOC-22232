@@ -44,7 +44,21 @@
             panel4 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
+            label2 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label3 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             panel1.SuspendLayout();
+            panel11.SuspendLayout();
+            panel9.SuspendLayout();
+            panel12.SuspendLayout();
+            panel7.SuspendLayout();
+            panel10.SuspendLayout();
+            panel6.SuspendLayout();
+            panel8.SuspendLayout();
             panel5.SuspendLayout();
             SuspendLayout();
             // 
@@ -69,11 +83,12 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(0, 706);
             button1.Name = "button1";
             button1.Size = new Size(326, 40);
             button1.TabIndex = 14;
-            button1.Text = "button1";
+            button1.Text = "Logout Admin";
             button1.UseVisualStyleBackColor = true;
             // 
             // panel13
@@ -85,6 +100,7 @@
             // 
             // panel11
             // 
+            panel11.Controls.Add(label4);
             panel11.Location = new Point(3, 538);
             panel11.Name = "panel11";
             panel11.Size = new Size(323, 50);
@@ -99,6 +115,7 @@
             // 
             // panel9
             // 
+            panel9.Controls.Add(label7);
             panel9.Location = new Point(3, 426);
             panel9.Name = "panel9";
             panel9.Size = new Size(323, 50);
@@ -106,6 +123,7 @@
             // 
             // panel12
             // 
+            panel12.Controls.Add(label8);
             panel12.Location = new Point(3, 482);
             panel12.Name = "panel12";
             panel12.Size = new Size(323, 50);
@@ -113,6 +131,7 @@
             // 
             // panel7
             // 
+            panel7.Controls.Add(label3);
             panel7.Location = new Point(3, 314);
             panel7.Name = "panel7";
             panel7.Size = new Size(323, 50);
@@ -120,6 +139,7 @@
             // 
             // panel10
             // 
+            panel10.Controls.Add(label6);
             panel10.Location = new Point(3, 370);
             panel10.Name = "panel10";
             panel10.Size = new Size(323, 50);
@@ -127,6 +147,7 @@
             // 
             // panel6
             // 
+            panel6.Controls.Add(label5);
             panel6.Location = new Point(3, 202);
             panel6.Name = "panel6";
             panel6.Size = new Size(323, 50);
@@ -134,6 +155,7 @@
             // 
             // panel8
             // 
+            panel8.Controls.Add(label2);
             panel8.Location = new Point(3, 258);
             panel8.Name = "panel8";
             panel8.Size = new Size(323, 50);
@@ -152,7 +174,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(60, 7);
+            label1.Location = new Point(50, 6);
             label1.Name = "label1";
             label1.Size = new Size(114, 37);
             label1.TabIndex = 0;
@@ -179,6 +201,76 @@
             panel3.Size = new Size(1034, 137);
             panel3.TabIndex = 2;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(50, 7);
+            label2.Name = "label2";
+            label2.Size = new Size(110, 37);
+            label2.TabIndex = 1;
+            label2.Text = "Riwayat";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(50, 6);
+            label4.Name = "label4";
+            label4.Size = new Size(215, 37);
+            label4.TabIndex = 3;
+            label4.Text = "Registrasi Admin";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(50, 6);
+            label5.Name = "label5";
+            label5.Size = new Size(74, 37);
+            label5.TabIndex = 4;
+            label5.Text = "Kasir";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(50, 6);
+            label3.Name = "label3";
+            label3.Size = new Size(158, 37);
+            label3.TabIndex = 2;
+            label3.Text = "Pendapatan";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(50, 6);
+            label6.Name = "label6";
+            label6.Size = new Size(267, 37);
+            label6.TabIndex = 3;
+            label6.Text = "Diagram Pendapatan";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(50, 6);
+            label7.Name = "label7";
+            label7.Size = new Size(142, 37);
+            label7.TabIndex = 4;
+            label7.Text = "Pendataan";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(50, 6);
+            label8.Name = "label8";
+            label8.Size = new Size(251, 37);
+            label8.TabIndex = 4;
+            label8.Text = "Diagram Pendataan";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -190,6 +282,20 @@
             Name = "Form2";
             Text = "J-Explore";
             panel1.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ResumeLayout(false);
@@ -213,5 +319,12 @@
         private Panel panel2;
         private Panel panel3;
         private Label label1;
+        private Label label2;
+        private Label label4;
+        private Label label7;
+        private Label label8;
+        private Label label3;
+        private Label label6;
+        private Label label5;
     }
 }

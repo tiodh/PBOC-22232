@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class Form2 : Form
+    public partial class pengunjung : Form
     {
-        public Form2()
+        public pengunjung()
         {
             InitializeComponent();
-        }
-
-        private void panel5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello World");
         }
     }
 }

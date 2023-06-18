@@ -74,7 +74,7 @@ namespace J_Explore.Services
                 AddText("Anak-Anak" + "".PadRight(maxLength - 9 - 2) + Global.PadLeft(1), e, ref y, spacing);
                 AddText("Dewasa" + "".PadRight(maxLength - 6 - 2) + Global.PadLeft(2), e, ref y, spacing);
                 AddText("".PadRight(maxLength, separator), e, ref y, spacing);
-                //AddText("Jmlh Transaksi")
+                AddText("Jmlh Transaksi" + "".PadRight(maxLength - 14 - 4) + 1000.ToString("N0"), e, ref y, spacing);
 
                 //e.Graphics.DrawString("Rembangan", font, brush, GetCenterX(e, "Tokoku"), y);
                 //y += AddNewLine(e, spacing);

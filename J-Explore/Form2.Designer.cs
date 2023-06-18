@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             panel1 = new Panel();
             button1 = new Button();
             panel13 = new Panel();
@@ -44,9 +43,7 @@
             panel4 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            HomeButton = new Button();
             panel1.SuspendLayout();
-            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -153,7 +150,6 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(HomeButton);
             panel5.Location = new Point(3, 195);
             panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
@@ -185,22 +181,6 @@
             panel3.Size = new Size(1182, 183);
             panel3.TabIndex = 2;
             // 
-            // HomeButton
-            // 
-            HomeButton.BackColor = Color.FromArgb(63, 130, 109);
-            HomeButton.Dock = DockStyle.Fill;
-            HomeButton.FlatStyle = FlatStyle.Flat;
-            HomeButton.Image = (Image)resources.GetObject("HomeButton.Image");
-            HomeButton.ImageAlign = ContentAlignment.MiddleLeft;
-            HomeButton.Location = new Point(0, 0);
-            HomeButton.Name = "HomeButton";
-            HomeButton.Padding = new Padding(15, 0, 0, 0);
-            HomeButton.Size = new Size(369, 67);
-            HomeButton.TabIndex = 0;
-            HomeButton.Text = "           button2";
-            HomeButton.TextAlign = ContentAlignment.MiddleLeft;
-            HomeButton.UseVisualStyleBackColor = false;
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -215,7 +195,6 @@
             RightToLeft = RightToLeft.No;
             Text = "J-Explore";
             panel1.ResumeLayout(false);
-            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -236,6 +215,5 @@
         private Panel panel4;
         private Panel panel2;
         private Panel panel3;
-        private Button HomeButton;
     }
 }

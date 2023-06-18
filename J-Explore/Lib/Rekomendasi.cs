@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace J_Explore.Lib
 {
-    public partial class Fasilitas : Form
+    public partial class Rekomendasi : Form
     {
-        public Fasilitas()
+        public Rekomendasi()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

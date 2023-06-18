@@ -131,6 +131,7 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(323, 50);
             panel9.TabIndex = 9;
+            panel9.Click += pendataan;
             // 
             // label7
             // 
@@ -149,6 +150,7 @@
             panel12.Name = "panel12";
             panel12.Size = new Size(323, 50);
             panel12.TabIndex = 10;
+            panel12.Click += diagrampendataan;
             // 
             // label8
             // 
@@ -167,6 +169,7 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(323, 50);
             panel7.TabIndex = 7;
+            panel7.Click += pendapatan;
             // 
             // label3
             // 
@@ -185,6 +188,7 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(323, 50);
             panel10.TabIndex = 8;
+            panel10.Click += diagrampendapatan;
             // 
             // label6
             // 

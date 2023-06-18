@@ -1,3 +1,5 @@
+using J_Explore.Services;
+
 namespace J_Explore
 {
     public partial class Form1 : Form
@@ -5,6 +7,11 @@ namespace J_Explore
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PrintHelper.Print(new PrintingArgumentsTransaction());
         }
     }
 }

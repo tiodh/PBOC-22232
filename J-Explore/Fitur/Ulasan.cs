@@ -8,18 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace J_Explore
+namespace J_Explore.Fitur
 {
-    public partial class Form2 : Form
+    public partial class Ulasan : Form
     {
-        public Form2()
+        public Ulasan()
         {
             InitializeComponent();
         }
 
-        private void panel5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello World")
-        }
     }
 }

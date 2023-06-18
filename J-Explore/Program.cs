@@ -1,3 +1,7 @@
+using J_Explore.Services;
+using Npgsql;
+using System.Data;
+
 namespace J_Explore
 {
     internal static class Program

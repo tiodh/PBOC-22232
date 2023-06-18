@@ -1,6 +1,6 @@
 ﻿namespace J_Explore
 {
-    partial class Form2
+    partial class Dashboard_Admin
     {
         /// <summary>
         /// Required designer variable.

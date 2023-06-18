@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class Form2 : Form
+    public partial class Dashboard_Admin : Form
     {
-        public Form2()
+        public Dashboard_Admin()
         {
             InitializeComponent();
         }

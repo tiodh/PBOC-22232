@@ -16,7 +16,6 @@ namespace J_Explore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-            //PrintHelper.Print(new PrintingArgumentsTransaction(), new PrintPreviewDialog());
         }
     }
 }

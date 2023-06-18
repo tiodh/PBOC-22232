@@ -33,9 +33,9 @@
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Username_Login = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-            this.cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -86,6 +86,14 @@
             this.kryptonPanel2.Size = new System.Drawing.Size(1486, 658);
             this.kryptonPanel2.TabIndex = 7;
             // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.BackColor = System.Drawing.Color.White;
+            this.cartesianChart1.Location = new System.Drawing.Point(14, 12);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(1458, 631);
+            this.cartesianChart1.TabIndex = 0;
+            // 
             // kryptonButton1
             // 
             this.kryptonButton1.Location = new System.Drawing.Point(499, 140);
@@ -104,6 +112,7 @@
             this.kryptonButton1.StateCommon.Content.ShortText.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonButton1.TabIndex = 53;
             this.kryptonButton1.Values.Text = "Cari";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // Username_Login
             // 
@@ -121,14 +130,6 @@
             this.Username_Login.TabIndex = 52;
             this.Username_Login.Text = "Cari";
             this.Username_Login.UseWaitCursor = true;
-            // 
-            // cartesianChart1
-            // 
-            this.cartesianChart1.BackColor = System.Drawing.Color.White;
-            this.cartesianChart1.Location = new System.Drawing.Point(14, 12);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(1458, 631);
-            this.cartesianChart1.TabIndex = 0;
             // 
             // UserControl5
             // 

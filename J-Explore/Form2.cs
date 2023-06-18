@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class AktorAdmin : Form
+    public partial class Form2 : Form
     {
-        public AktorAdmin()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void AkunAdmin_Load(object sender, EventArgs e)
+        private void panel5_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hello World")
         }
     }
 }

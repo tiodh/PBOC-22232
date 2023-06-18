@@ -28,6 +28,27 @@ namespace J_Explore
             panel10.Controls.Clear();
             panel10.Controls.Add(Kuliner);
             Kuliner.Dock = DockStyle.Fill;
+            MessageBox.Show("Hello World");
+        }
+
+        private void pendapatan(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void diagrampendapatan(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pendataan(object sender, EventArgs e)
+        {
+
+        }
+
+        private void diagrampendataan(object sender, EventArgs e)
+        {
+
         }
     }
 }

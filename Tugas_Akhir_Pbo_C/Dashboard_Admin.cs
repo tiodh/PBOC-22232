@@ -19,7 +19,8 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Review Review = new UserControls.Review();
         UserControls.Registrasi_Admin Registrasi = new UserControls.Registrasi_Admin();
         UserControls.Contact_Darurat Contact = new UserControls.Contact_Darurat();
-
+        UserControls.Grafik_Pengunjung diagram_Pengunjung = new UserControls.Grafik_Pengunjung();
+        UserControls.Grafik_Keuangan diagramKeuangan = new UserControls.Grafik_Keuangan();
         public Dashboard_Admin()
         {
             InitializeComponent();
@@ -84,6 +85,20 @@ namespace Tugas_Akhir_Pbo_C
             PanelUtamaAdmin.Controls.Clear();
             PanelUtamaAdmin.Controls.Add(Contact);
             Contact.Dock = DockStyle.Fill;
+        }
+
+        private void diagramPengunjung_Click(object sender, EventArgs e)
+        {
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(diagram_Pengunjung);
+            diagram_Pengunjung.Dock = DockStyle.Fill;
+        }
+
+        private void diagramPendapatan_Click(object sender, EventArgs e)
+        {
+            PanelUtamaAdmin.Controls.Clear();
+            PanelUtamaAdmin.Controls.Add(diagramKeuangan);
+            diagramKeuangan.Dock = DockStyle.Fill;
         }
     }
 }

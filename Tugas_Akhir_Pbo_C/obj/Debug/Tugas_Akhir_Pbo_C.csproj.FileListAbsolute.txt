@@ -150,3 +150,32 @@ C:\Kuliah\Semester 2\PBO\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_
 C:\Kuliah\Semester 2\PBO\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
 C:\Users\acer\Source\Repos\PBOC-22232c\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 C:\Users\acer\Source\Repos\PBOC-22232c\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.AssemblyReference.cache
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.SuggestedBindingRedirects.cache
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form1.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Dashboard_Admin.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Properties.Resources.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_User.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Map.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Fasilitas.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Harga.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kontak_Darurat.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Review.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Pengunjung.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Pengunjung.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Keuangan.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Registrasi_Admin.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Contact_Darurat.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_Admin.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl6.resources
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.GenerateResource.cache
+D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache

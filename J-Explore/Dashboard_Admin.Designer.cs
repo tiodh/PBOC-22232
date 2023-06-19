@@ -28,316 +28,581 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            button1 = new Button();
-            panel13 = new Panel();
-            panel11 = new Panel();
-            label4 = new Label();
-            panel14 = new Panel();
-            panel9 = new Panel();
-            label7 = new Label();
-            panel12 = new Panel();
-            label8 = new Label();
-            panel7 = new Panel();
-            label3 = new Label();
-            panel10 = new Panel();
-            label6 = new Label();
-            panel6 = new Panel();
-            label5 = new Label();
-            panel8 = new Panel();
-            label2 = new Label();
-            panel5 = new Panel();
-            panel4 = new Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_Admin));
             panel2 = new Panel();
+            showPanel = new Panel();
+            panel11 = new Panel();
+            tittlePageAdmin = new Label();
+            panel1 = new Panel();
+            tableLayoutPanel7 = new TableLayoutPanel();
+            pictureBox7 = new PictureBox();
+            panel10 = new Panel();
+            label7 = new Label();
+            tableLayoutPanel6 = new TableLayoutPanel();
+            pictureBox6 = new PictureBox();
+            panel9 = new Panel();
+            label6 = new Label();
+            tableLayoutPanel5 = new TableLayoutPanel();
+            pictureBox5 = new PictureBox();
+            panel8 = new Panel();
+            label5 = new Label();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            pictureBox4 = new PictureBox();
+            panel7 = new Panel();
+            label4 = new Label();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            pictureBox3 = new PictureBox();
+            panel6 = new Panel();
+            label3 = new Label();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            pictureBox2 = new PictureBox();
+            panel5 = new Panel();
+            label2 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panel4 = new Panel();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             panel3 = new Panel();
-            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             panel11.SuspendLayout();
-            panel9.SuspendLayout();
-            panel12.SuspendLayout();
-            panel7.SuspendLayout();
+            panel1.SuspendLayout();
+            tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel10.SuspendLayout();
-            panel6.SuspendLayout();
+            tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel9.SuspendLayout();
+            tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel8.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel7.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel6.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel5.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // panel2
             // 
-            panel1.BackColor = Color.DarkGreen;
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(panel13);
-            panel1.Controls.Add(panel11);
-            panel1.Controls.Add(panel14);
-            panel1.Controls.Add(panel9);
-            panel1.Controls.Add(panel12);
-            panel1.Controls.Add(panel7);
-            panel1.Controls.Add(panel10);
-            panel1.Controls.Add(panel6);
-            panel1.Controls.Add(panel8);
-            panel1.Controls.Add(panel5);
-            panel1.Controls.Add(panel4);
-            panel1.Location = new Point(1, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(376, 999);
-            panel1.TabIndex = 0;
+            panel2.Controls.Add(showPanel);
+            panel2.Controls.Add(panel11);
+            panel2.Controls.Add(panel1);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.MinimumSize = new Size(1478, 1010);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1924, 1010);
+            panel2.TabIndex = 1;
             // 
-            // button1
+            // showPanel
             // 
-            button1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(0, 706);
-            button1.Name = "button1";
-            button1.Size = new Size(373, 53);
-            button1.TabIndex = 14;
-            button1.Text = "Logout Admin";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // panel13
-            // 
-            panel13.Location = new Point(3, 867);
-            panel13.Margin = new Padding(3, 4, 3, 4);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(369, 67);
-            panel13.TabIndex = 13;
+            showPanel.Dock = DockStyle.Fill;
+            showPanel.Location = new Point(466, 170);
+            showPanel.Margin = new Padding(4);
+            showPanel.Name = "showPanel";
+            showPanel.Size = new Size(1458, 840);
+            showPanel.TabIndex = 2;
             // 
             // panel11
             // 
-            panel11.Controls.Add(label4);
-            panel11.Location = new Point(3, 538);
+            panel11.BackColor = Color.FromArgb(63, 130, 109);
+            panel11.Controls.Add(tittlePageAdmin);
+            panel11.Dock = DockStyle.Top;
+            panel11.Location = new Point(466, 0);
+            panel11.Margin = new Padding(4);
             panel11.Name = "panel11";
-            panel11.Size = new Size(369, 67);
-            panel11.TabIndex = 11;
+            panel11.Size = new Size(1458, 170);
+            panel11.TabIndex = 1;
             // 
-            // label4
+            // tittlePageAdmin
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(50, 6);
-            label4.Name = "label4";
-            label4.Size = new Size(215, 37);
-            label4.TabIndex = 3;
-            label4.Text = "Registrasi Admin";
+            tittlePageAdmin.Anchor = AnchorStyles.None;
+            tittlePageAdmin.AutoSize = true;
+            tittlePageAdmin.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            tittlePageAdmin.ForeColor = Color.White;
+            tittlePageAdmin.Location = new Point(683, 52);
+            tittlePageAdmin.Margin = new Padding(4, 0, 4, 0);
+            tittlePageAdmin.Name = "tittlePageAdmin";
+            tittlePageAdmin.Size = new Size(115, 45);
+            tittlePageAdmin.TabIndex = 1;
+            tittlePageAdmin.Text = "KASIR";
             // 
-            // panel14
+            // panel1
             // 
-            panel14.Location = new Point(3, 792);
-            panel14.Margin = new Padding(3, 4, 3, 4);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(369, 67);
-            panel14.TabIndex = 12;
+            panel1.BackColor = Color.FromArgb(63, 130, 109);
+            panel1.Controls.Add(tableLayoutPanel7);
+            panel1.Controls.Add(tableLayoutPanel6);
+            panel1.Controls.Add(tableLayoutPanel5);
+            panel1.Controls.Add(tableLayoutPanel4);
+            panel1.Controls.Add(tableLayoutPanel3);
+            panel1.Controls.Add(tableLayoutPanel2);
+            panel1.Controls.Add(tableLayoutPanel1);
+            panel1.Controls.Add(panel3);
+            panel1.Dock = DockStyle.Left;
+            panel1.ForeColor = Color.FromArgb(63, 130, 109);
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(466, 1010);
+            panel1.TabIndex = 0;
             // 
-            // panel9
+            // tableLayoutPanel7
             // 
-            panel9.Controls.Add(label7);
-            panel9.Location = new Point(3, 426);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(369, 67);
-            panel9.TabIndex = 9;
-            panel9.Click += pendataan;
+            tableLayoutPanel7.ColumnCount = 2;
+            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel7.Controls.Add(pictureBox7, 0, 0);
+            tableLayoutPanel7.Controls.Add(panel10, 1, 0);
+            tableLayoutPanel7.Dock = DockStyle.Top;
+            tableLayoutPanel7.Location = new Point(0, 698);
+            tableLayoutPanel7.Margin = new Padding(4);
+            tableLayoutPanel7.Name = "tableLayoutPanel7";
+            tableLayoutPanel7.RowCount = 1;
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel7.Size = new Size(466, 88);
+            tableLayoutPanel7.TabIndex = 7;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Dock = DockStyle.Fill;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(4, 4);
+            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(115, 80);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 2;
+            pictureBox7.TabStop = false;
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(label7);
+            panel10.Dock = DockStyle.Fill;
+            panel10.Location = new Point(127, 4);
+            panel10.Margin = new Padding(4);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(335, 80);
+            panel10.TabIndex = 0;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(50, 6);
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(24, 21);
+            label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(142, 37);
-            label7.TabIndex = 4;
-            label7.Text = "Pendataan";
+            label7.Size = new Size(241, 32);
+            label7.TabIndex = 1;
+            label7.Text = "REGISTRASI ADMIN";
+            label7.Click += label7_Click;
             // 
-            // panel12
+            // tableLayoutPanel6
             // 
-            panel12.Controls.Add(label8);
-            panel12.Location = new Point(3, 482);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(369, 67);
-            panel12.TabIndex = 10;
-            panel12.Click += diagrampendataan;
+            tableLayoutPanel6.ColumnCount = 2;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel6.Controls.Add(pictureBox6, 0, 0);
+            tableLayoutPanel6.Controls.Add(panel9, 1, 0);
+            tableLayoutPanel6.Dock = DockStyle.Top;
+            tableLayoutPanel6.Location = new Point(0, 610);
+            tableLayoutPanel6.Margin = new Padding(4);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 1;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel6.Size = new Size(466, 88);
+            tableLayoutPanel6.TabIndex = 6;
             // 
-            // label8
+            // pictureBox6
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(50, 6);
-            label8.Name = "label8";
-            label8.Size = new Size(251, 37);
-            label8.TabIndex = 4;
-            label8.Text = "Diagram Pendataan";
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(4, 4);
+            pictureBox6.Margin = new Padding(4);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(115, 80);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 2;
+            pictureBox6.TabStop = false;
             // 
-            // panel7
+            // panel9
             // 
-            panel7.Controls.Add(label3);
-            panel7.Location = new Point(3, 314);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(369, 67);
-            panel7.TabIndex = 7;
-            panel7.Click += pendapatan;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(50, 6);
-            label3.Name = "label3";
-            label3.Size = new Size(158, 37);
-            label3.TabIndex = 2;
-            label3.Text = "Pendapatan";
-            // 
-            // panel10
-            // 
-            panel10.Controls.Add(label6);
-            panel10.Location = new Point(3, 370);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(369, 67);
-            panel10.TabIndex = 8;
-            panel10.Click += diagrampendapatan;
+            panel9.Controls.Add(label6);
+            panel9.Dock = DockStyle.Fill;
+            panel9.Location = new Point(127, 4);
+            panel9.Margin = new Padding(4);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(335, 80);
+            panel9.TabIndex = 0;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(50, 6);
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(24, 16);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(267, 37);
-            label6.TabIndex = 3;
-            label6.Text = "Diagram Pendapatan";
+            label6.Size = new Size(282, 32);
+            label6.TabIndex = 1;
+            label6.Text = "DIAGRAM PENDATAAN";
+            label6.Click += label6_Click;
             // 
-            // panel6
+            // tableLayoutPanel5
             // 
-            panel6.Controls.Add(label5);
-            panel6.Location = new Point(3, 202);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(369, 67);
-            panel6.TabIndex = 5;
+            tableLayoutPanel5.ColumnCount = 2;
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel5.Controls.Add(pictureBox5, 0, 0);
+            tableLayoutPanel5.Controls.Add(panel8, 1, 0);
+            tableLayoutPanel5.Dock = DockStyle.Top;
+            tableLayoutPanel5.Location = new Point(0, 522);
+            tableLayoutPanel5.Margin = new Padding(4);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            tableLayoutPanel5.RowCount = 1;
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel5.Size = new Size(466, 88);
+            tableLayoutPanel5.TabIndex = 5;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Dock = DockStyle.Fill;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(4, 4);
+            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(115, 80);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 2;
+            pictureBox5.TabStop = false;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(label5);
+            panel8.Dock = DockStyle.Fill;
+            panel8.Location = new Point(127, 4);
+            panel8.Margin = new Padding(4);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(335, 80);
+            panel8.TabIndex = 0;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(50, 6);
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(22, 18);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(74, 37);
-            label5.TabIndex = 4;
-            label5.Text = "Kasir";
+            label5.Size = new Size(159, 32);
+            label5.TabIndex = 1;
+            label5.Text = "PENDATAAN";
+            label5.Click += label5_Click;
             // 
-            // panel8
+            // tableLayoutPanel4
             // 
-            panel8.Controls.Add(label2);
-            panel8.Location = new Point(3, 258);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(369, 67);
-            panel8.TabIndex = 6;
+            tableLayoutPanel4.ColumnCount = 2;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel4.Controls.Add(pictureBox4, 0, 0);
+            tableLayoutPanel4.Controls.Add(panel7, 1, 0);
+            tableLayoutPanel4.Dock = DockStyle.Top;
+            tableLayoutPanel4.Location = new Point(0, 434);
+            tableLayoutPanel4.Margin = new Padding(4);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Size = new Size(466, 88);
+            tableLayoutPanel4.TabIndex = 4;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Dock = DockStyle.Fill;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(4, 4);
+            pictureBox4.Margin = new Padding(4);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(115, 80);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(label4);
+            panel7.Dock = DockStyle.Fill;
+            panel7.Location = new Point(127, 4);
+            panel7.Margin = new Padding(4);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(335, 80);
+            panel7.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(22, 18);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(296, 32);
+            label4.TabIndex = 1;
+            label4.Text = "DIAGRAM PENDAPATAN";
+            label4.Click += diagrampendapatan;
+            // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.ColumnCount = 2;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel3.Controls.Add(pictureBox3, 0, 0);
+            tableLayoutPanel3.Controls.Add(panel6, 1, 0);
+            tableLayoutPanel3.Dock = DockStyle.Top;
+            tableLayoutPanel3.Location = new Point(0, 346);
+            tableLayoutPanel3.Margin = new Padding(4);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 1;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel3.Size = new Size(466, 88);
+            tableLayoutPanel3.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Dock = DockStyle.Fill;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(4, 4);
+            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(115, 80);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(label3);
+            panel6.Dock = DockStyle.Fill;
+            panel6.Location = new Point(127, 4);
+            panel6.Margin = new Padding(4);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(335, 80);
+            panel6.TabIndex = 0;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(22, 21);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(173, 32);
+            label3.TabIndex = 1;
+            label3.Text = "PENDAPATAN";
+            label3.Click += label3_Click;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 2;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel2.Controls.Add(pictureBox2, 0, 0);
+            tableLayoutPanel2.Controls.Add(panel5, 1, 0);
+            tableLayoutPanel2.Dock = DockStyle.Top;
+            tableLayoutPanel2.Location = new Point(0, 258);
+            tableLayoutPanel2.Margin = new Padding(4);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Size = new Size(466, 88);
+            tableLayoutPanel2.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Fill;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(4, 4);
+            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(115, 80);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(label2);
+            panel5.Dock = DockStyle.Fill;
+            panel5.Location = new Point(127, 4);
+            panel5.Margin = new Padding(4);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(335, 80);
+            panel5.TabIndex = 0;
+            panel5.Paint += panel5_Paint;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(50, 7);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(22, 19);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(110, 37);
+            label2.Size = new Size(118, 32);
             label2.TabIndex = 1;
-            label2.Text = "Riwayat";
+            label2.Text = "RIWAYAT";
+            label2.Click += label2_Click;
             // 
-            // panel5
+            // tableLayoutPanel1
             // 
-            panel5.Location = new Point(3, 195);
-            panel5.Margin = new Padding(3, 4, 3, 4);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(369, 67);
-            panel5.TabIndex = 4;
-            panel5.Click += panel5_Click;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel1.Controls.Add(panel4, 1, 0);
+            tableLayoutPanel1.Controls.Add(pictureBox1, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Top;
+            tableLayoutPanel1.Location = new Point(0, 170);
+            tableLayoutPanel1.Margin = new Padding(4);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(466, 88);
+            tableLayoutPanel1.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(label1);
+            panel4.Dock = DockStyle.Fill;
+            panel4.Location = new Point(127, 4);
+            panel4.Margin = new Padding(4);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(335, 80);
+            panel4.TabIndex = 0;
+            panel4.Paint += panel4_Paint;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(50, 6);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(22, 22);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(114, 37);
+            label1.Size = new Size(84, 32);
             label1.TabIndex = 0;
-            label1.Text = "Beranda";
+            label1.Text = "KASIR";
+            label1.Click += label1_Click;
             // 
-            // panel4
+            // pictureBox1
             // 
-            panel4.Location = new Point(3, 4);
-            panel4.Margin = new Padding(3, 4, 3, 4);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(369, 183);
-            panel4.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            panel2.Location = new Point(384, 191);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1182, 808);
-            panel2.TabIndex = 1;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(4, 4);
+            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(115, 80);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // panel3
             // 
-            panel3.Location = new Point(384, 0);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.BackColor = Color.FromArgb(53, 110, 93);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1182, 183);
-            panel3.TabIndex = 2;
+            panel3.Size = new Size(466, 170);
+            panel3.TabIndex = 0;
             // 
-            // Form2
+            // Dashboard_Admin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(959, 630);
-            Controls.Add(panel3);
+            ClientSize = new Size(1924, 924);
             Controls.Add(panel2);
-            Controls.Add(panel1);
             ForeColor = Color.White;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "Form2";
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "Dashboard_Admin";
             RightToLeft = RightToLeft.No;
             Text = "J-Explore";
-            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
+            panel1.ResumeLayout(false);
+            tableLayoutPanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
+            tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
+        private Panel panel2;
+        private Label label1;
         private Panel panel1;
-        private Button button1;
-        private Panel panel13;
-        private Panel panel11;
-        private Panel panel14;
-        private Panel panel9;
-        private Panel panel12;
-        private Panel panel7;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel3;
+        private TableLayoutPanel tableLayoutPanel7;
+        private TableLayoutPanel tableLayoutPanel6;
+        private TableLayoutPanel tableLayoutPanel5;
+        private TableLayoutPanel tableLayoutPanel4;
+        private TableLayoutPanel tableLayoutPanel3;
+        private TableLayoutPanel tableLayoutPanel2;
         private Panel panel10;
-        private Panel panel6;
+        private Panel panel9;
         private Panel panel8;
+        private Panel panel7;
+        private Panel panel6;
         private Panel panel5;
         private Panel panel4;
-        private Panel panel2;
-        private Panel panel3;
-        private Label label1;
-        private Label label2;
-        private Label label4;
         private Label label7;
-        private Label label8;
-        private Label label3;
         private Label label6;
         private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Panel showPanel;
+        private Panel panel11;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private Label tittlePageAdmin;
     }
 }

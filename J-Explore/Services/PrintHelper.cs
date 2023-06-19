@@ -68,13 +68,13 @@ namespace J_Explore.Services
 
 
                 AddText("Rembangan", e, ref y, spacing);
-                AddText("1/kasir".PadRight(maxLength), e, ref y, spacing);
-                AddText(Global.GetFormattedDate(DateTime.Now, withDayOfWeek: true), e, ref y, spacing);
+                AddText($"{transactionArgs.Id}/{transactionArgs.UsernameAdmin}".PadRight(maxLength), e, ref y, spacing);
+                AddText(Global.GetFormattedDate(transactionArgs.Tanggal, withDayOfWeek: true), e, ref y, spacing);
                 AddText("".PadRight(maxLength, separator), e, ref y, spacing);
-                AddText("Anak-Anak" + "".PadRight(maxLength - 9 - 2) + Global.PadLeft(1), e, ref y, spacing);
-                AddText("Dewasa" + "".PadRight(maxLength - 6 - 2) + Global.PadLeft(2), e, ref y, spacing);
+                AddText("Anak-Anak" + "".PadRight(maxLength - 9 - 2) + Global.PadLeft(transactionArgs.AnakAnak), e, ref y, spacing);
+                AddText("Dewasa" + "".PadRight(maxLength - 6 - 2) + Global.PadLeft(transactionArgs.Dewasa), e, ref y, spacing);
                 AddText("".PadRight(maxLength, separator), e, ref y, spacing);
-                AddText("Jmlh Transaksi" + "".PadRight(maxLength - 14 - 4) + 1000.ToString("N0"), e, ref y, spacing);
+                AddText("Total" + "".PadRight(maxLength - 5 - transactionArgs.Total.ToString("N0").Length) + transactionArgs.Total.ToString("N0"), e, ref y, spacing);
 
                 //e.Graphics.DrawString("Rembangan", font, brush, GetCenterX(e, "Tokoku"), y);
                 //y += AddNewLine(e, spacing);
@@ -235,13 +235,21 @@ namespace J_Explore.Services
 
     public class PrintingArgumentsTransaction : PrintingArguments
     {
-        //public Transaction Transaction;
-        //public List<DetailTransaction> DetailTransactions;
+        public int Id;
+        public string UsernameAdmin;
+        public DateTime Tanggal;
+        public int AnakAnak;
+        public int Dewasa;
+        public int Total;
 
-        //public PrintingArgumentsTransaction(Transaction transaction, List<DetailTransaction> detailTransactions)
-        //{
-        //    Transaction = transaction;
-        //    DetailTransactions = detailTransactions;
-        //}
+        public PrintingArgumentsTransaction(int id, string usernameAdmin, DateTime tanggal, int anakAnak, int dewasa, int total)
+        {
+            Id = id;
+            UsernameAdmin = usernameAdmin;
+            Tanggal = tanggal;
+            AnakAnak = anakAnak;
+            Dewasa = dewasa;
+            Total = total;
+        }
     }
 }

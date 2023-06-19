@@ -1,14 +1,14 @@
 CREATE TABLE admin (
   username varchar(255) PRIMARY KEY,
-  password varchar(255)
+  password varchar(255) NOT NULL
 );
 
 INSERT INTO admin VALUES ('admin', 'admin123');
 
 CREATE TABLE transaksi (
   id_transaksi SERIAL PRIMARY KEY,
-  username_admin varchar(255),
-  tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  username_admin varchar(255) NOT NULL,
+  tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
   nama_pengunjung varchar(255),
   asal_pengunjung varchar(255),
   foreign key (username_admin) references admin (username)
@@ -16,8 +16,8 @@ CREATE TABLE transaksi (
 
 CREATE TABLE jenis_pengunjung (
   id_jenis_pengunjung SERIAL PRIMARY KEY,
-  jenis_pengunjung varchar(255),
-  harga_tiket int
+  jenis_pengunjung varchar(255) NOT NULL,
+  harga_tiket int NOT NULL
 );
 
 INSERT INTO jenis_pengunjung VALUES 
@@ -26,9 +26,9 @@ INSERT INTO jenis_pengunjung VALUES
 
 CREATE TABLE detail_transaksi (
   id_detail_transaksi SERIAL PRIMARY KEY,
-  id_transaksi int,
-  id_jenis_pengunjung int,
-  jumlah_pengunjung int,
+  id_transaksi int NOT NULL,
+  id_jenis_pengunjung int NOT NULL,
+  jumlah_pengunjung int NOT NULL,
   foreign key (id_transaksi) references transaksi (id_transaksi),
   foreign key (id_jenis_pengunjung) references jenis_pengunjung (id_jenis_pengunjung)
 );

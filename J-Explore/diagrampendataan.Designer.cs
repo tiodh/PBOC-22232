@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cartDataHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            dateTimeBulan = new DateTimePicker();
             cartBulan = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             cartDataMinggu = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             cartHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
@@ -37,20 +35,6 @@
             label2 = new Label();
             label3 = new Label();
             SuspendLayout();
-            // 
-            // cartDataHari
-            // 
-            cartDataHari.Location = new Point(36, 90);
-            cartDataHari.Name = "cartDataHari";
-            cartDataHari.Size = new Size(433, 167);
-            cartDataHari.TabIndex = 0;
-            // 
-            // dateTimeBulan
-            // 
-            dateTimeBulan.Location = new Point(353, 263);
-            dateTimeBulan.Name = "dateTimeBulan";
-            dateTimeBulan.Size = new Size(300, 31);
-            dateTimeBulan.TabIndex = 5;
             // 
             // cartBulan
             // 
@@ -115,8 +99,6 @@
             Controls.Add(cartBulan);
             Controls.Add(cartDataMinggu);
             Controls.Add(cartHari);
-            Controls.Add(dateTimeBulan);
-            Controls.Add(cartDataHari);
             Name = "diagrampendataan";
             Text = "DIAGRAM PENDATAAN";
             ResumeLayout(false);
@@ -124,9 +106,6 @@
         }
 
         #endregion
-
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataHari;
-        private DateTimePicker dateTimeBulan;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartBulan;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataMinggu;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartHari;

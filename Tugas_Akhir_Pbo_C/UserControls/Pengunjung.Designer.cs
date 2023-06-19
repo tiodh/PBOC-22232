@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pengunjung));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             this.kryptonCheckButton4 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
@@ -40,10 +41,9 @@
             this.kryptonMaskedTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonMaskedTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
-            this.cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             this.cartesianChart2 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             this.cartesianChart3 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            this.cartesianChart4 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            this.Chart3 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -62,6 +62,13 @@
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonPanel1.TabIndex = 8;
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Location = new System.Drawing.Point(1515, 48);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(150, 150);
+            this.cartesianChart1.TabIndex = 60;
             // 
             // kryptonCheckButton4
             // 
@@ -209,13 +216,6 @@
             this.kryptonMaskedTextBox2.Text = "Cari";
             this.kryptonMaskedTextBox2.UseWaitCursor = true;
             // 
-            // cartesianChart1
-            // 
-            this.cartesianChart1.Location = new System.Drawing.Point(1515, 48);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(150, 150);
-            this.cartesianChart1.TabIndex = 60;
-            // 
             // cartesianChart2
             // 
             this.cartesianChart2.BackColor = System.Drawing.Color.White;
@@ -232,19 +232,19 @@
             this.cartesianChart3.Size = new System.Drawing.Size(739, 345);
             this.cartesianChart3.TabIndex = 59;
             // 
-            // cartesianChart4
+            // Chart3
             // 
-            this.cartesianChart4.BackColor = System.Drawing.Color.White;
-            this.cartesianChart4.Location = new System.Drawing.Point(16, 617);
-            this.cartesianChart4.Name = "cartesianChart4";
-            this.cartesianChart4.Size = new System.Drawing.Size(1498, 312);
-            this.cartesianChart4.TabIndex = 60;
+            this.Chart3.BackColor = System.Drawing.Color.White;
+            this.Chart3.Location = new System.Drawing.Point(16, 617);
+            this.Chart3.Name = "Chart3";
+            this.Chart3.Size = new System.Drawing.Size(1498, 312);
+            this.Chart3.TabIndex = 60;
             // 
             // Pengunjung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cartesianChart4);
+            this.Controls.Add(this.Chart3);
             this.Controls.Add(this.cartesianChart3);
             this.Controls.Add(this.cartesianChart2);
             this.Controls.Add(this.kryptonButton3);
@@ -281,6 +281,6 @@
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart1;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart2;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart3;
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart4;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart Chart3;
     }
 }

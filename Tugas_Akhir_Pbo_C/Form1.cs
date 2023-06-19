@@ -22,6 +22,7 @@ namespace Tugas_Akhir_Pbo_C
         UserControls.Kuliner Kuliner = new UserControls.Kuliner();
         UserControls.Kontak_Darurat Darurat = new UserControls.Kontak_Darurat();
         UserControls.Map Map = new UserControls.Map();
+        Data_Harga data_harga = new Data_Harga();
         public Form1()
         {
             InitializeComponent();
@@ -130,6 +131,13 @@ namespace Tugas_Akhir_Pbo_C
         {
             PanelUtama.Controls.Clear();
             PanelUtama.Controls.Add(Kuliner);
+            Kuliner.Dock = DockStyle.Fill;
+        }
+
+        private void kryptonButton2_Click_1(object sender, EventArgs e)
+        {
+            PanelUtama.Controls.Clear();
+            PanelUtama.Controls.Add(data_harga);
             Kuliner.Dock = DockStyle.Fill;
         }
     }

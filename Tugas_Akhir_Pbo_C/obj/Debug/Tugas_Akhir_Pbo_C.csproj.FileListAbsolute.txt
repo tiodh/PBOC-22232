@@ -67,3 +67,209 @@ E:\fe\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cac
 E:\fe\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete
 E:\fe\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 E:\fe\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\libHarfBuzzSharp.dylib
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x86\libHarfBuzzSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x64\libHarfBuzzSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\arm64\libHarfBuzzSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\libSkiaSharp.dylib
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x86\libSkiaSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x64\libSkiaSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\arm64\libSkiaSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Tugas_Akhir_Pbo_C.exe.config
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Tugas_Akhir_Pbo_C.exe
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\HarfBuzzSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.WinForms.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Newtonsoft.Json.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Npgsql.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.GLControl.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.HarfBuzz.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.WindowsForms.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Buffers.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Collections.Immutable.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Drawing.Common.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Memory.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Numerics.Vectors.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Encodings.Web.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Json.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Channels.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.ValueTuple.dll
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\HarfBuzzSharp.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\HarfBuzzSharp.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.WinForms.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Newtonsoft.Json.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Npgsql.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.GLControl.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.GLControl.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.HarfBuzz.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.HarfBuzz.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.Desktop.Common.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.WindowsForms.pdb
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.WindowsForms.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Buffers.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Collections.Immutable.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Memory.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Numerics.Vectors.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Encodings.Web.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Json.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Channels.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.ValueTuple.xml
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.AssemblyReference.cache
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.SuggestedBindingRedirects.cache
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form1.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Dashboard_Admin.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Properties.Resources.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_User.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Map.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Fasilitas.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Harga.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kontak_Darurat.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Review.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl5.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Pengunjung.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Keuangan.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Registrasi_Admin.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl1.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_Admin.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl6.resources
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.GenerateResource.cache
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
+C:\Penyimpanan Utama\Download\PBO Projek Akhir\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.AssemblyReference.cache
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.SuggestedBindingRedirects.cache
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\libHarfBuzzSharp.dylib
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x86\libHarfBuzzSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x64\libHarfBuzzSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\arm64\libHarfBuzzSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\libSkiaSharp.dylib
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x86\libSkiaSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\x64\libSkiaSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\arm64\libSkiaSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Tugas_Akhir_Pbo_C.exe.config
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Tugas_Akhir_Pbo_C.exe
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\HarfBuzzSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.WinForms.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Newtonsoft.Json.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Npgsql.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.GLControl.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.HarfBuzz.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.WindowsForms.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Buffers.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Collections.Immutable.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Drawing.Common.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Memory.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Json.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Channels.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.ValueTuple.dll
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\HarfBuzzSharp.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\HarfBuzzSharp.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\LiveChartsCore.SkiaSharpView.WinForms.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Newtonsoft.Json.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\Npgsql.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\OpenTK.GLControl.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.HarfBuzz.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.HarfBuzz.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.Desktop.Common.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.Desktop.Common.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.WindowsForms.pdb
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\SkiaSharp.Views.WindowsForms.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Buffers.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Collections.Immutable.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Memory.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Text.Json.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Channels.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\bin\Debug\System.ValueTuple.xml
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form1.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Dashboard_Admin.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Properties.Resources.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_User.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Map.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Fasilitas.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Harga.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kontak_Darurat.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Review.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl5.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Pengunjung.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Keuangan.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Registrasi_Admin.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl1.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_Admin.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl6.resources
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.GenerateResource.cache
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache
+C:\Users\arya\Documents\Kuliah\PBO\PBOC-22232\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete

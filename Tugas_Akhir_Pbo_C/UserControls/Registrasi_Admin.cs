@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
+using Npgsql;
 
 namespace Tugas_Akhir_Pbo_C.UserControls
 {
@@ -15,6 +17,86 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         public Registrasi_Admin()
         {
             InitializeComponent();
+        }
+
+        private void kryptonCheckButton2_Click(object sender, EventArgs e)
+        {
+
+            string username = kryptonTextBox5.Text;
+
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=Rizal020304;Database=pbo"))
+            {
+                connection.Open();
+
+
+                string sql = "DELETE FROM akun_admin WHERE username = @username";
+
+                using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+                {
+
+                    command.Parameters.AddWithValue("@username", username);
+
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Akun admin berhasil dihapus.");
+                        ClearTextBoxes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Akun admin tidak ditemukan.");
+                    }
+                }
+            }
+        }
+        private void ClearTextBoxes()
+        {
+
+            kryptonTextBox5.Text = "";
+            kryptonTextBox1.Text = "";
+        }
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registrasi_Admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonCheckButton2_Click_1(object sender, EventArgs e)
+        {
+            string username = kryptonTextBox5.Text;
+
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=Rizal020304;Database=pbo"))
+            {
+                connection.Open();
+
+
+                string sql = "DELETE FROM akun_admin WHERE username = @username";
+
+                using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+                {
+
+                    command.Parameters.AddWithValue("@username", username);
+
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Akun admin berhasil dihapus.");
+                        ClearTextBoxes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Akun admin tidak ditemukan.");
+                    }
+                }
+            }
         }
     }
 }

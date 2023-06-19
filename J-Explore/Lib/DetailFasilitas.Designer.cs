@@ -49,7 +49,6 @@
             pictureBox1.Location = new Point(21, 23);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(337, 236);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -172,24 +171,24 @@
             Controls.Add(pictureBox1);
             Name = "DetailFasilitas";
             Text = "Form1";
+            Load += DetailFasilitas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private Label label2;
-        private TextBox textBox3;
         private Label label3;
-        private TextBox textBox4;
         private Label label4;
-        private TextBox textBox5;
         private Label label5;
         private Button button1;
+        public TextBox textBox1;
+        public TextBox textBox2;
+        public TextBox textBox3;
+        public TextBox textBox4;
+        public TextBox textBox5;
+        public PictureBox pictureBox1;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace J_Explore.Lib
 {
-    partial class Fasilitas
+    partial class FasilitasUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fasilitas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FasilitasUser));
             panel1 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel4 = new TableLayoutPanel();
@@ -173,6 +173,7 @@
             button10.TabIndex = 0;
             button10.Text = "Restoran";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // pictureBox9
             // 
@@ -207,6 +208,7 @@
             button11.TabIndex = 0;
             button11.Text = "Cafe";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // pictureBox10
             // 
@@ -241,6 +243,7 @@
             button9.TabIndex = 0;
             button9.Text = "Playground";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // pictureBox8
             // 
@@ -275,6 +278,7 @@
             button7.TabIndex = 0;
             button7.Text = "Kolam Renang";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // pictureBox6
             // 
@@ -309,6 +313,7 @@
             button8.TabIndex = 0;
             button8.Text = "Camping Ground";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // pictureBox7
             // 
@@ -365,6 +370,7 @@
             button3.TabIndex = 0;
             button3.Text = "Hotel";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // pictureBox1
             // 
@@ -399,6 +405,7 @@
             button6.TabIndex = 0;
             button6.Text = "Suite Room";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // pictureBox5
             // 
@@ -433,6 +440,7 @@
             button5.TabIndex = 0;
             button5.Text = "Kantin";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // pictureBox4
             // 
@@ -467,6 +475,7 @@
             button4.TabIndex = 0;
             button4.Text = "Aula";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // pictureBox3
             // 
@@ -578,7 +587,7 @@
             label1.TabIndex = 1;
             label1.Text = "FASILITAS";
             // 
-            // Fasilitas
+            // FasilitasUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -586,7 +595,7 @@
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(951, 488);
-            Name = "Fasilitas";
+            Name = "FasilitasUser";
             Text = "Fasilitas";
             Load += Fasilitas_Load;
             panel1.ResumeLayout(false);

@@ -1,4 +1,5 @@
 ﻿using J_Explore.Fitur;
+using J_Explore.Lib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,12 +91,13 @@ namespace J_Explore
 
         private void label2_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Fasilitas(), sender);
+            OpenChildFrom(new FasilitasUser(), sender);
         }
 
         private void panel5_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Fasilitas(), sender);
+            OpenChildFrom(new FasilitasUser(), sender);
+            
         }
 
         private void panel6_Click(object sender, EventArgs e)
@@ -116,6 +118,11 @@ namespace J_Explore
         private void panel4_Click(object sender, EventArgs e)
         {
             OpenChildFrom(new Beranda(), sender);
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

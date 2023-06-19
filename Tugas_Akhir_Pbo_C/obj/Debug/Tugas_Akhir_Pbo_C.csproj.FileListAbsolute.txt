@@ -354,3 +354,32 @@ E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\
 E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete
 E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.AssemblyReference.cache
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.SuggestedBindingRedirects.cache
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form1.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Dashboard_Admin.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.LoginAdmin.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Properties.Resources.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControl4.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_User.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kuliner.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Map.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Fasilitas.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Harga.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pendapatan_Admin.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Pengunjung.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Rekomendasi.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Kontak_Darurat.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Review.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Riwayat_Admin.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl5.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Data_Pengunjung.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Grafik_Keuangan.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Registrasi_Admin.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Contact_Darurat.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.Beranda_Admin.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.UserControls.UserControl6.resources
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.GenerateResource.cache
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
+C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb

@@ -198,6 +198,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(887, 828);
             button1.Margin = new Padding(4, 5, 4, 5);
@@ -210,6 +211,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button2.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(1061, 828);
             button2.Margin = new Padding(4, 5, 4, 5);
@@ -222,6 +224,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button3.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(1236, 828);
             button3.Margin = new Padding(4, 5, 4, 5);

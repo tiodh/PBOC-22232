@@ -44,6 +44,7 @@
             // 
             // textBox5
             // 
+            textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox5.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.Location = new Point(327, 692);
             textBox5.Margin = new Padding(4, 5, 4, 5);
@@ -53,6 +54,7 @@
             // 
             // textBox4
             // 
+            textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.Location = new Point(327, 572);
             textBox4.Margin = new Padding(4, 5, 4, 5);
@@ -62,6 +64,7 @@
             // 
             // textBox3
             // 
+            textBox3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.Location = new Point(327, 452);
             textBox3.Margin = new Padding(4, 5, 4, 5);
@@ -71,6 +74,7 @@
             // 
             // textBox2
             // 
+            textBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(327, 332);
             textBox2.Margin = new Padding(4, 5, 4, 5);
@@ -80,6 +84,7 @@
             // 
             // textBox1
             // 
+            textBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(327, 222);
             textBox1.Margin = new Padding(4, 5, 4, 5);
@@ -161,6 +166,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(1047, 827);
             button1.Margin = new Padding(4, 5, 4, 5);

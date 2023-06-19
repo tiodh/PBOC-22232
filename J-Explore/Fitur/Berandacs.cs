@@ -8,18 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace J_Explore
+namespace J_Explore.Fitur
 {
-    public partial class pendapatan : Form
+    public partial class Beranda : Form
     {
-        public pendapatan()
+        public Beranda()
         {
             InitializeComponent();
         }
 
-        private void pendataanMinggu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
     }
 }

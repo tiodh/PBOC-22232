@@ -64,14 +64,14 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(1334, 593);
+            dataGridView1.Size = new Size(808, 448);
             dataGridView1.TabIndex = 2;
             // 
             // Kuliner
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1364, 732);
+            ClientSize = new Size(838, 587);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(textBox1);

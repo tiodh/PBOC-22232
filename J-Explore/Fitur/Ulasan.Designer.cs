@@ -52,7 +52,7 @@
             textBox1.Location = new Point(80, 220);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(868, 223);
+            textBox1.Size = new Size(868, 162);
             textBox1.TabIndex = 0;
             // 
             // pictureBox1
@@ -117,7 +117,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(83, 470);
+            button1.Location = new Point(81, 388);
             button1.Name = "button1";
             button1.Size = new Size(205, 57);
             button1.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(294, 470);
+            button2.Location = new Point(292, 388);
             button2.Name = "button2";
             button2.Size = new Size(205, 57);
             button2.TabIndex = 9;
@@ -135,17 +135,17 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(83, 604);
+            textBox2.Location = new Point(12, 506);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(1338, 374);
+            textBox2.Size = new Size(1192, 276);
             textBox2.TabIndex = 10;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(83, 575);
+            label3.Location = new Point(12, 477);
             label3.Name = "label3";
             label3.Size = new Size(171, 26);
             label3.TabIndex = 11;
@@ -155,7 +155,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1562, 990);
+            ClientSize = new Size(1206, 794);
             Controls.Add(label3);
             Controls.Add(textBox2);
             Controls.Add(button2);

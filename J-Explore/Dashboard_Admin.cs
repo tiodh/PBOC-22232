@@ -1,4 +1,5 @@
 ﻿using J_Explore.Properties;
+using J_Explore.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,7 +51,7 @@ namespace J_Explore
 
         private void diagrampendapatan(object sender, EventArgs e)
         {
-
+            OpenChildFrom(new diagrampendapatan(), sender);
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -65,7 +66,7 @@ namespace J_Explore
 
         private void label3_Click(object sender, EventArgs e)
         {
-            // PENDATAAN
+            OpenChildFrom(new pendapatan(), sender);
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -91,6 +92,77 @@ namespace J_Explore
         private void label2_Click(object sender, EventArgs e)
         {
             OpenChildFrom(new Riwayat(), sender);
+        }
+
+        private void OnTableLayoutKasirMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+
+        }
+
+        private void OnTableLayoutKasirMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
+        }
+
+        private void OnPictureBoxKasirMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+        }
+
+        private void OnPictureBoxKasirMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
+        }
+
+        private void OnPanelKasirMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+        }
+
+        private void OnPanelKasirMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
+        }
+
+        private void OnLabelKasirMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+        }
+
+        private void OnLabelKasirMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
+        }
+
+        private void OnTableLayoutRiwayatMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+        }
+
+        private void OnTableLayoutRiwayatMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
+        }
+
+        private void OnPanelRiwayatMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+        }
+
+        private void OnPanelRiwayatMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
+        }
+
+        private void OnPictureBoxRiwayatMouseEnter(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Global.OnHoverColor;
+        }
+
+        private void OnPictureBoxRiwayatMouseLeave(object sender, EventArgs e)
+        {
+            //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
         }
     }
 }

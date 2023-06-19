@@ -25,7 +25,10 @@ namespace J_Explore.Utils
         public const string ColumnDataPengunjungNama = "nama_pengunjung";
         public const string ColumnDataPengunjungAlamat = "alamat_pengunjung";
         public const string ColumnDataPengunjungJumlah = "jumlah_pengunjung";
-        
+
+        public const string TableJenisPengunjung = "jenis_pengunjung";
+        public const string ColumnJenisPengunjungId = "id_jenis_pengunjung";
+        public const string ColumnJenisPengunjungKelompokUsia = "kelompok_usia";
 
         public static readonly Color OnHoverColor = Color.Lime;
 

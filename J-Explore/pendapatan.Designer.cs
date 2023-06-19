@@ -1,6 +1,6 @@
 ﻿namespace J_Explore
 {
-    partial class pengunjung
+    partial class pendapatan
     {
         /// <summary>
         /// Required designer variable.

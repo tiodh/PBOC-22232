@@ -1,6 +1,6 @@
 ﻿namespace J_Explore
 {
-    partial class diagrampengunjung
+    partial class diagrampendapatan
     {
         /// <summary>
         /// Required designer variable.

@@ -57,7 +57,7 @@ namespace J_Explore.Services
                 reportSheet.Cells[i + additionalRow, 4].Value = transaction.AnakAnak.ToString("N0");
                 reportSheet.Cells[i + additionalRow, 5].Value = transaction.Dewasa.ToString("N0");
                 reportSheet.Cells[i + additionalRow, 6].Value = transaction.Total.ToString("N0");
-
+                 
                 i++;
             }
             return excelPackage;

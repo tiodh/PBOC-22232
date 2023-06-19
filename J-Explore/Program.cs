@@ -17,7 +17,7 @@ namespace J_Explore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            Application.Run(new Form1());
+            Application.Run(new Dashboard_Admin());
         }
     }
 }

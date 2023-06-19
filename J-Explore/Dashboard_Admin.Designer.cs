@@ -487,6 +487,7 @@
             // 
             // panel4
             // 
+            panel4.BackgroundImageLayout = ImageLayout.None;
             panel4.Controls.Add(label1);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(127, 4);

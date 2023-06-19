@@ -28,76 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pendataanHari = new DataGridView();
-            pendataanMinggu = new DataGridView();
-            pendataanBulan = new DataGridView();
-            dateTimeHari = new DateTimePicker();
-            dateTimeMinggu = new DateTimePicker();
             dateTimeBulan = new DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)pendataanHari).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pendataanMinggu).BeginInit();
+            dateTimeMinggu = new DateTimePicker();
+            dateTimeHari = new DateTimePicker();
+            pendataanBulan = new DataGridView();
+            pendataanMinggu = new DataGridView();
+            pendataanHari = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pendataanMinggu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pendataanHari).BeginInit();
             SuspendLayout();
             // 
-            // pendataanHari
+            // dateTimeBulan
             // 
-            pendataanHari.BackgroundColor = Color.White;
-            pendataanHari.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendataanHari.Location = new Point(35, 72);
-            pendataanHari.Name = "pendataanHari";
-            pendataanHari.RowHeadersWidth = 62;
-            pendataanHari.RowTemplate.Height = 33;
-            pendataanHari.Size = new Size(433, 175);
-            pendataanHari.TabIndex = 0;
+            dateTimeBulan.Location = new Point(570, 396);
+            dateTimeBulan.Name = "dateTimeBulan";
+            dateTimeBulan.Size = new Size(300, 31);
+            dateTimeBulan.TabIndex = 17;
             // 
-            // pendataanMinggu
+            // dateTimeMinggu
             // 
-            pendataanMinggu.BackgroundColor = Color.White;
-            pendataanMinggu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendataanMinggu.Location = new Point(535, 72);
-            pendataanMinggu.Name = "pendataanMinggu";
-            pendataanMinggu.RowHeadersWidth = 62;
-            pendataanMinggu.RowTemplate.Height = 33;
-            pendataanMinggu.Size = new Size(433, 175);
-            pendataanMinggu.TabIndex = 1;
+            dateTimeMinggu.Location = new Point(958, 35);
+            dateTimeMinggu.Name = "dateTimeMinggu";
+            dateTimeMinggu.Size = new Size(300, 31);
+            dateTimeMinggu.TabIndex = 16;
+            // 
+            // dateTimeHari
+            // 
+            dateTimeHari.Location = new Point(108, 35);
+            dateTimeHari.Name = "dateTimeHari";
+            dateTimeHari.Size = new Size(300, 31);
+            dateTimeHari.TabIndex = 15;
             // 
             // pendataanBulan
             // 
             pendataanBulan.BackgroundColor = Color.White;
             pendataanBulan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendataanBulan.Location = new Point(35, 333);
+            pendataanBulan.Location = new Point(42, 454);
             pendataanBulan.Name = "pendataanBulan";
             pendataanBulan.RowHeadersWidth = 62;
             pendataanBulan.RowTemplate.Height = 33;
-            pendataanBulan.Size = new Size(933, 179);
-            pendataanBulan.TabIndex = 2;
+            pendataanBulan.Size = new Size(1352, 296);
+            pendataanBulan.TabIndex = 14;
             // 
-            // dateTimeHari
+            // pendataanMinggu
             // 
-            dateTimeHari.Location = new Point(90, 20);
-            dateTimeHari.Name = "dateTimeHari";
-            dateTimeHari.Size = new Size(300, 31);
-            dateTimeHari.TabIndex = 3;
+            pendataanMinggu.BackgroundColor = Color.White;
+            pendataanMinggu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            pendataanMinggu.Location = new Point(795, 87);
+            pendataanMinggu.Name = "pendataanMinggu";
+            pendataanMinggu.RowHeadersWidth = 62;
+            pendataanMinggu.RowTemplate.Height = 33;
+            pendataanMinggu.Size = new Size(599, 283);
+            pendataanMinggu.TabIndex = 13;
             // 
-            // dateTimeMinggu
+            // pendataanHari
             // 
-            dateTimeMinggu.Location = new Point(604, 19);
-            dateTimeMinggu.Name = "dateTimeMinggu";
-            dateTimeMinggu.Size = new Size(300, 31);
-            dateTimeMinggu.TabIndex = 4;
-            // 
-            // dateTimeBulan
-            // 
-            dateTimeBulan.Location = new Point(352, 275);
-            dateTimeBulan.Name = "dateTimeBulan";
-            dateTimeBulan.Size = new Size(300, 31);
-            dateTimeBulan.TabIndex = 5;
+            pendataanHari.BackgroundColor = Color.White;
+            pendataanHari.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            pendataanHari.Location = new Point(42, 87);
+            pendataanHari.Name = "pendataanHari";
+            pendataanHari.RowHeadersWidth = 62;
+            pendataanHari.RowTemplate.Height = 33;
+            pendataanHari.Size = new Size(599, 283);
+            pendataanHari.TabIndex = 12;
             // 
             // pendataan
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1012, 550);
+            ClientSize = new Size(1436, 784);
             Controls.Add(dateTimeBulan);
             Controls.Add(dateTimeMinggu);
             Controls.Add(dateTimeHari);
@@ -106,19 +106,19 @@
             Controls.Add(pendataanHari);
             Name = "pendataan";
             Text = "PENDATAAN";
-            ((System.ComponentModel.ISupportInitialize)pendataanHari).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pendataanMinggu).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pendataanMinggu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pendataanHari).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView pendataanHari;
-        private DataGridView pendataanMinggu;
-        private DataGridView pendataanBulan;
-        private DateTimePicker dateTimeHari;
-        private DateTimePicker dateTimeMinggu;
         private DateTimePicker dateTimeBulan;
+        private DateTimePicker dateTimeMinggu;
+        private DateTimePicker dateTimeHari;
+        private DataGridView pendataanBulan;
+        private DataGridView pendataanMinggu;
+        private DataGridView pendataanHari;
     }
 }

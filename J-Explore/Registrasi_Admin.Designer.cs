@@ -46,50 +46,51 @@
             // 
             textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox5.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(327, 692);
-            textBox5.Margin = new Padding(4, 5, 4, 5);
+            textBox5.Location = new Point(262, 554);
+            textBox5.Margin = new Padding(3, 4, 3, 4);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(913, 61);
+            textBox5.Size = new Size(731, 52);
             textBox5.TabIndex = 23;
             // 
             // textBox4
             // 
             textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(327, 572);
-            textBox4.Margin = new Padding(4, 5, 4, 5);
+            textBox4.Location = new Point(262, 458);
+            textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(913, 61);
+            textBox4.Size = new Size(731, 52);
             textBox4.TabIndex = 22;
             // 
             // textBox3
             // 
             textBox3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(327, 452);
-            textBox3.Margin = new Padding(4, 5, 4, 5);
+            textBox3.Location = new Point(262, 362);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(913, 61);
+            textBox3.Size = new Size(731, 52);
             textBox3.TabIndex = 21;
             // 
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(327, 332);
-            textBox2.Margin = new Padding(4, 5, 4, 5);
+            textBox2.Location = new Point(262, 266);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(913, 61);
+            textBox2.Size = new Size(731, 52);
             textBox2.TabIndex = 20;
             // 
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.BackColor = SystemColors.Window;
             textBox1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(327, 222);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Location = new Point(262, 178);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(913, 61);
+            textBox1.Size = new Size(731, 52);
             textBox1.TabIndex = 19;
             // 
             // label8
@@ -97,10 +98,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(50, 687);
-            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Location = new Point(40, 550);
             label8.Name = "label8";
-            label8.Size = new Size(173, 67);
+            label8.Size = new Size(147, 57);
             label8.TabIndex = 18;
             label8.Text = "No HP";
             // 
@@ -109,10 +109,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(50, 567);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(40, 454);
             label7.Name = "label7";
-            label7.Size = new Size(146, 67);
+            label7.Size = new Size(123, 57);
             label7.TabIndex = 17;
             label7.Text = "Email";
             // 
@@ -121,10 +120,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(50, 447);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(40, 358);
             label6.Name = "label6";
-            label6.Size = new Size(233, 67);
+            label6.Size = new Size(200, 57);
             label6.TabIndex = 16;
             label6.Text = "Password";
             // 
@@ -133,10 +131,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(50, 327);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(40, 262);
             label5.Name = "label5";
-            label5.Size = new Size(249, 67);
+            label5.Size = new Size(212, 57);
             label5.TabIndex = 15;
             label5.Text = "Username";
             // 
@@ -145,10 +142,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(50, 217);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(40, 174);
             label4.Name = "label4";
-            label4.Size = new Size(235, 67);
+            label4.Size = new Size(199, 57);
             label4.TabIndex = 14;
             label4.Text = "ID Admin";
             // 
@@ -157,10 +153,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(579, 47);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(463, 38);
             label1.Name = "label1";
-            label1.Size = new Size(427, 67);
+            label1.Size = new Size(359, 57);
             label1.TabIndex = 24;
             label1.Text = "Registrasi Admin";
             // 
@@ -168,19 +163,20 @@
             // 
             button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(1047, 827);
-            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Location = new Point(838, 662);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(194, 68);
+            button1.Size = new Size(155, 54);
             button1.TabIndex = 25;
             button1.Text = "Daftar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Registrasi_Admin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1454, 945);
+            ClientSize = new Size(1163, 756);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(textBox5);
@@ -194,7 +190,7 @@
             Controls.Add(label5);
             Controls.Add(label4);
             ForeColor = Color.Black;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Registrasi_Admin";
             Text = "Registrasi_Admin";
             ResumeLayout(false);

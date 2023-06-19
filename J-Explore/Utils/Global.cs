@@ -9,6 +9,8 @@ namespace J_Explore.Utils
 {
     public static class Global
     {
+        public static readonly Color OnHoverColor = Color.Lime;
+
         public static readonly PaperSize PaperSize58mm = new PaperSize("Custom", 201, 0);
         public static readonly PaperSize PaperSize80mm = new PaperSize("Custom", 283, 0);
 

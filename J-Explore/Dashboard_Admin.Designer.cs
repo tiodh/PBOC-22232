@@ -106,7 +106,7 @@
             // 
             showPanel.Dock = DockStyle.Fill;
             showPanel.Location = new Point(466, 170);
-            showPanel.Margin = new Padding(4, 4, 4, 4);
+            showPanel.Margin = new Padding(4);
             showPanel.Name = "showPanel";
             showPanel.Size = new Size(1458, 840);
             showPanel.TabIndex = 2;
@@ -117,7 +117,7 @@
             panel11.Controls.Add(tittlePageAdmin);
             panel11.Dock = DockStyle.Top;
             panel11.Location = new Point(466, 0);
-            panel11.Margin = new Padding(4, 4, 4, 4);
+            panel11.Margin = new Padding(4);
             panel11.Name = "panel11";
             panel11.Size = new Size(1458, 170);
             panel11.TabIndex = 1;
@@ -149,7 +149,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.ForeColor = Color.FromArgb(63, 130, 109);
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(466, 1010);
             panel1.TabIndex = 0;
@@ -163,7 +163,7 @@
             tableLayoutPanel7.Controls.Add(panel10, 1, 0);
             tableLayoutPanel7.Dock = DockStyle.Top;
             tableLayoutPanel7.Location = new Point(0, 698);
-            tableLayoutPanel7.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel7.Margin = new Padding(4);
             tableLayoutPanel7.Name = "tableLayoutPanel7";
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -175,7 +175,7 @@
             pictureBox7.Dock = DockStyle.Fill;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(4, 4);
-            pictureBox7.Margin = new Padding(4, 4, 4, 4);
+            pictureBox7.Margin = new Padding(4);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(115, 80);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -187,7 +187,7 @@
             panel10.Controls.Add(label7);
             panel10.Dock = DockStyle.Fill;
             panel10.Location = new Point(127, 4);
-            panel10.Margin = new Padding(4, 4, 4, 4);
+            panel10.Margin = new Padding(4);
             panel10.Name = "panel10";
             panel10.Size = new Size(335, 80);
             panel10.TabIndex = 0;
@@ -214,7 +214,7 @@
             tableLayoutPanel6.Controls.Add(panel9, 1, 0);
             tableLayoutPanel6.Dock = DockStyle.Top;
             tableLayoutPanel6.Location = new Point(0, 610);
-            tableLayoutPanel6.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel6.Margin = new Padding(4);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -226,7 +226,7 @@
             pictureBox6.Dock = DockStyle.Fill;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(4, 4);
-            pictureBox6.Margin = new Padding(4, 4, 4, 4);
+            pictureBox6.Margin = new Padding(4);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(115, 80);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -238,7 +238,7 @@
             panel9.Controls.Add(label6);
             panel9.Dock = DockStyle.Fill;
             panel9.Location = new Point(127, 4);
-            panel9.Margin = new Padding(4, 4, 4, 4);
+            panel9.Margin = new Padding(4);
             panel9.Name = "panel9";
             panel9.Size = new Size(335, 80);
             panel9.TabIndex = 0;
@@ -265,7 +265,7 @@
             tableLayoutPanel5.Controls.Add(panel8, 1, 0);
             tableLayoutPanel5.Dock = DockStyle.Top;
             tableLayoutPanel5.Location = new Point(0, 522);
-            tableLayoutPanel5.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel5.Margin = new Padding(4);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -277,7 +277,7 @@
             pictureBox5.Dock = DockStyle.Fill;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(4, 4);
-            pictureBox5.Margin = new Padding(4, 4, 4, 4);
+            pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(115, 80);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -289,7 +289,7 @@
             panel8.Controls.Add(label5);
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(127, 4);
-            panel8.Margin = new Padding(4, 4, 4, 4);
+            panel8.Margin = new Padding(4);
             panel8.Name = "panel8";
             panel8.Size = new Size(335, 80);
             panel8.TabIndex = 0;
@@ -316,7 +316,7 @@
             tableLayoutPanel4.Controls.Add(panel7, 1, 0);
             tableLayoutPanel4.Dock = DockStyle.Top;
             tableLayoutPanel4.Location = new Point(0, 434);
-            tableLayoutPanel4.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel4.Margin = new Padding(4);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -328,7 +328,7 @@
             pictureBox4.Dock = DockStyle.Fill;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(4, 4);
-            pictureBox4.Margin = new Padding(4, 4, 4, 4);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(115, 80);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -340,7 +340,7 @@
             panel7.Controls.Add(label4);
             panel7.Dock = DockStyle.Fill;
             panel7.Location = new Point(127, 4);
-            panel7.Margin = new Padding(4, 4, 4, 4);
+            panel7.Margin = new Padding(4);
             panel7.Name = "panel7";
             panel7.Size = new Size(335, 80);
             panel7.TabIndex = 0;
@@ -366,7 +366,7 @@
             tableLayoutPanel3.Controls.Add(panel6, 1, 0);
             tableLayoutPanel3.Dock = DockStyle.Top;
             tableLayoutPanel3.Location = new Point(0, 346);
-            tableLayoutPanel3.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel3.Margin = new Padding(4);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -378,7 +378,7 @@
             pictureBox3.Dock = DockStyle.Fill;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(4, 4);
-            pictureBox3.Margin = new Padding(4, 4, 4, 4);
+            pictureBox3.Margin = new Padding(4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(115, 80);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -390,7 +390,7 @@
             panel6.Controls.Add(label3);
             panel6.Dock = DockStyle.Fill;
             panel6.Location = new Point(127, 4);
-            panel6.Margin = new Padding(4, 4, 4, 4);
+            panel6.Margin = new Padding(4);
             panel6.Name = "panel6";
             panel6.Size = new Size(335, 80);
             panel6.TabIndex = 0;
@@ -417,35 +417,41 @@
             tableLayoutPanel2.Controls.Add(panel5, 1, 0);
             tableLayoutPanel2.Dock = DockStyle.Top;
             tableLayoutPanel2.Location = new Point(0, 258);
-            tableLayoutPanel2.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel2.Margin = new Padding(4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Size = new Size(466, 88);
             tableLayoutPanel2.TabIndex = 2;
+            tableLayoutPanel2.MouseEnter += OnTableLayoutRiwayatMouseEnter;
+            tableLayoutPanel2.MouseLeave += OnTableLayoutRiwayatMouseLeave;
             // 
             // pictureBox2
             // 
             pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(4, 4);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(115, 80);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.MouseEnter += OnPictureBoxRiwayatMouseEnter;
+            pictureBox2.MouseLeave += OnPictureBoxRiwayatMouseLeave;
             // 
             // panel5
             // 
             panel5.Controls.Add(label2);
             panel5.Dock = DockStyle.Fill;
             panel5.Location = new Point(127, 4);
-            panel5.Margin = new Padding(4, 4, 4, 4);
+            panel5.Margin = new Padding(4);
             panel5.Name = "panel5";
             panel5.Size = new Size(335, 80);
             panel5.TabIndex = 0;
             panel5.Paint += panel5_Paint;
+            panel5.MouseEnter += OnPanelRiwayatMouseEnter;
+            panel5.MouseLeave += OnPanelRiwayatMouseLeave;
             // 
             // label2
             // 
@@ -469,23 +475,27 @@
             tableLayoutPanel1.Controls.Add(pictureBox1, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Top;
             tableLayoutPanel1.Location = new Point(0, 170);
-            tableLayoutPanel1.Margin = new Padding(4, 4, 4, 4);
+            tableLayoutPanel1.Margin = new Padding(4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Size = new Size(466, 88);
             tableLayoutPanel1.TabIndex = 1;
+            tableLayoutPanel1.MouseEnter += OnTableLayoutKasirMouseEnter;
+            tableLayoutPanel1.MouseLeave += OnTableLayoutKasirMouseLeave;
             // 
             // panel4
             // 
             panel4.Controls.Add(label1);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(127, 4);
-            panel4.Margin = new Padding(4, 4, 4, 4);
+            panel4.Margin = new Padding(4);
             panel4.Name = "panel4";
             panel4.Size = new Size(335, 80);
             panel4.TabIndex = 0;
             panel4.Paint += panel4_Paint;
+            panel4.MouseEnter += OnPanelKasirMouseEnter;
+            panel4.MouseLeave += OnPanelKasirMouseLeave;
             // 
             // label1
             // 
@@ -499,25 +509,29 @@
             label1.TabIndex = 0;
             label1.Text = "KASIR";
             label1.Click += label1_Click;
+            label1.MouseEnter += OnLabelKasirMouseEnter;
+            label1.MouseLeave += OnLabelKasirMouseLeave;
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(4, 4);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(115, 80);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.MouseEnter += OnPictureBoxKasirMouseEnter;
+            pictureBox1.MouseLeave += OnPictureBoxKasirMouseLeave;
             // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(53, 110, 93);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
-            panel3.Margin = new Padding(4, 4, 4, 4);
+            panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
             panel3.Size = new Size(466, 170);
             panel3.TabIndex = 0;

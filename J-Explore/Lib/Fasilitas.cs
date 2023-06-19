@@ -21,5 +21,10 @@ namespace J_Explore.Lib
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

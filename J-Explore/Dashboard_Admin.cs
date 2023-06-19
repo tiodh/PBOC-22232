@@ -19,9 +19,10 @@ namespace J_Explore
         public Dashboard_Admin()
         {
             InitializeComponent();
+            OpenChildFrom(new Kasir(), "Kasir");
         }
 
-        public void OpenChildFrom(Form childFrom, object btnsender)
+        public void OpenChildFrom(Form childFrom, string title)
         {
             if (activeForm != null)
             {
@@ -35,7 +36,7 @@ namespace J_Explore
             this.showPanel.Tag = childFrom;
             childFrom.BringToFront();
             childFrom.Show();
-            tittlePageAdmin.Text = childFrom.Text;
+            tittlePageAdmin.Text = title.ToUpper();
 
         }
 
@@ -51,7 +52,7 @@ namespace J_Explore
 
         private void diagrampendapatan(object sender, EventArgs e)
         {
-            OpenChildFrom(new diagrampendapatan(), sender);
+            OpenChildFrom(new diagrampendapatan(), "Diagram Pendapatan");
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -66,32 +67,32 @@ namespace J_Explore
 
         private void label3_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new pendapatan(), sender);
+            OpenChildFrom(new pendapatan(), "Pendapatan");
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new pendataan(), sender);
+            OpenChildFrom(new pendataan(), "Pendataan");
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new diagrampendataan(), sender);
+            OpenChildFrom(new diagrampendataan(), "Diagram Pendapatan");
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Registrasi_Admin(), sender);
+            OpenChildFrom(new Registrasi_Admin(), "Registrasi Admin");
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Kasir(), sender);
+            OpenChildFrom(new Kasir(), "Kasir");
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Riwayat(), sender);
+            OpenChildFrom(new Riwayat(), "Riwayat");
         }
 
         private void OnTableLayoutKasirMouseEnter(object sender, EventArgs e)

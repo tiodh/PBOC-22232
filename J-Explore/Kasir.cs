@@ -1,4 +1,6 @@
-﻿using J_Explore.Services;
+﻿using J_Explore.Models;
+using J_Explore.Services;
+using J_Explore.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +61,7 @@ namespace J_Explore
 
         private void OnButtonSimpanClick(object sender, EventArgs e)
         {
-            // Sebelum Print, pastikan data sudah di simpan di dalam database terlebih dahulu
+
 
             PrintHelper.Print(new PrintingArgumentsTransaction(1, "Otong", DateTime.Now, int.Parse(textBox6.Text), int.Parse(textBox7.Text), int.Parse(textBox4.Text)));
         }

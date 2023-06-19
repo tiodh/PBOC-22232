@@ -17,7 +17,8 @@ namespace J_Explore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            Application.Run(new Dashboard_User());
+            DbHelper.Initialize("localhost", 5432, "posgtres", "HELLOWORLD123", "pboc");
+            Application.Run(new Dashboard_Admin());
         }
     }
 }

@@ -75,6 +75,7 @@
             button2.TabIndex = 2;
             button2.Text = "Export Excel";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += OnButtonExportExcelClick;
             // 
             // button3
             // 
@@ -87,6 +88,7 @@
             button3.TabIndex = 3;
             button3.Text = "Export PDF";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += OnButtonExportPdfClick;
             // 
             // button4
             // 
@@ -104,12 +106,14 @@
             // 
             dataGridViewRiwayat.AllowUserToAddRows = false;
             dataGridViewRiwayat.AllowUserToDeleteRows = false;
+            dataGridViewRiwayat.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridViewRiwayat.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewRiwayat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewRiwayat.Columns.AddRange(new DataGridViewColumn[] { ColumnId, ColumnAdmin, ColumnTanggal, ColumnAnakAnak, ColumnDewasa, ColumnTotal });
             dataGridViewRiwayat.Location = new Point(41, 125);
             dataGridViewRiwayat.Margin = new Padding(3, 4, 3, 4);
             dataGridViewRiwayat.Name = "dataGridViewRiwayat";
+            dataGridViewRiwayat.ReadOnly = true;
             dataGridViewRiwayat.RowHeadersWidth = 51;
             dataGridViewRiwayat.RowTemplate.Height = 25;
             dataGridViewRiwayat.Size = new Size(1087, 573);

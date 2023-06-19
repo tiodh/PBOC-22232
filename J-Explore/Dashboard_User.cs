@@ -1,4 +1,6 @@
 ﻿using J_Explore.Fitur;
+using Org.BouncyCastle.Crypto.Tls;
+using penjualan_laptop.lib.dataProduct;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -116,6 +118,12 @@ namespace J_Explore
         private void panel4_Click(object sender, EventArgs e)
         {
             OpenChildFrom(new Beranda(), sender);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.ShowDialog();
         }
     }
 }

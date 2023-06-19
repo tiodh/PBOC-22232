@@ -168,6 +168,7 @@
     <Compile Include="Daftar Wisata.Designer.cs">
       <DependentUpon>Daftar Wisata.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\DbHelper.cs" />
     <Compile Include="Services\PrintHelper.cs" />
     <Compile Include="UserControls\Beranda_User.cs">
       <SubType>UserControl</SubType>

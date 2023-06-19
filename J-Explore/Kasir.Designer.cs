@@ -53,6 +53,7 @@
             // 
             Transaksi.AutoSize = true;
             Transaksi.Font = new Font("Segoe UI", 25F, FontStyle.Bold, GraphicsUnit.Point);
+            Transaksi.ForeColor = Color.Black;
             Transaksi.Location = new Point(36, 43);
             Transaksi.Margin = new Padding(4, 0, 4, 0);
             Transaksi.Name = "Transaksi";
@@ -64,6 +65,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(74, 153);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -75,6 +77,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(74, 267);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
@@ -86,6 +89,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(74, 388);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -97,6 +101,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Black;
             label4.ImageAlign = ContentAlignment.MiddleLeft;
             label4.Location = new Point(763, 153);
             label4.Margin = new Padding(4, 0, 4, 0);
@@ -147,6 +152,7 @@
             // 
             radioButton3.AutoSize = true;
             radioButton3.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton3.ForeColor = Color.Black;
             radioButton3.Location = new Point(279, 498);
             radioButton3.Margin = new Padding(4, 5, 4, 5);
             radioButton3.Name = "radioButton3";
@@ -161,6 +167,7 @@
             // 
             radioButton4.AutoSize = true;
             radioButton4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton4.ForeColor = Color.Black;
             radioButton4.Location = new Point(497, 498);
             radioButton4.Margin = new Padding(4, 5, 4, 5);
             radioButton4.Name = "radioButton4";
@@ -175,6 +182,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(74, 495);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -188,6 +196,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(763, 502);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
@@ -199,6 +208,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.Black;
             button1.Location = new Point(887, 828);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
@@ -211,6 +221,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.Black;
             button2.Location = new Point(1061, 828);
             button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
@@ -223,6 +234,7 @@
             // button3
             // 
             button3.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.Black;
             button3.Location = new Point(1236, 828);
             button3.Margin = new Padding(4, 5, 4, 5);
             button3.Name = "button3";
@@ -235,6 +247,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
             label8.ImageAlign = ContentAlignment.MiddleLeft;
             label8.Location = new Point(763, 312);
             label8.Margin = new Padding(4, 0, 4, 0);

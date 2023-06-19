@@ -16,5 +16,10 @@ namespace J_Explore
         {
             InitializeComponent();
         }
+
+        private void diagrampendapatan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

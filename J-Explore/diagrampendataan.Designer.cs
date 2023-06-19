@@ -28,99 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cartDataHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            dateTimeBulan = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker3 = new DateTimePicker();
-            cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            cartesianChart2 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            cartesianChart3 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            cartBulan = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            cartDataMinggu = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            cartHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
-            // cartDataHari
+            // cartBulan
             // 
-            cartDataHari.Location = new Point(36, 90);
-            cartDataHari.Name = "cartDataHari";
-            cartDataHari.Size = new Size(433, 167);
-            cartDataHari.TabIndex = 0;
+            cartBulan.Location = new Point(50, 446);
+            cartBulan.Name = "cartBulan";
+            cartBulan.Size = new Size(1337, 309);
+            cartBulan.TabIndex = 14;
             // 
-            // dateTimeBulan
+            // cartDataMinggu
             // 
-            dateTimeBulan.Location = new Point(353, 263);
-            dateTimeBulan.Name = "dateTimeBulan";
-            dateTimeBulan.Size = new Size(300, 31);
-            dateTimeBulan.TabIndex = 5;
+            cartDataMinggu.Location = new Point(799, 83);
+            cartDataMinggu.Name = "cartDataMinggu";
+            cartDataMinggu.Size = new Size(588, 248);
+            cartDataMinggu.TabIndex = 13;
+            cartDataMinggu.Load += cartesianChart2_Load;
             // 
-            // dateTimePicker1
+            // cartHari
             // 
-            dateTimePicker1.Location = new Point(595, 364);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(300, 31);
-            dateTimePicker1.TabIndex = 17;
+            cartHari.Location = new Point(69, 83);
+            cartHari.Name = "cartHari";
+            cartHari.Size = new Size(588, 248);
+            cartHari.TabIndex = 12;
             // 
-            // dateTimePicker2
+            // label1
             // 
-            dateTimePicker2.Location = new Point(963, 30);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(300, 31);
-            dateTimePicker2.TabIndex = 16;
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(314, 51);
+            label1.Name = "label1";
+            label1.Size = new Size(109, 29);
+            label1.TabIndex = 15;
+            label1.Text = "HARI INI";
             // 
-            // dateTimePicker3
+            // label2
             // 
-            dateTimePicker3.Location = new Point(235, 30);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(300, 31);
-            dateTimePicker3.TabIndex = 15;
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(1037, 51);
+            label2.Name = "label2";
+            label2.Size = new Size(151, 29);
+            label2.TabIndex = 16;
+            label2.Text = "MINGGU INI";
             // 
-            // cartesianChart1
+            // label3
             // 
-            cartesianChart1.Location = new Point(50, 446);
-            cartesianChart1.Name = "cartesianChart1";
-            cartesianChart1.Size = new Size(1337, 309);
-            cartesianChart1.TabIndex = 14;
-            // 
-            // cartesianChart2
-            // 
-            cartesianChart2.Location = new Point(799, 83);
-            cartesianChart2.Name = "cartesianChart2";
-            cartesianChart2.Size = new Size(588, 248);
-            cartesianChart2.TabIndex = 13;
-            // 
-            // cartesianChart3
-            // 
-            cartesianChart3.Location = new Point(69, 83);
-            cartesianChart3.Name = "cartesianChart3";
-            cartesianChart3.Size = new Size(588, 248);
-            cartesianChart3.TabIndex = 12;
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(665, 394);
+            label3.Name = "label3";
+            label3.Size = new Size(134, 29);
+            label3.TabIndex = 17;
+            label3.Text = "BULAN INI";
             // 
             // diagrampendataan
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1436, 784);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(dateTimePicker2);
-            Controls.Add(dateTimePicker3);
-            Controls.Add(cartesianChart1);
-            Controls.Add(cartesianChart2);
-            Controls.Add(cartesianChart3);
-            Controls.Add(dateTimeBulan);
-            Controls.Add(cartDataHari);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(cartBulan);
+            Controls.Add(cartDataMinggu);
+            Controls.Add(cartHari);
+            ForeColor = Color.Black;
             Name = "diagrampendataan";
             Text = "DIAGRAM PENDATAAN";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataHari;
-        private DateTimePicker dateTimeBulan;
-        private DateTimePicker dateTimePicker1;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker3;
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart1;
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart2;
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart3;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartBulan;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataMinggu;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartHari;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

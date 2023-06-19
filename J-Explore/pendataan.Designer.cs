@@ -28,37 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dateTimeBulan = new DateTimePicker();
-            dateTimeMinggu = new DateTimePicker();
-            dateTimeHari = new DateTimePicker();
             pendataanBulan = new DataGridView();
             pendataanMinggu = new DataGridView();
             pendataanHari = new DataGridView();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pendataanMinggu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pendataanHari).BeginInit();
             SuspendLayout();
-            // 
-            // dateTimeBulan
-            // 
-            dateTimeBulan.Location = new Point(570, 396);
-            dateTimeBulan.Name = "dateTimeBulan";
-            dateTimeBulan.Size = new Size(300, 31);
-            dateTimeBulan.TabIndex = 17;
-            // 
-            // dateTimeMinggu
-            // 
-            dateTimeMinggu.Location = new Point(958, 35);
-            dateTimeMinggu.Name = "dateTimeMinggu";
-            dateTimeMinggu.Size = new Size(300, 31);
-            dateTimeMinggu.TabIndex = 16;
-            // 
-            // dateTimeHari
-            // 
-            dateTimeHari.Location = new Point(108, 35);
-            dateTimeHari.Name = "dateTimeHari";
-            dateTimeHari.Size = new Size(300, 31);
-            dateTimeHari.TabIndex = 15;
             // 
             // pendataanBulan
             // 
@@ -93,14 +72,47 @@
             pendataanHari.Size = new Size(599, 283);
             pendataanHari.TabIndex = 12;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(645, 402);
+            label3.Name = "label3";
+            label3.Size = new Size(134, 29);
+            label3.TabIndex = 23;
+            label3.Text = "BULAN INI";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(1046, 42);
+            label2.Name = "label2";
+            label2.Size = new Size(151, 29);
+            label2.TabIndex = 22;
+            label2.Text = "MINGGU INI";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(279, 42);
+            label1.Name = "label1";
+            label1.Size = new Size(109, 29);
+            label1.TabIndex = 21;
+            label1.Text = "HARI INI";
+            // 
             // pendataan
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1436, 784);
-            Controls.Add(dateTimeBulan);
-            Controls.Add(dateTimeMinggu);
-            Controls.Add(dateTimeHari);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(pendataanBulan);
             Controls.Add(pendataanMinggu);
             Controls.Add(pendataanHari);
@@ -110,15 +122,15 @@
             ((System.ComponentModel.ISupportInitialize)pendataanMinggu).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanHari).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private DateTimePicker dateTimeBulan;
-        private DateTimePicker dateTimeMinggu;
-        private DateTimePicker dateTimeHari;
         private DataGridView pendataanBulan;
         private DataGridView pendataanMinggu;
         private DataGridView pendataanHari;
+        private Label label3;
+        private Label label2;
+        private Label label1;
     }
 }

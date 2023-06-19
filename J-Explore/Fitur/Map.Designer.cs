@@ -38,9 +38,10 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(373, 148);
+            pictureBox1.Location = new Point(260, 118);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(446, 689);
+            pictureBox1.Size = new Size(507, 551);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -48,19 +49,21 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(56, 52);
+            label1.Location = new Point(45, 42);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(312, 45);
+            label1.Size = new Size(260, 37);
             label1.TabIndex = 1;
             label1.Text = "MAP REMBANGAN";
             // 
             // Map
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1167, 990);
+            ClientSize = new Size(934, 792);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Map";
             Text = "Map";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -393,15 +393,15 @@
             textBox1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(9, 24);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(232, 34);
+            textBox1.Size = new Size(344, 34);
             textBox1.TabIndex = 4;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(261, 24);
+            button1.Location = new Point(359, 24);
             button1.Name = "button1";
-            button1.Size = new Size(89, 34);
+            button1.Size = new Size(102, 36);
             button1.TabIndex = 5;
             button1.Text = "Cari";
             button1.UseVisualStyleBackColor = true;

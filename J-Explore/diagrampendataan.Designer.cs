@@ -62,6 +62,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(314, 51);
             label1.Name = "label1";
             label1.Size = new Size(109, 29);
@@ -72,6 +73,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(1037, 51);
             label2.Name = "label2";
             label2.Size = new Size(151, 29);
@@ -82,6 +84,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(665, 394);
             label3.Name = "label3";
             label3.Size = new Size(134, 29);
@@ -99,6 +102,7 @@
             Controls.Add(cartBulan);
             Controls.Add(cartDataMinggu);
             Controls.Add(cartHari);
+            ForeColor = Color.Black;
             Name = "diagrampendataan";
             Text = "DIAGRAM PENDATAAN";
             ResumeLayout(false);

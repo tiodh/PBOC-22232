@@ -247,8 +247,8 @@ namespace J_Explore
                 }
             };
         }
-    
-    
+
+
 
         private void cartesianChart2_Load(object sender, EventArgs e)
         {

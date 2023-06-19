@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +44,11 @@ namespace Tugas_Akhir_Pbo_C.UserControls
             comboBoxBulan.SelectedItem = DateTime.Now.ToString("MMMM");
         }
 
+        private void Pengunjung_Load_1(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
         private void LoadData()
         {
             try
@@ -52,11 +57,10 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                 {
                     connection.Open();
 
-                    // Load data keuangan
-                    string keuanganQuery = @"SELECT tanggal, SUM(nominal_tranksaksi) as total_pendapatan
-                         FROM detail_transaksi
-                         WHERE nominal_tranksaksi = 'pendapatan'
-                         GROUP BY tanggal";
+                    string keuanganQuery = @"SELECT tanggal, SUM(nominal) as total_pendapatan
+                                             FROM detail_transaksi
+                                             WHERE tipe_transaksi = 'pendapatan'
+                                             GROUP BY tanggal";
                     using (NpgsqlCommand keuanganCommand = new NpgsqlCommand(keuanganQuery, connection))
                     {
                         using (NpgsqlDataReader keuanganReader = keuanganCommand.ExecuteReader())
@@ -65,6 +69,9 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                             {
                                 DateTime tanggal = keuanganReader.GetDateTime(0);
                                 decimal totalPendapatan = keuanganReader.GetDecimal(1);
+
+                                // Tambahkan baris baru ke DataGridView
+                                dataGridViewKeuangan.Rows.Add(tanggal, totalPendapatan);
                             }
                         }
                     }
@@ -81,6 +88,7 @@ namespace Tugas_Akhir_Pbo_C.UserControls
                                 string asal = pengunjungReader.GetString(1);
                                 int umur = pengunjungReader.GetInt32(2);
 
+                                dataGridViewPengunjung.Rows.Add(nama, asal, umur);
                             }
                         }
                     }

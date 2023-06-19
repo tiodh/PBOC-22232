@@ -356,6 +356,7 @@
             label4.Size = new Size(296, 32);
             label4.TabIndex = 1;
             label4.Text = "DIAGRAM PENDAPATAN";
+            label4.Click += diagrampendapatan;
             // 
             // tableLayoutPanel3
             // 

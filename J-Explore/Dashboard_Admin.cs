@@ -51,7 +51,7 @@ namespace J_Explore
 
         private void diagrampendapatan(object sender, EventArgs e)
         {
-
+            OpenChildFrom(new diagrampendapatan(), sender);
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -66,7 +66,7 @@ namespace J_Explore
 
         private void label3_Click(object sender, EventArgs e)
         {
-            // PENDATAAN
+            OpenChildFrom(new pendapatan(), sender);
         }
 
         private void label5_Click(object sender, EventArgs e)

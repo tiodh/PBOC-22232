@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Asn1.Cmp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,11 @@ namespace J_Explore.Lib
         {
             InitializeComponent();
         }
+
+        private void DetailFasilitas_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

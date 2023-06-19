@@ -92,12 +92,13 @@ namespace J_Explore
 
         private void label2_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Fasilitas(), sender);
+            OpenChildFrom(new FasilitasUser(), sender);
         }
 
         private void panel5_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Fasilitas(), sender);
+            OpenChildFrom(new FasilitasUser(), sender);
+            
         }
 
         private void panel6_Click(object sender, EventArgs e)

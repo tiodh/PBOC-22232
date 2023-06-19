@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace J_Explore.Lib
 {
-    public partial class Fasilitas : Form
+    public partial class DetailFasilitas : Form
     {
-        public Fasilitas()
+        public DetailFasilitas()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

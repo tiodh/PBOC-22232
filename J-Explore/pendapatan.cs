@@ -16,5 +16,10 @@ namespace J_Explore
         {
             InitializeComponent();
         }
+
+        private void pendataanMinggu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

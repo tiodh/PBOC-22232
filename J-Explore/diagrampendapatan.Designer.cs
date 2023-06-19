@@ -38,58 +38,58 @@
             // 
             // dateTimeBulan
             // 
-            dateTimeBulan.Location = new Point(354, 262);
+            dateTimeBulan.Location = new Point(577, 370);
             dateTimeBulan.Name = "dateTimeBulan";
             dateTimeBulan.Size = new Size(300, 31);
             dateTimeBulan.TabIndex = 11;
             // 
             // dateTimeMinggu
             // 
-            dateTimeMinggu.Location = new Point(619, 35);
+            dateTimeMinggu.Location = new Point(945, 36);
             dateTimeMinggu.Name = "dateTimeMinggu";
             dateTimeMinggu.Size = new Size(300, 31);
             dateTimeMinggu.TabIndex = 10;
             // 
             // dateTimeHari
             // 
-            dateTimeHari.Location = new Point(124, 36);
+            dateTimeHari.Location = new Point(217, 36);
             dateTimeHari.Name = "dateTimeHari";
             dateTimeHari.Size = new Size(300, 31);
             dateTimeHari.TabIndex = 9;
             // 
             // cartDataBulan
             // 
-            cartDataBulan.Location = new Point(37, 317);
+            cartDataBulan.Location = new Point(32, 452);
             cartDataBulan.Name = "cartDataBulan";
-            cartDataBulan.Size = new Size(938, 198);
+            cartDataBulan.Size = new Size(1337, 309);
             cartDataBulan.TabIndex = 8;
             // 
             // cartDataMinggu
             // 
-            cartDataMinggu.Location = new Point(542, 89);
+            cartDataMinggu.Location = new Point(781, 89);
             cartDataMinggu.Name = "cartDataMinggu";
-            cartDataMinggu.Size = new Size(433, 167);
+            cartDataMinggu.Size = new Size(588, 248);
             cartDataMinggu.TabIndex = 7;
             // 
             // cartDataHari
             // 
-            cartDataHari.Location = new Point(37, 89);
+            cartDataHari.Location = new Point(51, 89);
             cartDataHari.Name = "cartDataHari";
-            cartDataHari.Size = new Size(433, 167);
+            cartDataHari.Size = new Size(588, 248);
             cartDataHari.TabIndex = 6;
             // 
-            // diagrampengunjung
+            // diagrampendapatan
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1012, 550);
+            ClientSize = new Size(1436, 784);
             Controls.Add(dateTimeBulan);
             Controls.Add(dateTimeMinggu);
             Controls.Add(dateTimeHari);
             Controls.Add(cartDataBulan);
             Controls.Add(cartDataMinggu);
             Controls.Add(cartDataHari);
-            Name = "diagrampengunjung";
+            Name = "diagrampendapatan";
             Text = "diagrampengunjung";
             ResumeLayout(false);
         }

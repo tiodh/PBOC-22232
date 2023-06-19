@@ -41,21 +41,21 @@
             // 
             // dateTimeBulan
             // 
-            dateTimeBulan.Location = new Point(357, 285);
+            dateTimeBulan.Location = new Point(568, 391);
             dateTimeBulan.Name = "dateTimeBulan";
             dateTimeBulan.Size = new Size(300, 31);
             dateTimeBulan.TabIndex = 11;
             // 
             // dateTimeMinggu
             // 
-            dateTimeMinggu.Location = new Point(609, 29);
+            dateTimeMinggu.Location = new Point(956, 30);
             dateTimeMinggu.Name = "dateTimeMinggu";
             dateTimeMinggu.Size = new Size(300, 31);
             dateTimeMinggu.TabIndex = 10;
             // 
             // dateTimeHari
             // 
-            dateTimeHari.Location = new Point(95, 30);
+            dateTimeHari.Location = new Point(106, 30);
             dateTimeHari.Name = "dateTimeHari";
             dateTimeHari.Size = new Size(300, 31);
             dateTimeHari.TabIndex = 9;
@@ -64,23 +64,24 @@
             // 
             pendataanBulan.BackgroundColor = Color.White;
             pendataanBulan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendataanBulan.Location = new Point(40, 343);
+            pendataanBulan.Location = new Point(40, 449);
             pendataanBulan.Name = "pendataanBulan";
             pendataanBulan.RowHeadersWidth = 62;
             pendataanBulan.RowTemplate.Height = 33;
-            pendataanBulan.Size = new Size(933, 179);
+            pendataanBulan.Size = new Size(1352, 296);
             pendataanBulan.TabIndex = 8;
             // 
             // pendataanMinggu
             // 
             pendataanMinggu.BackgroundColor = Color.White;
             pendataanMinggu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendataanMinggu.Location = new Point(540, 82);
+            pendataanMinggu.Location = new Point(793, 82);
             pendataanMinggu.Name = "pendataanMinggu";
             pendataanMinggu.RowHeadersWidth = 62;
             pendataanMinggu.RowTemplate.Height = 33;
-            pendataanMinggu.Size = new Size(433, 175);
+            pendataanMinggu.Size = new Size(599, 283);
             pendataanMinggu.TabIndex = 7;
+            pendataanMinggu.CellContentClick += pendataanMinggu_CellContentClick;
             // 
             // pendataanHari
             // 
@@ -90,21 +91,21 @@
             pendataanHari.Name = "pendataanHari";
             pendataanHari.RowHeadersWidth = 62;
             pendataanHari.RowTemplate.Height = 33;
-            pendataanHari.Size = new Size(433, 175);
+            pendataanHari.Size = new Size(599, 283);
             pendataanHari.TabIndex = 6;
             // 
-            // pengunjung
+            // pendapatan
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1012, 550);
+            ClientSize = new Size(1436, 784);
             Controls.Add(dateTimeBulan);
             Controls.Add(dateTimeMinggu);
             Controls.Add(dateTimeHari);
             Controls.Add(pendataanBulan);
             Controls.Add(pendataanMinggu);
             Controls.Add(pendataanHari);
-            Name = "pengunjung";
+            Name = "pendapatan";
             Text = "pengunjung";
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanMinggu).EndInit();

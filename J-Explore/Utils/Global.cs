@@ -9,6 +9,24 @@ namespace J_Explore.Utils
 {
     public static class Global
     {
+        public const string TableAkunAdmin = "akun_admin";
+        public const string ColumnAkunAdminId = "id_akun_admin";
+        public const string ColumnAkunAdminUsername = "username";
+        public const string ColumnAkunAdminPassword = "password";
+        public const string ColumnAkunAdminEmail = "email";
+        public const string ColumnAkunAdminNoHp = "no_hp";
+
+        public const string TableAkunUser = "akun_user";
+        public const string ColumnAkunUserId = "id_akun_user";
+        public const string ColumnAkunUserUsername = "username";
+
+        public const string TableDataPengunjung = "data_pengunjung";
+        public const string ColumnDataPengunjungId = "id_data_pengunjung";
+        public const string ColumnDataPengunjungNama = "nama_pengunjung";
+        public const string ColumnDataPengunjungAlamat = "alamat_pengunjung";
+        public const string ColumnDataPengunjungJumlah = "jumlah_pengunjung";
+        
+
         public static readonly Color OnHoverColor = Color.Lime;
 
         public static readonly PaperSize PaperSize58mm = new PaperSize("Custom", 201, 0);

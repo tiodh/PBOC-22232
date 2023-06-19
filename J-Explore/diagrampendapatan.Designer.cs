@@ -38,7 +38,9 @@
             // 
             // dateTimeBulan
             // 
-            dateTimeBulan.Location = new Point(577, 370);
+            dateTimeBulan.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            dateTimeBulan.Location = new Point(578, 370);
+            dateTimeBulan.Margin = new Padding(2);
             dateTimeBulan.Name = "dateTimeBulan";
             dateTimeBulan.Size = new Size(300, 31);
             dateTimeBulan.TabIndex = 11;
@@ -46,27 +48,32 @@
             // dateTimeMinggu
             // 
             dateTimeMinggu.Location = new Point(945, 36);
+            dateTimeMinggu.Margin = new Padding(2);
             dateTimeMinggu.Name = "dateTimeMinggu";
             dateTimeMinggu.Size = new Size(300, 31);
             dateTimeMinggu.TabIndex = 10;
             // 
             // dateTimeHari
             // 
-            dateTimeHari.Location = new Point(217, 36);
+            dateTimeHari.Location = new Point(218, 36);
+            dateTimeHari.Margin = new Padding(2);
             dateTimeHari.Name = "dateTimeHari";
             dateTimeHari.Size = new Size(300, 31);
             dateTimeHari.TabIndex = 9;
             // 
             // cartDataBulan
             // 
+            cartDataBulan.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             cartDataBulan.Location = new Point(32, 452);
+            cartDataBulan.Margin = new Padding(2);
             cartDataBulan.Name = "cartDataBulan";
-            cartDataBulan.Size = new Size(1337, 309);
+            cartDataBulan.Size = new Size(1338, 309);
             cartDataBulan.TabIndex = 8;
             // 
             // cartDataMinggu
             // 
             cartDataMinggu.Location = new Point(781, 89);
+            cartDataMinggu.Margin = new Padding(2);
             cartDataMinggu.Name = "cartDataMinggu";
             cartDataMinggu.Size = new Size(588, 248);
             cartDataMinggu.TabIndex = 7;
@@ -74,6 +81,7 @@
             // cartDataHari
             // 
             cartDataHari.Location = new Point(51, 89);
+            cartDataHari.Margin = new Padding(2);
             cartDataHari.Name = "cartDataHari";
             cartDataHari.Size = new Size(588, 248);
             cartDataHari.TabIndex = 6;
@@ -89,8 +97,10 @@
             Controls.Add(cartDataBulan);
             Controls.Add(cartDataMinggu);
             Controls.Add(cartDataHari);
+            Margin = new Padding(2);
             Name = "diagrampendapatan";
-            Text = "diagrampengunjung";
+            Text = "DIAGRAM PENDAPATAN";
+            Load += diagrampendapatan_Load;
             ResumeLayout(false);
         }
 

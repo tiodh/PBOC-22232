@@ -1,0 +1,7 @@
+Data Pengunjung (
+  id_data_pengunjung integer,
+  nama_pengunjung varchar(255),
+  alamat_pengunjung varchar(255),
+  jumlah_pengunjung_dewasa integer,
+  jumlah_pengunjung_anak_anak integer
+);

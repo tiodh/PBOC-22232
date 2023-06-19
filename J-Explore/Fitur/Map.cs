@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace J_Explore
+namespace J_Explore.Fitur
 {
-    public partial class diagrampendapatan : Form
+    public partial class Map : Form
     {
-        public diagrampendapatan()
+        public Map()
         {
             InitializeComponent();
-        }
-
-        private void diagrampendapatan_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

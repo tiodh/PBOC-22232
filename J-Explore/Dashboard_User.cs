@@ -80,10 +80,40 @@ namespace J_Explore
 
         private void label4_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new Beranda(), sender);
+            OpenChildFrom(new Rekomendasi(), sender);
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Beranda(), sender);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Fasilitas(), sender);
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Fasilitas(), sender);
+        }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Map(), sender);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Map(), sender);
+        }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Rekomendasi(), sender);
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
         {
             OpenChildFrom(new Beranda(), sender);
         }

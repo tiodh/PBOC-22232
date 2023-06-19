@@ -99,6 +99,7 @@
             // textBox4
             // 
             textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox4.Enabled = false;
             textBox4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.Location = new Point(219, 540);
             textBox4.Margin = new Padding(3, 4, 3, 4);

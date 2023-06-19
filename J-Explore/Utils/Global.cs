@@ -1,4 +1,5 @@
-﻿using System;
+﻿using J_Explore.Models;
+using System;
 using System.Collections.Generic;
 using System.Drawing.Printing;
 using System.Linq;
@@ -29,11 +30,20 @@ namespace J_Explore.Utils
         public const string ColumnJenisPengunjungHargaTiket = "harga_tiket";
 
         public const string TableTransaksi = "transaksi";
-        public const string ColumnIdTransaksi = "id_transaksi";
+        public const string ColumnTransaksiId = "id_transaksi";
         public const string ColumnTransaksiUsernameAdmin = "username_admin";
         public const string ColumnTransaksiTanggalTransaksi = "tanggal_transaksi";
         public const string ColumnTransaksiNamaPengunjung = "nama_pengunjung";
         public const string ColumnTransaksiAsalPengunjung = "asal_pengunjung";
+
+        public static Admin CurrentAdmin = new Admin("admin", "admin123");
+
+        // Konfigurasi Database
+        public const string DbHost = "localhost";
+        public const int DbPort = 5432;
+        public const string DbUsername = "postgres";
+        public const string DbPassword = "HELLOWORLD123";
+        public const string DbName = "pbo";
 
         public static readonly Color OnHoverColor = Color.Lime;
 

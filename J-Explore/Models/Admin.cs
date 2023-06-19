@@ -20,13 +20,13 @@ namespace J_Explore.Models
         }
 
         public static Admin FromDataRow(DataRow row) => new Admin(
-            (string)row[Global.ColumnAkunAdminUsername],
-            (string)row[Global.ColumnAkunAdminPassword]
+            (string)row[Global.ColumnAdminUsername],
+            (string)row[Global.ColumnAdminPassword]
         );
 
         public Dictionary<string, dynamic> ToDictionary() => new Dictionary<string, dynamic>
         {
-            {Global.ColumnAkunAdminPassword, Password},
+            {Global.ColumnAdminPassword, Password},
         };
     }
 }

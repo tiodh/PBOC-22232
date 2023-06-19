@@ -11,23 +11,27 @@ namespace J_Explore.Models
     public class JenisPengunjung
     {
         public int Id;
-        public string KelompokUsia;
+        public string Jenis;
+        public int HargaTiket;
 
-        public JenisPengunjung(int id, string kelompokUsia)
+        public JenisPengunjung(int id, string jenis, int hargaTiket)
         {
             Id = id;
-            KelompokUsia = kelompokUsia;
+            Jenis = jenis;
+            HargaTiket = hargaTiket;
         }
 
         public static JenisPengunjung FromDataRow(DataRow row) => new JenisPengunjung
         (
             (int)row[Global.ColumnJenisPengunjungId],
-            (string)row[Global.ColumnJenisPengunjungKelompokUsia]
+            (string)row[Global.ColumnJenisPengunjungJenisPengunjung],
+            (int)row[Global.ColumnJenisPengunjungHargaTiket]
         );
 
         public Dictionary<string, dynamic> ToDictionary() => new Dictionary<string, dynamic>
         {
-            {Global.ColumnJenisPengunjungKelompokUsia, KelompokUsia}
+            {Global.ColumnJenisPengunjungJenisPengunjung, Jenis},
+            {Global.ColumnJenisPengunjungHargaTiket, HargaTiket}
         };
     }
 }

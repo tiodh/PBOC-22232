@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logitop.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace Tugas_Akhir_Pbo_C
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            DbHelper.Initialize("localhost", 5432, "postgres", "Rizal020304", "pbo", "public");
             Application.Run(new Form1());
         }
     }

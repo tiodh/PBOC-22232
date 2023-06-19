@@ -77,7 +77,7 @@ namespace J_Explore
 
         private void label6_Click(object sender, EventArgs e)
         {
-            OpenChildFrom(new diagrampendataan(), "Diagram Pendapatan");
+            OpenChildFrom(new diagrampendataan(), "Diagram Pendataan");
         }
 
         private void label7_Click(object sender, EventArgs e)

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cartDataHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            dateTimeBulan = new DateTimePicker();
             cartBulan = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             cartDataMinggu = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             cartHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
@@ -37,20 +35,6 @@
             label2 = new Label();
             label3 = new Label();
             SuspendLayout();
-            // 
-            // cartDataHari
-            // 
-            cartDataHari.Location = new Point(36, 90);
-            cartDataHari.Name = "cartDataHari";
-            cartDataHari.Size = new Size(433, 167);
-            cartDataHari.TabIndex = 0;
-            // 
-            // dateTimeBulan
-            // 
-            dateTimeBulan.Location = new Point(353, 263);
-            dateTimeBulan.Name = "dateTimeBulan";
-            dateTimeBulan.Size = new Size(300, 31);
-            dateTimeBulan.TabIndex = 5;
             // 
             // cartBulan
             // 
@@ -78,6 +62,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(314, 51);
             label1.Name = "label1";
             label1.Size = new Size(109, 29);
@@ -88,6 +73,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(1037, 51);
             label2.Name = "label2";
             label2.Size = new Size(151, 29);
@@ -98,6 +84,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(665, 394);
             label3.Name = "label3";
             label3.Size = new Size(134, 29);
@@ -115,8 +102,7 @@
             Controls.Add(cartBulan);
             Controls.Add(cartDataMinggu);
             Controls.Add(cartHari);
-            Controls.Add(dateTimeBulan);
-            Controls.Add(cartDataHari);
+            ForeColor = Color.Black;
             Name = "diagrampendataan";
             Text = "DIAGRAM PENDATAAN";
             ResumeLayout(false);
@@ -124,9 +110,6 @@
         }
 
         #endregion
-
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataHari;
-        private DateTimePicker dateTimeBulan;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartBulan;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataMinggu;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartHari;

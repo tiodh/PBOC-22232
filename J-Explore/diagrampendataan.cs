@@ -18,6 +18,8 @@ using System.Windows.Forms;
 using LiveChartsCore.SkiaSharpView.VisualElements;
 using System.Data.Common;
 using LiveChartsCore.SkiaSharpView.WinForms;
+using LiveChartsCore.Kernel.Sketches;
+
 namespace J_Explore
 {
     public partial class diagrampendataan : Form
@@ -32,17 +34,9 @@ namespace J_Explore
             _dbConnection = new NpgsqlConnection(connectionString);
 
             // Inisialisasi koleksi tanggal dan jumlah pengunjung
-            weeklyData = new ObservableCollection<DateTimePoint>();
-
-            // Tambahkan event handler untuk perubahan nilai DateTimePicker
-            dateTimeMinggu.ValueChanged += DateTimePickerMinggu_ValueChanged;
-
-            // Panggil metode untuk mengisi data
-            LoadData();
-        }
-
-        private void LoadData()
-        {
+            ObservableCollection<DateTimePoint> weeklyData = new ObservableCollection<DateTimePoint>();
+            ObservableCollection<DateTimePoint> weeklyData2 = new ObservableCollection<DateTimePoint>();
+            ObservableCollection<DateTimePoint> monthlyData = new ObservableCollection<DateTimePoint>();
             // Ambil data dari database
             _dbConnection.Open();
             NpgsqlCommand command = new NpgsqlCommand("SELECT tanggal_transaksi, SUM(jumlah_pengunjung) AS total_pengunjung FROM transaksi JOIN data_pengunjung ON transaksi.id_transaksi = data_pengunjung.id_data_pengunjung GROUP BY tanggal_transaksi", _dbConnection);
@@ -53,10 +47,73 @@ namespace J_Explore
 
             DateTime firstDate = (DateTime)data.Rows[0]["tanggal_transaksi"];
             DateTime lastDate = (DateTime)data.Rows[data.Rows.Count - 1]["tanggal_transaksi"];
+            //DateTime endDate = startDate.AddMonths(1).AddDays(-1);
+
 
             // Menghitung durasi antara tanggal pertama dan terakhir
             TimeSpan duration = lastDate - firstDate;
 
+            if (duration.Days >= 30)
+            {
+                var monthlyGroups = data.AsEnumerable()
+                    .GroupBy(row => new DateTime(((DateTime)row["tanggal_transaksi"]).Year, ((DateTime)row["tanggal_transaksi"]).Month, 1))
+                    .Select(group => new
+                    {
+                        MonthStartDate = group.Key,
+                        Total = group.Sum(row => (int)(long)row["total_pengunjung"])
+                    })
+                    .OrderBy(group => group.MonthStartDate);
+
+                foreach (var monthlyGroup in monthlyGroups)
+                {
+                    monthlyData.Add(new DateTimePoint(monthlyGroup.MonthStartDate, monthlyGroup.Total));
+                }
+            }
+            else
+            {
+                var dailyGroups = data.AsEnumerable()
+                    .Select(row => new
+                    {
+                        Date = ((DateTime)row["tanggal_transaksi"]).Date,
+                        Total = (int)(long)row["total_pengunjung"]
+                    })
+                    .OrderBy(group => group.Date);
+
+                foreach (var dailyGroup in dailyGroups)
+                {
+                    monthlyData.Add(new DateTimePoint(dailyGroup.Date, dailyGroup.Total));
+                }
+            }
+
+            // Konfigurasi grafik
+            cartBulan.Title = new LabelVisual
+            {
+                Text = "Jumlah Pengunjung",
+                TextSize = 25,
+                Padding = new LiveChartsCore.Drawing.Padding(15),
+                Paint = new SolidColorPaint(SKColors.DarkSlateGray)
+            };
+
+            cartBulan.Series = new ISeries[]
+            {
+            new ColumnSeries<DateTimePoint>
+            {
+                TooltipLabelFormatter = (chartPoint) => $"{new DateTime((long)chartPoint.SecondaryValue):dd MMM yyyy}: {chartPoint.PrimaryValue:N0}",
+                Name = "Jumlah Pengunjung",
+                Values = monthlyData
+            }
+            };
+
+            cartBulan.XAxes = new Axis[]
+            {
+                new Axis
+                {
+                    Labeler = value => new DateTime((long)value).ToString("MMM yyyy"),
+                    LabelsRotation = 45,
+                    UnitWidth = TimeSpan.FromDays(30).Ticks, // Menggunakan 30 hari sebagai unit lebar
+                    MinStep = TimeSpan.FromDays(30).Ticks, // Minimal jarak antara label adalah 30 hari
+                }
+            };
             if (duration.Days >= 7)
             {
                 // Mengelompokkan data menjadi mingguan
@@ -75,11 +132,8 @@ namespace J_Explore
 
                 foreach (var weeklyGroup in weeklyGroups)
                 {
-                    long weekStartDateTicks = weeklyGroup.WeekStartDate.Ticks;
-                    DateTime weekStartDate = DateTime.FromOADate(weekStartDateTicks);
-                    weeklyData.Add(new DateTimePoint(weekStartDate, weeklyGroup.Total));
+                    weeklyData.Add(new DateTimePoint(new DateTime(weeklyGroup.WeekStartDate.Ticks), weeklyGroup.Total));
                 }
-
             }
             else
             {
@@ -99,17 +153,13 @@ namespace J_Explore
 
                 foreach (var weeklyGroup in weeklyGroups)
                 {
-                    long weekStartDateTicks = weeklyGroup.WeekStartDate.Ticks;
-                    DateTime weekStartDate = DateTime.FromOADate(weekStartDateTicks);
-                    weeklyData.Add(new DateTimePoint(weekStartDate, weeklyGroup.Total));
+                    weeklyData.Add(new DateTimePoint(weeklyGroup.WeekStartDate, weeklyGroup.Total));
                 }
-
             }
-
             // Konfigurasi grafik
             cartDataMinggu.Title = new LabelVisual
             {
-                Text = "Jumlah Pengunjung",
+                Text = "Laporan Jumlah Pengunjung",
                 TextSize = 25,
                 Padding = new LiveChartsCore.Drawing.Padding(15),
                 Paint = new SolidColorPaint(SKColors.DarkSlateGray)
@@ -129,7 +179,68 @@ namespace J_Explore
             {
                 new Axis
                 {
-                    Labeler = value => ((DateTime)value).ToString("dd MMM yyyy"),
+                    Labeler = value => new DateTime((long)value).ToString("dd MMM yyyy"),
+                    LabelsRotation = 45,
+                    UnitWidth = TimeSpan.FromDays(1).Ticks,
+                    MinStep = TimeSpan.FromDays(1).Ticks,
+                }
+            };
+            if (duration.Days >= 7)
+            {
+                var dailyGroups2 = data.AsEnumerable()
+                    .Select(row => new
+                    {
+                        Date = ((DateTime)row["tanggal_transaksi"]).Date,
+                        Total = (int)(long)row["total_pengunjung"]
+                    })
+                    .OrderBy(group => group.Date);
+
+                foreach (var dailyGroup2 in dailyGroups2)
+                {
+                    weeklyData2.Add(new DateTimePoint(dailyGroup2.Date, dailyGroup2.Total));
+                }
+            }
+
+            else
+            {
+                var dailyGroups2 = data.AsEnumerable()
+                    .Select(row => new
+                    {
+                        Date = ((DateTime)row["tanggal_transaksi"]).Date,
+                        Total = (int)(long)row["total_pengunjung"]
+                    })
+                    .OrderBy(group => group.Date);
+
+                foreach (var dailyGroup2 in dailyGroups2)
+                {
+                    weeklyData2.Add(new DateTimePoint(dailyGroup2.Date, dailyGroup2.Total));
+                }
+            }
+
+            // Konfigurasi grafik
+            cartHari.Title = new LabelVisual
+            {
+                Text = "Laporan Jumlah Pengunjung",
+                TextSize = 25,
+                Padding = new LiveChartsCore.Drawing.Padding(15),
+                Paint = new SolidColorPaint(SKColors.DarkSlateGray)
+            };
+
+            cartHari.Series = new ISeries[]
+            {
+                new ColumnSeries<DateTimePoint>
+                {
+                    TooltipLabelFormatter = (chartPoint) => $"{new DateTime((long)chartPoint.SecondaryValue):dd MMM yyyy}: {chartPoint.PrimaryValue:N0}",
+                    Name = "Jumlah Pengunjung",
+                    Values = weeklyData2
+                }
+            };
+
+            cartHari.XAxes = new Axis[]
+            {
+                new Axis
+                {
+                    Labeler = value => new DateTime((long)value).ToString("dd MMM yyyy"),
                     LabelsRotation = 45,
                     UnitWidth = TimeSpan.FromDays(1).Ticks,
                     MinStep = TimeSpan.FromDays(1).Ticks,
@@ -137,14 +248,7 @@ namespace J_Explore
             };
         }
 
-        private void DateTimePickerMinggu_ValueChanged(object sender, EventArgs e)
-        {
-            // Hapus semua data sebelum memuat data baru
-            weeklyData.Clear();
 
-            // Panggil metode untuk memuat data
-            LoadData();
-        }
 
         private void cartesianChart2_Load(object sender, EventArgs e)
         {

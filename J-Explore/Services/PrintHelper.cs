@@ -59,13 +59,11 @@ namespace J_Explore.Services
             {
                 PrintingArgumentsMessage messageArgs = (PrintingArgumentsMessage)args;
 
-                e.Graphics.DrawString(messageArgs.Message, font, brush, GetCenterX(e, messageArgs.Message), y);
+                e.Graphics!.DrawString(messageArgs.Message, font, brush, GetCenterX(e, messageArgs.Message), y);
             }
             else if (args is PrintingArgumentsTransaction)
             {
                 PrintingArgumentsTransaction transactionArgs = (PrintingArgumentsTransaction)args;
-                int total = 0;
-
 
                 AddText("Rembangan", e, ref y, spacing);
                 AddText($"{transactionArgs.Id}/{transactionArgs.UsernameAdmin}".PadRight(maxLength), e, ref y, spacing);
@@ -75,57 +73,6 @@ namespace J_Explore.Services
                 AddText("Dewasa" + "".PadRight(maxLength - 6 - 2) + Global.PadLeft(transactionArgs.Dewasa), e, ref y, spacing);
                 AddText("".PadRight(maxLength, separator), e, ref y, spacing);
                 AddText("Total" + "".PadRight(maxLength - 5 - transactionArgs.Total.ToString("N0").Length) + transactionArgs.Total.ToString("N0"), e, ref y, spacing);
-
-                //e.Graphics.DrawString("Rembangan", font, brush, GetCenterX(e, "Tokoku"), y);
-                //y += AddNewLine(e, spacing);
-                //e.Graphics.DrawString("Jalan Antah Berantah", font, brush, GetCenterX(e, "Jalan Antah Berantah"), y);
-                //y += AddNewLine(e, spacing);
-                //e.Graphics.DrawString("".PadRight(maxLength, separator), font, brush, GetCenterX(e, "".PadRight(maxLength, separator)), y);
-                //y += AddNewLine(e, spacing);
-                //e.Graphics.DrawString($"1/kasir".PadRight(maxLength), font, brush, GetCenterX(e, "".PadRight(maxLength, separator)), y);
-                //y += AddNewLine(e, spacing);
-                ////e.Graphics.DrawString($"{Global.GetFormattedDate(transactionArgs.Transaction.Date)}".PadRight(maxLength), font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
-                ////y += AddNewLine(e, font, spacing);
-                //e.Graphics.DrawString("".PadRight(maxLength, separator), font, brush, GetCenterX(e, "".PadRight(maxLength, separator)), y);
-                //y += AddNewLine(e, spacing);
-                ////foreach (DetailTransaction detailTransaction in transactionArgs.DetailTransactions)
-                ////{
-                ////    total += detailTransaction.Laptop.Price * detailTransaction.Amount;
-
-                ////    foreach (string name in BreakStringByLength(detailTransaction.Laptop.Name, maxLength))
-                ////    {
-                ////        e.Graphics.DrawString($"{name.PadRight(maxLength)}", font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
-                ////        y += AddNewLine(e, font, spacing);
-                ////    }
-
-                ////    string temporaryPrice = $"{detailTransaction.Laptop.Price} * {detailTransaction.Amount}";
-                ////    string finalPrice = (detailTransaction.Laptop.Price * detailTransaction.Amount).ToString();
-
-                ////    int temporaryPriceLength = temporaryPrice.Length + 1;
-                ////    int priceLength = finalPrice.Length;
-
-                ////    if (temporaryPriceLength + priceLength <= maxLength)
-                ////    {
-                ////        temporaryPrice = temporaryPrice + "".PadRight(maxLength - temporaryPriceLength - priceLength) + finalPrice;
-                ////        e.Graphics.DrawString(temporaryPrice, font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
-                ////        y += AddNewLine(e, font, spacing + spacingBetweenItem);
-                ////    }
-                ////    else
-                ////    {
-                ////        e.Graphics.DrawString(temporaryPrice, font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
-                ////        y += AddNewLine(e, font, spacing);
-                ////        e.Graphics.DrawString(finalPrice, font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
-                ////        y += AddNewLine(e, font, spacing + spacingBetweenItem);
-                ////    }
-                ////}
-                //e.Graphics.DrawString("".PadRight(maxLength, separator), font, brush, GetCenterX(e, "".PadRight(maxLength, separator)), y);
-                //y += AddNewLine(e, spacing);
-                //e.Graphics.DrawString("Total" + "".PadRight(maxLength - 5 - total.ToString().Length) + total.ToString(), font, brush, GetCenterX(e, "".PadRight(maxLength, separator)), y);
-                //y += AddNewLine(e, spacing);
-                ////e.Graphics.DrawString("Bayar" + "".PadRight(maxLength - 5 - transactionArgs.Transaction.pay.ToString().Length) + transactionArgs.Transaction.pay.ToString(), font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
-                ////y += AddNewLine(e, font, spacing);
-                ////int change = transactionArgs.Transaction.pay - total;
-                ////e.Graphics.DrawString("Kembali" + "".PadRight(maxLength - 7 - change.ToString().Length) + change.ToString(), font, brush, GetCenterX(e, font, "".PadRight(maxLength, separator)), y);
             }
         }
 

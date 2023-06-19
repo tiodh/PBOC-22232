@@ -1,4 +1,6 @@
-﻿using J_Explore.Services;
+﻿using J_Explore.Models;
+using J_Explore.Services;
+using J_Explore.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,9 +61,22 @@ namespace J_Explore
 
         private void OnButtonSimpanClick(object sender, EventArgs e)
         {
-            // Sebelum Print, pastikan data sudah di simpan di dalam database terlebih dahulu
+            string nama = null;
+            string asal = null;
 
-            PrintHelper.Print(new PrintingArgumentsTransaction(1, "Otong", DateTime.Now, int.Parse(textBox6.Text), int.Parse(textBox7.Text), int.Parse(textBox4.Text)));
+            if (!string.IsNullOrEmpty(textBox2.Text))
+            {
+                nama = textBox2.Text;
+            }
+            if (!string.IsNullOrEmpty(textBox3.Text))
+            {
+                asal = textBox3.Text;
+            }
+
+            DbHelper.GetInstance().Create(Global.TableTransaksi, new Transaksi(1, Global.CurrentAdmin, DateTime.Now, nama, asal).ToDictionary());
+            Transaksi lastTransaksi = Transaksi.FromDataRow(DbHelper.GetInstance().ExecuteQuery($"SELECT * FROM {Global.TableTransaksi} ORDER BY {Global.ColumnTransaksiId} DESC LIMIT 1").Rows[0]);
+
+            PrintHelper.Print(new PrintingArgumentsTransaction(lastTransaksi.Id, lastTransaksi.Admin.Username, lastTransaksi.Tanggal, 0, int.Parse(textBox7.Text), int.Parse(textBox4.Text)));
         }
 
         private void OnJumlahAnakAnakKeyPressed(object sender, KeyPressEventArgs e) => e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);

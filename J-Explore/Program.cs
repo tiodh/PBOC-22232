@@ -1,4 +1,5 @@
 using J_Explore.Services;
+using J_Explore.Utils;
 using Npgsql;
 using OfficeOpenXml;
 using System.Data;
@@ -17,6 +18,7 @@ namespace J_Explore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            DbHelper.Initialize(Global.DbHost, Global.DbPort, Global.DbUsername, Global.DbPassword, Global.DbName);
             Application.Run(new Dashboard_Admin());
         }
     }

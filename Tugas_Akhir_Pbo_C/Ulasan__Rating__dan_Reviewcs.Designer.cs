@@ -61,11 +61,11 @@
             this.kryptonLabel2.Location = new System.Drawing.Point(20, 35);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(207, 49);
+            this.kryptonLabel2.Size = new System.Drawing.Size(493, 49);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 4;
-            this.kryptonLabel2.Values.Text = "Dashboard";
+            this.kryptonLabel2.Values.Text = "Ulasan, Rating, dan Review";
             // 
             // Ulasan__Rating__dan_Reviewcs
             // 
@@ -75,7 +75,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.button1);
             this.Name = "Ulasan__Rating__dan_Reviewcs";
-            this.Text = "Ulasan__Rating__dan_Reviewcs";
+            this.Text = "Ulasan, Rating, dan Reviewcs";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();

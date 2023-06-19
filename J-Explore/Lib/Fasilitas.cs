@@ -13,6 +13,8 @@ namespace J_Explore.Lib
 {
     public partial class Fasilitas : Form
     {
+        private NpgsqlConnection conn;
+        private NpgsqlCommand cmd;
         public Fasilitas()
         {
             InitializeComponent();
@@ -31,6 +33,11 @@ namespace J_Explore.Lib
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Fasilitas_Load(object sender, EventArgs e)
+        {
+            conn = new NpgsqlConnection();
         }
     }
 }

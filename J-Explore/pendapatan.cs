@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class pengunjung : Form
+    public partial class pendapatan : Form
     {
-        public pengunjung()
+        public pendapatan()
         {
             InitializeComponent();
         }

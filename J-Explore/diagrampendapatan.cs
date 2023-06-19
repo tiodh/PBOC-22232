@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace J_Explore
 {
-    public partial class diagrampengunjung : Form
+    public partial class diagrampendapatan : Form
     {
-        public diagrampengunjung()
+        public diagrampendapatan()
         {
             InitializeComponent();
         }

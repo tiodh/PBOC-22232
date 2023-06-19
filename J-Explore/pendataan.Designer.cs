@@ -105,7 +105,7 @@
             Controls.Add(pendataanMinggu);
             Controls.Add(pendataanHari);
             Name = "pendataan";
-            Text = "pendataan";
+            Text = "PENDATAAN";
             ((System.ComponentModel.ISupportInitialize)pendataanHari).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanMinggu).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).EndInit();

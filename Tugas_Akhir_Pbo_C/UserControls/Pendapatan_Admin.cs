@@ -16,5 +16,10 @@ namespace Tugas_Akhir_Pbo_C.UserControls
         {
             InitializeComponent();
         }
+
+        private void Pendapatan_Admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

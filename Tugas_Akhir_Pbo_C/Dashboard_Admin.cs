@@ -77,5 +77,10 @@ namespace Tugas_Akhir_Pbo_C
             PanelUtamaAdmin.Controls.Add(Registrasi);
             Registrasi.Dock = DockStyle.Fill;
         }
+
+        private void Dashboard_Admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

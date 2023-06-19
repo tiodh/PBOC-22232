@@ -89,11 +89,9 @@ INSERT INTO jenis_fasilitas(id_jenis_fasilitas, nama_jenis_fasilitas, deskripsi_
 		   (7,'Suite Room', 'Tempat menginap dengan fasilitas lebih lengkap dari hotel dan pastinya lebih nyaman dan pengalaman menginap jauh lebih berkualitas untuk menkmati indahnya wisata rembangan' ),
 		   (8, 'Kantin', 'Setelah berenang pastinya energi akan terkuras dan perut juga pasti lapar, kantin adalah tempat pelipur lapar yang paling tepat, dengan 2 kantin yang menyediakan makanan dan minuman tidak lupa juga jajan - jajan untuk menemani anda saat menunggu orang tersayang anda selesai berenang'),
 		   (9, 'Play Ground', 'Play Ground dapat dinikmati oleh semua kalangan umur, fasilitas bermain yang beragam dan pastinya sangat seru dengan menikmati pemandangan rembangan yang sangat indah dan udara yang sangat sejuk'),
-		   (10, 'Aula', 'Tempat yang pas untuk mengadakan acara yang bersifat umum di puncak teratas kota Jember dengan disertai udara yang sejuk dapat membuat acara semakin meriah dan juga menyenangkan hati')
+		   (10, 'Aula', 'Tempat yang pas untuk mengadakan acara yang bersifat umum di puncak teratas kota Jember dengan disertai udara yang sejuk dapat membuat acara semakin meriah dan juga menyenangkan hati');
 
-CREATE TABLE IF NOT EXISTS fasilitas (
-  id_fasilitas SERIAL PRIMARY KEY,
-  nama_fasilitas VARCHAR(255) NOT NULL,
+CREATE TABLE IF NOT EXISTS fasilitas (id_fasilitas SERIAL PRIMARY KEY,nama_fasilitas VARCHAR(255) NOT NULL,
   jumlah_fasilitas INT NOT NULL,
 	harga_fasilitas VARCHAR(255) NOT NULL,
 	jam_operational VARCHAR(255) NOT NULL,
@@ -119,7 +117,7 @@ VALUES
 (13,'Musik Corner',1,'Free','07-00-22.00',DEFAULT,3),
 (14,'Camping Ground',1,'50000-200000','24 Jam',DEFAULT,4),
 (15,'Cafe Dragon Fruit',1,'Free','07.00-23.00',DEFAULT,6),
-(16, 'Restoran Rembangan',1,'Free','07.00-23.00',DEFAULT,5)
+(16, 'Restoran Rembangan',1,'Free','07.00-23.00',DEFAULT,5),
 (17, 'Kantin',1,'Free','07.00-22.00',DEFAULT,7),
 (18, 'Playground',1,'Free','24 Jam',DEFAULT,9);
 
@@ -315,4 +313,3 @@ INSERT INTO kuliner(
           (168, 'Energen', 5000,2),
           (169, 'Kopi Lanang', 7000,2),
           (170, 'Robusta Gunung Ijen', 5000,2);
-

@@ -9,26 +9,31 @@ namespace J_Explore.Utils
 {
     public static class Global
     {
-        public const string TableAkunAdmin = "akun_admin";
-        public const string ColumnAkunAdminId = "id_akun_admin";
-        public const string ColumnAkunAdminUsername = "username";
-        public const string ColumnAkunAdminPassword = "password";
-        public const string ColumnAkunAdminEmail = "email";
-        public const string ColumnAkunAdminNoHp = "no_hp";
+        public const string TableAkunAdmin = "admin";
+        public const string ColumnAdminUsername = "username";
+        public const string ColumnAdminPassword = "password";
 
         public const string TableAkunUser = "akun_user";
         public const string ColumnAkunUserId = "id_akun_user";
         public const string ColumnAkunUserUsername = "username";
 
-        public const string TableDataPengunjung = "data_pengunjung";
-        public const string ColumnDataPengunjungId = "id_data_pengunjung";
-        public const string ColumnDataPengunjungNama = "nama_pengunjung";
-        public const string ColumnDataPengunjungAlamat = "alamat_pengunjung";
-        public const string ColumnDataPengunjungJumlah = "jumlah_pengunjung";
+        public const string TableDetailTransaksi = "detail_transaksi";
+        public const string ColumnDetailTransaksiId = "id_detail_transaksi";
+        // ColumnIdTransaksi
+        // ColumnIdJenisPengunjung
+        public const string ColumnDetailTransaksiJumlahPengunjung = "jumlah_pengunjung";
 
         public const string TableJenisPengunjung = "jenis_pengunjung";
         public const string ColumnJenisPengunjungId = "id_jenis_pengunjung";
-        public const string ColumnJenisPengunjungKelompokUsia = "kelompok_usia";
+        public const string ColumnJenisPengunjungJenisPengunjung = "jenis_pengunjung";
+        public const string ColumnJenisPengunjungHargaTiket = "harga_tiket";
+
+        public const string TableTransaksi = "transaksi";
+        public const string ColumnIdTransaksi = "id_transaksi";
+        public const string ColumnTransaksiUsernameAdmin = "username_admin";
+        public const string ColumnTransaksiTanggalTransaksi = "tanggal_transaksi";
+        public const string ColumnTransaksiNamaPengunjung = "nama_pengunjung";
+        public const string ColumnTransaksiAsalPengunjung = "asal_pengunjung";
 
         public static readonly Color OnHoverColor = Color.Lime;
 

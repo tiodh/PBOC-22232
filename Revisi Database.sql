@@ -1,14 +1,14 @@
 CREATE TABLE admin (
   username varchar(255) PRIMARY KEY,
-  password varchar(255)
+  password varchar(255) NOT NULL
 );
 
 INSERT INTO admin VALUES ('admin', 'admin123');
 
 CREATE TABLE transaksi (
   id_transaksi SERIAL PRIMARY KEY,
-  username_admin varchar(255),
-  tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  username_admin varchar(255) NOT NULL,
+  tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
   nama_pengunjung varchar(255),
   asal_pengunjung varchar(255),
   foreign key (username_admin) references admin (username)
@@ -16,8 +16,8 @@ CREATE TABLE transaksi (
 
 CREATE TABLE jenis_pengunjung (
   id_jenis_pengunjung SERIAL PRIMARY KEY,
-  jenis_pengunjung varchar(255),
-  harga_tiket int
+  jenis_pengunjung varchar(255) NOT NULL,
+  harga_tiket int NOT NULL
 );
 
 INSERT INTO jenis_pengunjung VALUES 
@@ -26,9 +26,9 @@ INSERT INTO jenis_pengunjung VALUES
 
 CREATE TABLE detail_transaksi (
   id_detail_transaksi SERIAL PRIMARY KEY,
-  id_transaksi int,
-  id_jenis_pengunjung int,
-  jumlah_pengunjung int,
+  id_transaksi int NOT NULL,
+  id_jenis_pengunjung int NOT NULL,
+  jumlah_pengunjung int NOT NULL,
   foreign key (id_transaksi) references transaksi (id_transaksi),
   foreign key (id_jenis_pengunjung) references jenis_pengunjung (id_jenis_pengunjung)
 );
@@ -80,16 +80,18 @@ CREATE TABLE IF NOT EXISTS jenis_fasilitas (
 );
 
 INSERT INTO jenis_fasilitas(id_jenis_fasilitas, nama_jenis_fasilitas, deskripsi_jenis_fasilitas)
-  VALUES  (1, 'Kolam renang', 'Memiliki dua jenis kolam dengan satu kolam renang untuk anak dan satu kolam renang untuk orang dewasa'),
-          (2, 'Hotel', 'Memiliki 45 kamar dengan fasilitas yang dirancang untuk memberikan pengalaman penginapan yang berkualitas serta menawarkan pemandangan dari puncak yang menakjubkan'),
-          (3, 'Music corner', 'Merupakan fasilitas baru yang menawarkan pengalaman hiburan musik. Pada hari kerja disediakan fasilitas untuk karaoke dan pada akhir pekan akan ada penampilan live music untuk menghibur para pengunjung'),
-          (4, 'Camping ground', 'Fasilitas ini disediakan untuk pengalaman camping dengan suasana alam terbuka disertai pemandangan yang menakjubkan'),
-          (5, 'Restoran', 'Restoran ini membuat pengunjung dapat menikmati makanan yang lezat disertai pemandangan yang indah'),
-          (6, 'Cafe', 'Tempat yang nyaman untuk pengunjung menikmati makanan ringan dengan pemandangan dari puncak yang memanjakan mata');
+	VALUES (1, 'Kolam renang', 'Memiliki dua jenis kolam dengan satu kolam renang untuk anak dan satu kolam renang untuk orang dewasa'),
+	       (2, 'Hotel', 'Memiliki 45 kamar dengan fasilitas yang dirancang untuk memberikan pengalaman penginapan yang berkualitas serta menawarkan pemandangan dari puncak yang menakjubkan'),
+		   (3, 'Music corner', 'Merupakan fasilitas baru yang menawarkan pengalaman hiburan musik. Pada hari kerja disediakan fasilitas untuk karaoke dan pada akhir pekan akan ada penampilan live music untuk menghibur para pengunjung'),
+		   (4, 'Camping ground', 'Fasilitas ini disediakan untuk pengalaman camping dengan suasana alam terbuka disertai pemandangan yang menakjubkan'),
+		   (5, 'Restoran', 'Restoran ini membuat pengunjung dapat menikmati makanan yang lezat disertai pemandangan yang indah'),
+		   (6, 'Cafe', 'Tempat yang nyaman untuk pengunjung menikmati makanan ringan dengan pemandangan dari puncak yang memanjakan mata'),
+		   (7,'Suite Room', 'Tempat menginap dengan fasilitas lebih lengkap dari hotel dan pastinya lebih nyaman dan pengalaman menginap jauh lebih berkualitas untuk menkmati indahnya wisata rembangan' ),
+		   (8, 'Kantin', 'Setelah berenang pastinya energi akan terkuras dan perut juga pasti lapar, kantin adalah tempat pelipur lapar yang paling tepat, dengan 2 kantin yang menyediakan makanan dan minuman tidak lupa juga jajan - jajan untuk menemani anda saat menunggu orang tersayang anda selesai berenang'),
+		   (9, 'Play Ground', 'Play Ground dapat dinikmati oleh semua kalangan umur, fasilitas bermain yang beragam dan pastinya sangat seru dengan menikmati pemandangan rembangan yang sangat indah dan udara yang sangat sejuk'),
+		   (10, 'Aula', 'Tempat yang pas untuk mengadakan acara yang bersifat umum di puncak teratas kota Jember dengan disertai udara yang sejuk dapat membuat acara semakin meriah dan juga menyenangkan hati');
 
-CREATE TABLE IF NOT EXISTS fasilitas (
-  id_fasilitas SERIAL PRIMARY KEY,
-  nama_fasilitas VARCHAR(255) NOT NULL,
+CREATE TABLE IF NOT EXISTS fasilitas (id_fasilitas SERIAL PRIMARY KEY,nama_fasilitas VARCHAR(255) NOT NULL,
   jumlah_fasilitas INT NOT NULL,
 	harga_fasilitas VARCHAR(255) NOT NULL,
 	jam_operational VARCHAR(255) NOT NULL,
@@ -113,7 +115,11 @@ VALUES
 (11,'Aula A',1,'1.155.000','07.00-23.00',DEFAULT,2),
 (12,'Aula B',1,'Rp990.000','07.00-23.00',DEFAULT,2),
 (13,'Musik Corner',1,'Free','07-00-22.00',DEFAULT,3),
-(14,'Camping Ground',1,'50000-200000','24 Jam',DEFAULT,4);
+(14,'Camping Ground',1,'50000-200000','24 Jam',DEFAULT,4),
+(15,'Cafe Dragon Fruit',1,'Free','07.00-23.00',DEFAULT,6),
+(16, 'Restoran Rembangan',1,'Free','07.00-23.00',DEFAULT,5),
+(17, 'Kantin',1,'Free','07.00-22.00',DEFAULT,7),
+(18, 'Playground',1,'Free','24 Jam',DEFAULT,9);
 
 CREATE TABLE IF NOT EXISTS nama_tempat (
   id_nama_tempat SERIAL PRIMARY KEY,
@@ -307,4 +313,3 @@ INSERT INTO kuliner(
           (168, 'Energen', 5000,2),
           (169, 'Kopi Lanang', 7000,2),
           (170, 'Robusta Gunung Ijen', 5000,2);
-

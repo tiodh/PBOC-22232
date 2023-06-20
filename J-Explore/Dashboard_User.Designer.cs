@@ -176,6 +176,7 @@
             // 
             panel4.BackColor = Color.SeaGreen;
             panel4.Controls.Add(label1);
+            panel4.Cursor = Cursors.Hand;
             panel4.Location = new Point(2, 3);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
@@ -512,7 +513,6 @@
             panel5.Size = new Size(250, 54);
             panel5.TabIndex = 1;
             panel5.Click += panel5_Click;
-            
             // 
             // label2
             // 

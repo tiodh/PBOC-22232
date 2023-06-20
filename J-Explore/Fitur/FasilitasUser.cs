@@ -1,4 +1,6 @@
 ﻿using System;
+using J_Explore.Fitur;
+using J_Explore.Lib;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

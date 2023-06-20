@@ -28,16 +28,18 @@ namespace J_Explore
                 {
                     conn.Open();
 
+                    int id = Convert.ToInt32(textBox1.Text);
                     string username = textBox1.Text;
                     string password = textBox2.Text;
                     string email = textBox3.Text;
                     string phoneNumber = textBox4.Text;
 
-                    string query = "INSERT INTO akun_admin (username, password, email, no_hp) " +
-                                   "VALUES (@username, @password, @email, @no_hp)";
+                    string query = "INSERT INTO akun_admin (id_akun_admin,username, password, email, no_hp) " +
+                                   "VALUES (@id, @username, @password, @email, @no_hp)";
 
                     using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("id", id);
                         cmd.Parameters.AddWithValue("username", username);
                         cmd.Parameters.AddWithValue("password", password);
                         cmd.Parameters.AddWithValue("email", email);
@@ -46,6 +48,12 @@ namespace J_Explore
                         cmd.ExecuteNonQuery();
 
                         MessageBox.Show("Akun berhasil dibuat!");
+
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
+                        textBox5.Text = "";
                     }
 
                     conn.Close();

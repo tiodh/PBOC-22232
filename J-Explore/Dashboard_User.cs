@@ -99,7 +99,7 @@ namespace J_Explore
         private void panel5_Click(object sender, EventArgs e)
         {
             OpenChildFrom(new FasilitasUser(), sender);
-            
+
         }
 
         private void panel6_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace J_Explore
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LoginForm login = new LoginForm();
+            LoginForm login = new LoginForm(this);
             login.ShowDialog();
         }
     }

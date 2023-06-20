@@ -313,3 +313,10 @@ INSERT INTO kuliner(
           (168, 'Energen', 5000,2),
           (169, 'Kopi Lanang', 7000,2),
           (170, 'Robusta Gunung Ijen', 5000,2);
+
+create table rembangan (
+	id_definisi_rembangan serial primary key,
+	definisi_rembangan text
+);
+
+insert into rembangan(definisi_rembangan) values ('Rembangan terletak kurang lebih 12 kilometer (7,5 mi) di sebelah utara kota Jember, tepatnya di kaki Gunung Argopuro. Tempat ini berdiri di lahan seluas 1.345 hektare (3.320 ekar) di ketinggian 650 meter (2.130 ft) di atas permukaan laut. Suhu rata-ratanya berkisar antara 18 °C (64 °F) dan 25 °C (77 °F). Secara administratif, Rembangan adalah bagian dari Desa Kemuning Lor, Kecamatan Arjasa, Jember, Jawa Timur. Di Rembangan terdapat hotel yang dibangun pada masa kolonial Belanda. Rembangan terletak kurang lebih 12 kilometer (7,5 mi) di sebelah utara kota Jember, tepatnya di kaki Gunung Argopuro. Tempat ini berdiri di lahan seluas 1.345 hektare (3.320 ekar) di ketinggian 650 meter (2.130 ft) di atas permukaan laut. Suhu rata-ratanya berkisar antara 18 °C (64 °F) dan 25 °C (77 °F). Secara administratif, Rembangan adalah bagian dari Desa Kemuning Lor, Kecamatan Arjasa, Jember, Jawa Timur. Di Rembangan terdapat hotel yang dibangun pada masa kolonial Belanda.');

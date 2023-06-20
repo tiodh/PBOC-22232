@@ -1,4 +1,5 @@
 ﻿using J_Explore.Lib;
+using J_Explore.Utils;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace J_Explore.Fitur
 {
     public partial class Beranda : Form
     {
-        private string connString = "Server=localhost; Port=5432; User Id=postgres; Password=123; Database=postgres";
+        private string connString = $"Server={Global.DbHost}; Port={Global.DbPort}; User Id={Global.DbUsername}; Password={Global.DbPassword}; Database={Global.DbName}";
         private NpgsqlConnection conn;
         private NpgsqlCommand cmd;
         private DataTable dt;

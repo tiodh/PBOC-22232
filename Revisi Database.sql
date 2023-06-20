@@ -105,7 +105,7 @@ INSERT INTO jenis_fasilitas(id_jenis_fasilitas, nama_jenis_fasilitas, deskripsi_
 
 CREATE TABLE IF NOT EXISTS fasilitas (id_fasilitas SERIAL PRIMARY KEY,nama_fasilitas VARCHAR(255) NOT NULL,
   jumlah_fasilitas INT NOT NULL,
-	harga_fasilitas VARCHAR(255) NOT NULL,
+	harga_fasilitas INT NOT NULL,
 	jam_operational VARCHAR(255) NOT NULL,
 	deskripsi_fasilitas VARCHAR(255)DEFAULT NULL,
   id_jenis_fasilitas INT NOT NULL,

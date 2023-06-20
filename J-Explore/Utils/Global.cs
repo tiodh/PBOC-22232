@@ -74,6 +74,27 @@ namespace J_Explore.Utils
             }
         }
 
+        public static string TranslateDayOfWeek(decimal dayOfWeek)
+        {
+            switch (dayOfWeek)
+            {
+                case 1:
+                    return "Senin";
+                case 2:
+                    return "Selasa";
+                case 3:
+                    return "Rabu";
+                case 4:
+                    return "Kamis";
+                case 5:
+                    return "Jum'at";
+                case 6:
+                    return "Sabtu";
+                default:
+                    return "Minggu";
+            }
+        }
+
         public static string TranslateMonth(int month)
         {
             switch (month)

@@ -1,4 +1,6 @@
 ﻿using J_Explore.Services;
+using J_Explore.Utils;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,10 @@ namespace J_Explore
 {
     public partial class pendataan : Form
     {
+        private string connString = $"Host={Global.DbHost};Port={Global.DbPort};Database={Global.DbName};Username={Global.DbUsername};Password={Global.DbPassword}";
+        private NpgsqlConnection conn;
+        private DataTable dt;
+        private NpgsqlCommand cmd;
         public pendataan()
         {
             InitializeComponent();
@@ -52,7 +58,24 @@ namespace J_Explore
 
         private void pendataan_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connString);
+        }
 
+        private void pendataanBulan_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string sql = @"SELECT EXTRACT(MONTH FROM tanggal_transaksi) AS bulan, COUNT(*) AS jumlah_pengunjung FROM transaksi WHERE EXTRACT(MONTH FROM tanggal_transaksi) = '" + textBox3.Text + "' GROUP BY bulan ORDER BY bulan;";
+            cmd = new NpgsqlCommand(sql, conn);
+            dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
+            conn.Close();
+            pendataanBulan.DataSource = dt;
+            MessageBox.Show("Data berhasil ditampilkan!");
         }
     }
 }

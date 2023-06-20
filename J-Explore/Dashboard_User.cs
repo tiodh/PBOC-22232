@@ -127,5 +127,10 @@ namespace J_Explore
             LoginForm login = new LoginForm(this);
             login.ShowDialog();
         }
+
+        private void Dashboard_User_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,7 +37,7 @@ namespace J_Explore.Models
         public Dictionary<string, dynamic> ToDictionary() => new Dictionary<string, dynamic>
         {
             {Global.ColumnTransaksiUsernameAdmin, Admin.Username},
-            {Global.ColumnTransaksiTanggalTransaksi, Tanggal},
+            {Global.ColumnTransaksiTanggalTransaksi, Tanggal.ToString("yyyy-MM-dd HH:mm:ss")},
             {Global.ColumnTransaksiNamaPengunjung, NamaPengunjung},
             {Global.ColumnTransaksiAsalPengunjung, AsalPengunjung}
         };

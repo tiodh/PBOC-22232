@@ -30,9 +30,7 @@
         {
             panel1 = new Panel();
             button1 = new Button();
-            passwordInput = new RichTextBox();
             usernameInput = new RichTextBox();
-            label2 = new Label();
             label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -40,9 +38,7 @@
             // panel1
             // 
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(passwordInput);
             panel1.Controls.Add(usernameInput);
-            panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
@@ -54,22 +50,13 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(179, 64, 69);
-            button1.Location = new Point(157, 145);
+            button1.Location = new Point(157, 86);
             button1.Name = "button1";
             button1.Size = new Size(577, 48);
             button1.TabIndex = 4;
             button1.Text = "Hapus Akun";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // passwordInput
-            // 
-            passwordInput.Location = new Point(157, 91);
-            passwordInput.Multiline = false;
-            passwordInput.Name = "passwordInput";
-            passwordInput.Size = new Size(577, 39);
-            passwordInput.TabIndex = 3;
-            passwordInput.Text = "";
             // 
             // usernameInput
             // 
@@ -79,18 +66,6 @@
             usernameInput.Size = new Size(577, 39);
             usernameInput.TabIndex = 2;
             usernameInput.Text = "";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(33, 93);
-            label2.Name = "label2";
-            label2.Size = new Size(117, 28);
-            label2.TabIndex = 1;
-            label2.Text = "Password   : ";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -119,10 +94,8 @@
         #endregion
 
         private Panel panel1;
-        private Label label2;
         private Label label1;
         private Button button1;
-        private RichTextBox passwordInput;
         private RichTextBox usernameInput;
     }
 }

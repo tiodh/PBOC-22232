@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using J_Explore.Utils;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace J_Explore
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connString = "Server=localhost;Port=5432;User Id=postgres;Password=Rizal020304;Database=pbo;";
+            string connString = $"Server={Global.DbHost};Port={Global.DbPort};User Id={Global.DbUsername};Password={Global.DbPassword};Database={Global.DbName}";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(connString))
             {
@@ -29,10 +30,10 @@ namespace J_Explore
                     conn.Open();
 
                     int id = Convert.ToInt32(textBox1.Text);
-                    string username = textBox1.Text;
-                    string password = textBox2.Text;
-                    string email = textBox3.Text;
-                    string phoneNumber = textBox4.Text;
+                    string username = textBox2.Text;
+                    string password = textBox3.Text;
+                    string email = textBox4.Text;
+                    string phoneNumber = textBox5.Text;
 
                     string query = "INSERT INTO akun_admin (id_akun_admin,username, password, email, no_hp) " +
                                    "VALUES (@id, @username, @password, @email, @no_hp)";

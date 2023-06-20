@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using J_Explore.Utils;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,9 +37,8 @@ namespace J_Explore
         private void hapusDataAkun()
         {
             string username = usernameInput.Text;
-            string password = passwordInput.Text;
 
-            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=Rizal020304;Database=pbo"))
+            using (NpgsqlConnection connection = new NpgsqlConnection($"Server={Global.DbHost};Port={Global.DbPort};User Id={Global.DbUsername};Password={Global.DbPassword};Database={Global.DbName}"))
             {
                 connection.Open();
 
@@ -56,7 +56,6 @@ namespace J_Explore
                     {
                         MessageBox.Show("Akun admin berhasil dihapus.");
                         usernameInput.Text = "";
-                        passwordInput.Text= "";
                     }
                     else
                     {

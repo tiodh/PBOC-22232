@@ -1,6 +1,8 @@
 ﻿using J_Explore;
 using J_Explore.Services;
+using J_Explore.Utils;
 using Npgsql;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +17,7 @@ namespace penjualan_laptop.lib.dataProduct
 {
     public partial class LoginForm : Form
     {
-        NpgsqlConnection conn = new NpgsqlConnection($"Host=localhost;Port=5432;Username=postgres;Password=Rizal020304;Database=pbo;");
+        NpgsqlConnection connTol = new NpgsqlConnection($"Server={Global.DbHost};Port={Global.DbPort};User Id={Global.DbUsername};Password={Global.DbPassword};Database={Global.DbName}");
         public LoginForm(Dashboard_User dashboard)
         {
             InitializeComponent();
@@ -27,8 +29,9 @@ namespace penjualan_laptop.lib.dataProduct
             string inputPassword = password.Text;
             try
             {
-                String query = $"select * from akun_admin where username = '{username.Text}' and password = '{password.Text}'";
-                NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, conn);
+                connTol.Open();
+                string query = $"select * from akun_admin where username = '{username.Text}' and password = '{password.Text}'";
+                NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, connTol);
 
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -37,9 +40,11 @@ namespace penjualan_laptop.lib.dataProduct
                 {
                     inputUsername = username.Text;
                     inputPassword = password.Text;
-                    this.Hide();
+
+                    
                     Dashboard_Admin dashboard_Admin = new Dashboard_Admin();
                     dashboard_Admin.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -56,7 +61,7 @@ namespace penjualan_laptop.lib.dataProduct
             }
             finally
             {
-                conn.Close();
+                connTol.Close();
             }
 
         }

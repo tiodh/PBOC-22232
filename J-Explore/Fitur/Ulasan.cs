@@ -18,5 +18,6 @@ namespace J_Explore.Fitur
             InitializeComponent();
         }
 
+
     }
 }

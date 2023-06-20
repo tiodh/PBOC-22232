@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS transaksi (
   tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
   nama_pengunjung varchar(255),
   asal_pengunjung varchar(255),
-  foreign key (username_admin) references admin (username)
+  foreign key (username_admin) references akun_admin (username)
 );
 
 INSERT INTO transaksi VALUES
@@ -24,7 +24,7 @@ INSERT INTO transaksi VALUES
 (DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
 (DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
 (DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
-(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
+(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL);
 
 CREATE TABLE jenis_pengunjung (
   id_jenis_pengunjung SERIAL PRIMARY KEY,
@@ -105,7 +105,7 @@ INSERT INTO jenis_fasilitas(id_jenis_fasilitas, nama_jenis_fasilitas, deskripsi_
 
 CREATE TABLE IF NOT EXISTS fasilitas (id_fasilitas SERIAL PRIMARY KEY,nama_fasilitas VARCHAR(255) NOT NULL,
   jumlah_fasilitas INT NOT NULL,
-	harga_fasilitas INT NOT NULL,
+	harga_fasilitas VARCHAR(255) NOT NULL,
 	jam_operational VARCHAR(255) NOT NULL,
 	deskripsi_fasilitas VARCHAR(255)DEFAULT NULL,
   id_jenis_fasilitas INT NOT NULL,

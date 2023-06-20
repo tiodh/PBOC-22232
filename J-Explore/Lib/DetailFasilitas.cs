@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using J_Explore.Fitur;
+using J_Explore.Lib;
 
 namespace J_Explore.Lib
 {

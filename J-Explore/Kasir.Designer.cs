@@ -85,6 +85,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(903, 52);
             textBox2.TabIndex = 12;
+            textBox2.KeyDown += OnTextBoxNamaKeyDown;
             // 
             // textBox3
             // 
@@ -95,6 +96,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(903, 52);
             textBox3.TabIndex = 13;
+            textBox3.KeyDown += OnTextBoxAsalKeyDown;
             // 
             // textBox4
             // 
@@ -106,7 +108,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(903, 52);
             textBox4.TabIndex = 22;
-            textBox4.TextChanged += textBox4_TextChanged;
+            textBox4.KeyDown += OnTextBoxNominalKeyDown;
             // 
             // label6
             // 
@@ -118,7 +120,6 @@
             label6.Size = new Size(146, 46);
             label6.TabIndex = 16;
             label6.Text = "Nominal";
-            label6.Click += label6_Click;
             // 
             // button2
             // 
@@ -156,7 +157,9 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(903, 52);
             textBox6.TabIndex = 28;
-            textBox6.KeyPress += OnJumlahAnakAnakKeyPressed;
+            textBox6.TextChanged += OnTextBoxJumlahAnakAnakTextChanged;
+            textBox6.KeyDown += OnTextBoxJumlahAnakKeyDown;
+            textBox6.KeyPress += OnTextBoxJumlahAnakAnakKeyPressed;
             // 
             // textBox7
             // 
@@ -167,7 +170,9 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(903, 52);
             textBox7.TabIndex = 29;
-            textBox7.KeyPress += OnJumlahDewasaKeyPressed;
+            textBox7.TextChanged += OnTextBoxJumlahDewasaTextChanged;
+            textBox7.KeyDown += OnTextBoxJumlahDewasaKeyDown;
+            textBox7.KeyPress += OnTextBoxJumlahDewasaKeyPressed;
             // 
             // Kasir
             // 
@@ -188,7 +193,6 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Kasir";
             Text = "Kasir";
-            Load += Kasir_Load;
             ResumeLayout(false);
             PerformLayout();
         }

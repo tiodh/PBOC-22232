@@ -165,5 +165,10 @@ namespace J_Explore
         {
             //tableLayoutPanel1.BackColor = Color.FromArgb(63, 130, 109);
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new HapusDataAdmin(), "HAPUS DATA ADMIN");
+        }
     }
 }

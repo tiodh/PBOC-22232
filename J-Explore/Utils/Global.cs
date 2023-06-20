@@ -10,7 +10,7 @@ namespace J_Explore.Utils
 {
     public static class Global
     {
-        public const string TableAkunAdmin = "admin";
+        public const string TableAdmin = "admin";
         public const string ColumnAdminUsername = "username";
         public const string ColumnAdminPassword = "password";
 

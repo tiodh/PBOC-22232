@@ -71,7 +71,12 @@ INSERT INTO jenis_fasilitas(id_jenis_fasilitas, nama_jenis_fasilitas, deskripsi_
 		   (3, 'Music corner', 'Merupakan fasilitas baru yang menawarkan pengalaman hiburan musik. Pada hari kerja disediakan fasilitas untuk karaoke dan pada akhir pekan akan ada penampilan live music untuk menghibur para pengunjung'),
 		   (4, 'Camping ground', 'Fasilitas ini disediakan untuk pengalaman camping dengan suasana alam terbuka disertai pemandangan yang menakjubkan'),
 		   (5, 'Restoran', 'Restoran ini membuat pengunjung dapat menikmati makanan yang lezat disertai pemandangan yang indah'),
-		   (6, 'Cafe', 'Tempat yang nyaman untuk pengunjung menikmati makanan ringan dengan pemandangan dari puncak yang memanjakan mata');
+		   (6, 'Cafe', 'Tempat yang nyaman untuk pengunjung menikmati makanan ringan dengan pemandangan dari puncak yang memanjakan mata'), 
+	           (7,'Suite Room', 'Tempat menginap dengan fasilitas lebih lengkap dari hotel dan pastinya lebih nyaman dan pengalaman menginap jauh lebih berkualitas untuk menkmati indahnya wisata rembangan' ),
+		   (8, 'Kantin', 'Setelah berenang pastinya energi akan terkuras dan perut juga pasti lapar, kantin adalah tempat pelipur lapar yang paling tepat, dengan 2 kantin yang menyediakan makanan dan minuman tidak lupa juga jajan - jajan untuk menemani anda saat menunggu orang tersayang anda selesai berenang'),
+		   (9, 'Play Ground', 'Play Ground dapat dinikmati oleh semua kalangan umur, fasilitas bermain yang beragam dan pastinya sangat seru dengan menikmati pemandangan rembangan yang sangat indah dan udara yang sangat sejuk'),
+		   (10, 'Aula', 'Tempat yang pas untuk mengadakan acara yang bersifat umum di puncak teratas kota Jember dengan disertai udara yang sejuk dapat membuat acara semakin meriah dan juga menyenangkan hati');
+
 
 CREATE TABLE IF NOT EXISTS nama_tempat (
     id_nama_tempat SERIAL PRIMARY KEY,
@@ -187,7 +192,11 @@ VALUES
 (11,'Aula A',1,'1.155.000','07.00-23.00',DEFAULT,2),
 (12,'Aula B',1,'Rp990.000','07.00-23.00',DEFAULT,2),
 (13,'Musik Corner',1,'Free','07-00-22.00',DEFAULT,3),
-(14,'Camping Ground',1,'50000-200000','24 Jam',DEFAULT,4);
+(14,'Camping Ground',1,'50000-200000','24 Jam',DEFAULT,4),
+(15,'Cafe Dragon Fruit',1,'Free','07.00-23.00',DEFAULT,6),
+(16, 'Restoran Rembangan',1,'Free','07.00-23.00',DEFAULT,5),
+(17, 'Kantin',1,'Free','07.00-22.00',DEFAULT,7),
+(18, 'Playground',1,'Free','24 Jam',DEFAULT,9);
 
 CREATE TABLE IF NOT EXISTS feedback_user (
     id_feedback_user SERIAL PRIMARY KEY,

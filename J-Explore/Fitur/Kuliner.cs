@@ -66,6 +66,45 @@ namespace J_Explore.Fitur
             }
         }
 
+        private void SearchData()
+        {
+            dataGridViewKuliner.Rows.Clear();
+
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    string query = $@"SELECT k.id_kuliner, nt.nama_tempat, nt.deskripsi_nama_tempat, k.nama_kuliner, k.harga_kuliner
+                                    FROM nama_tempat nt
+                                    INNER JOIN kuliner k ON nt.id_nama_tempat = k.id_nama_tempat
+                                    where nama_kuliner ilike '%{textBox1.Text}%'
+                                    ORDER BY k.id_kuliner";
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                    {
+                        using (NpgsqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                int id = reader.GetInt32(0);
+                                string namaTempat = reader.GetString(1);
+                                string deskripsiTempat = reader.GetString(2);
+                                string namaKuliner = reader.GetString(3);
+                                int hargaKuliner = reader.GetInt32(4);
+
+                                dataGridViewKuliner.Rows.Add(id, namaTempat, namaKuliner, hargaKuliner);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             int selectedRowIndex = dataGridViewKuliner.SelectedCells[0].RowIndex;
@@ -157,6 +196,11 @@ namespace J_Explore.Fitur
             }
             MessageBox.Show("Data gagal ditambahkan", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SearchData();
         }
     }
 }

@@ -49,10 +49,5 @@ namespace J_Explore
                 long JumlahWisatawanHarian = (long)row["jumlah_pengunjung"];
             }
         }
-
-        private void pendataan_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

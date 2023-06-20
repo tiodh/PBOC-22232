@@ -69,49 +69,22 @@ namespace J_Explore
                     totalDays.Add(Convert.ToInt32(row["nominal"]));
                     days.Add(dateIncome.ToString("dd MMM"));
                 }
-            }
-
-            // Deklarasikan variabel untuk menyimpan nilai total bulanan
-            Dictionary<int, int> tmp = new Dictionary<int, int>();
-            List<int> bab = new List<int> {0,0,0,0,0,0,0,0,0,0,0,0};
-            List<int> numberMont = new List<int>();
-
-            foreach (DataRow row in data.Rows)
-            {
-                DateTime dateIncome = Convert.ToDateTime(row["tanggal"]);
-                int bulan = dateIncome.Month;
-
-                if (Convert.ToDateTime(row["tanggal"]).Year == DateTime.Now.Year)
+                else
                 {
-                    if (tmp.ContainsKey(bulan))
+                    int existingIndex = month.IndexOf(dateIncome.ToString("MMM"));
+                    if (existingIndex != -1)
                     {
-                        tmp[bulan] += Convert.ToInt32(row["nominal"]);
+                        // Jika bulan sudah ada, tambahkan nilai ke bulan yang ada
+                        totalMonth[existingIndex] += Convert.ToInt32(row["nominal"]);
                     }
                     else
                     {
-                        tmp[bulan] = Convert.ToInt32(row["nominal"]);
-                    }
-                    numberMont.Add(bulan);
-                }
-            }
-
-            for(int i = 1; i <= days.Count; i++)
-            {
-                foreach (int bulan in numberMont)
-                {
-                    if (bulan == i)
-                    {
-                        totalMonth.Add(tmp[i]);
+                        // Jika bulan belum ada, tambahkan bulan dan nilai ke totalMonth
+                        totalMonth.Add(Convert.ToInt32(row["nominal"]));
+                        month.Add(dateIncome.ToString("MMM"));
                     }
                 }
             }
-
-            foreach (int bulan in totalMonth)
-            {
-                
-            }
-
-            Debug.WriteLine(totalMonth);
 
             cartDataHari.Series = new ISeries[] {
                 new ColumnSeries<int>

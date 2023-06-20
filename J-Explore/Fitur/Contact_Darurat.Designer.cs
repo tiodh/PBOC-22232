@@ -31,13 +31,13 @@
             panel1 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             DataKontakDarurat = new DataGridView();
-            panel2 = new Panel();
-            HapusButton = new Button();
             id = new DataGridViewTextBoxColumn();
             name = new DataGridViewTextBoxColumn();
             email = new DataGridViewTextBoxColumn();
             phone = new DataGridViewTextBoxColumn();
             deskripsi = new DataGridViewTextBoxColumn();
+            panel2 = new Panel();
+            HapusButton = new Button();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataKontakDarurat).BeginInit();
@@ -84,28 +84,6 @@
             DataKontakDarurat.Size = new Size(953, 726);
             DataKontakDarurat.TabIndex = 4;
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(HapusButton);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(962, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(225, 726);
-            panel2.TabIndex = 5;
-            // 
-            // HapusButton
-            // 
-            HapusButton.BackColor = Color.FromArgb(179, 64, 69);
-            HapusButton.Dock = DockStyle.Top;
-            HapusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            HapusButton.ForeColor = Color.Black;
-            HapusButton.Location = new Point(0, 0);
-            HapusButton.Name = "HapusButton";
-            HapusButton.Size = new Size(225, 44);
-            HapusButton.TabIndex = 2;
-            HapusButton.Text = "HAPUS";
-            HapusButton.UseVisualStyleBackColor = false;
-            // 
             // id
             // 
             id.HeaderText = "ID";
@@ -140,6 +118,29 @@
             deskripsi.MinimumWidth = 6;
             deskripsi.Name = "deskripsi";
             deskripsi.ReadOnly = true;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(HapusButton);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(962, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(225, 726);
+            panel2.TabIndex = 5;
+            // 
+            // HapusButton
+            // 
+            HapusButton.BackColor = Color.FromArgb(179, 64, 69);
+            HapusButton.Dock = DockStyle.Top;
+            HapusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            HapusButton.ForeColor = Color.Black;
+            HapusButton.Location = new Point(0, 0);
+            HapusButton.Name = "HapusButton";
+            HapusButton.Size = new Size(225, 44);
+            HapusButton.TabIndex = 2;
+            HapusButton.Text = "HAPUS";
+            HapusButton.UseVisualStyleBackColor = false;
+            HapusButton.Click += OnButtonHapusClick;
             // 
             // Contact_Darurat
             // 

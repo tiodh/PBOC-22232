@@ -121,7 +121,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAABYNJREFUeF7tnVmoVVUYx69DWtlghpmmBtoE9RDVSxFJD/UUDTRgYROJVlbYU2lC
+        DwAACw8BkvkDpQAABYNJREFUeF7tnVmoVVUYx69DWtlghpmmBtoE9RDVSxFJD/UUDTRgYROJVlbYU2lC
         D1FIT41WD1EEQZE0aUGDjQZREEWgERbNYaOV2UB1+/3X+Q5cbqdz1z5nr7XP3vf7wQ9Bzznf+v7Xe87Z
         a6+99pDjOI7jOI4z6AwPD0/H6/Et3IW/43t4A06zhzk5IPBz8Rv8Pz7A2fZwJxWEPBnXKvEINuNEe6pT
         NoQ7A19R0gVYYU93yoRgF6LehoqyExfayzhlQKAnYLfPi7F4CSfYyzn9QJBLUN+e+mW5vaTTK4R4Gf4d
@@ -148,6 +148,21 @@
         RK5CYII=
 </value>
   </data>
+  <metadata name="Id_layanan_darurat.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Nama_layanan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="no_telp.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Deskripsi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Id_layanan_darurat.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

@@ -41,9 +41,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(327, 28);
+            label1.Location = new Point(425, 36);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(578, 45);
+            label1.Size = new Size(767, 59);
             label1.TabIndex = 0;
             label1.Text = "HARGA TIKET WISATA REMBANGAN";
             // 
@@ -51,9 +52,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(135, 222);
+            label2.Location = new Point(176, 284);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(154, 32);
+            label2.Size = new Size(207, 45);
             label2.TabIndex = 1;
             label2.Text = "ANAK-ANAK";
             // 
@@ -61,33 +63,37 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(135, 387);
+            label3.Location = new Point(176, 495);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(110, 32);
+            label3.Size = new Size(150, 45);
             label3.TabIndex = 2;
             label3.Text = "DEWASA";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(361, 208);
+            textBox1.Location = new Point(469, 266);
+            textBox1.Margin = new Padding(4, 4, 4, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(705, 60);
+            textBox1.Size = new Size(915, 76);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(361, 369);
+            textBox2.Location = new Point(469, 472);
+            textBox2.Margin = new Padding(4, 4, 4, 4);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(705, 60);
+            textBox2.Size = new Size(915, 76);
             textBox2.TabIndex = 4;
             // 
             // button1
             // 
-            button1.Location = new Point(361, 499);
+            button1.Location = new Point(469, 639);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(157, 55);
+            button1.Size = new Size(204, 70);
             button1.TabIndex = 5;
             button1.Text = "UPDATE";
             button1.UseVisualStyleBackColor = true;
@@ -96,17 +102,18 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.FromArgb(192, 0, 0);
-            label4.Location = new Point(12, 710);
+            label4.Location = new Point(16, 909);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(222, 75);
+            label4.Size = new Size(298, 96);
             label4.TabIndex = 6;
             label4.Text = "Keterangan Usia :\r\nAnak-Anak = 1 - 12 Tahun\r\nDewasa = 13 Tahun Keatas\r\n";
             // 
             // Harga_Tiket
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1206, 794);
+            ClientSize = new Size(1568, 1016);
             Controls.Add(label4);
             Controls.Add(button1);
             Controls.Add(textBox2);
@@ -114,8 +121,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Harga_Tiket";
             Text = "Harga_Tiket";
+            Load += Harga_Tiket_Load;
             ResumeLayout(false);
             PerformLayout();
         }

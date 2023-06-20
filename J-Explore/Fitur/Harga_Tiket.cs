@@ -16,5 +16,10 @@ namespace J_Explore.Fitur
         {
             InitializeComponent();
         }
+
+        private void Harga_Tiket_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

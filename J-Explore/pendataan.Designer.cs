@@ -265,7 +265,6 @@
             Margin = new Padding(2, 1, 2, 1);
             Name = "pendataan";
             Text = "PENDATAAN";
-            Load += pendataan_Load;
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanMinggu).EndInit();
             ((System.ComponentModel.ISupportInitialize)pendataanHari).EndInit();

@@ -29,6 +29,7 @@ namespace J_Explore.Fitur
 
         private void LoadKulinerData()
         {
+            dataGridViewKuliner.Rows.Clear();
 
             try
             {
@@ -88,6 +89,39 @@ namespace J_Explore.Fitur
             MessageBox.Show("Data berhasil diperbarui.");
 
             LoadKulinerData();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DeleteData();
+            LoadKulinerData();
+        }
+
+        public void DeleteData()
+        {
+            string connString = $"Server={Global.DbHost};Port={Global.DbPort};Database={Global.DbName};User Id={Global.DbUsername};Password={Global.DbPassword};";
+            int selectedRowIndex = dataGridViewKuliner.SelectedCells[0].RowIndex;
+            int idKuliner = Convert.ToInt32(dataGridViewKuliner.Rows[selectedRowIndex].Cells[0].Value);
+            Console.WriteLine("INDEX" + selectedRowIndex);
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connString))
+                {
+                    connection.Open();
+
+                    string deleteQuery = "DELETE FROM kuliner WHERE id_kuliner = @id;";
+                    using (NpgsqlCommand command = new NpgsqlCommand(deleteQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", idKuliner);
+                        int rowsAffected = command.ExecuteNonQuery();
+                        Console.WriteLine("Jumlah baris terpengaruh: " + rowsAffected);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 }

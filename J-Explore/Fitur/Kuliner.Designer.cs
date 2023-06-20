@@ -31,13 +31,13 @@
             textBox1 = new TextBox();
             button1 = new Button();
             dataGridViewKuliner = new DataGridView();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             ColumnId = new DataGridViewTextBoxColumn();
             ColumnNamaTempat = new DataGridViewTextBoxColumn();
             ColumnNamaMakanan = new DataGridViewTextBoxColumn();
             ColumnHarga = new DataGridViewTextBoxColumn();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewKuliner).BeginInit();
             SuspendLayout();
             // 
@@ -76,6 +76,30 @@
             dataGridViewKuliner.Size = new Size(646, 358);
             dataGridViewKuliner.TabIndex = 2;
             // 
+            // ColumnId
+            // 
+            ColumnId.HeaderText = "Id";
+            ColumnId.MinimumWidth = 6;
+            ColumnId.Name = "ColumnId";
+            // 
+            // ColumnNamaTempat
+            // 
+            ColumnNamaTempat.HeaderText = "Nama Tempat";
+            ColumnNamaTempat.MinimumWidth = 6;
+            ColumnNamaTempat.Name = "ColumnNamaTempat";
+            // 
+            // ColumnNamaMakanan
+            // 
+            ColumnNamaMakanan.HeaderText = "Nama Makanan";
+            ColumnNamaMakanan.MinimumWidth = 6;
+            ColumnNamaMakanan.Name = "ColumnNamaMakanan";
+            // 
+            // ColumnHarga
+            // 
+            ColumnHarga.HeaderText = "Harga";
+            ColumnHarga.MinimumWidth = 6;
+            ColumnHarga.Name = "ColumnHarga";
+            // 
             // button2
             // 
             button2.Location = new Point(382, 36);
@@ -106,30 +130,7 @@
             button4.TabIndex = 5;
             button4.Text = "Delete";
             button4.UseVisualStyleBackColor = true;
-            // 
-            // ColumnId
-            // 
-            ColumnId.HeaderText = "Id";
-            ColumnId.MinimumWidth = 6;
-            ColumnId.Name = "ColumnId";
-            // 
-            // ColumnNamaTempat
-            // 
-            ColumnNamaTempat.HeaderText = "Nama Tempat";
-            ColumnNamaTempat.MinimumWidth = 6;
-            ColumnNamaTempat.Name = "ColumnNamaTempat";
-            // 
-            // ColumnNamaMakanan
-            // 
-            ColumnNamaMakanan.HeaderText = "Nama Makanan";
-            ColumnNamaMakanan.MinimumWidth = 6;
-            ColumnNamaMakanan.Name = "ColumnNamaMakanan";
-            // 
-            // ColumnHarga
-            // 
-            ColumnHarga.HeaderText = "Harga";
-            ColumnHarga.MinimumWidth = 6;
-            ColumnHarga.Name = "ColumnHarga";
+            button4.Click += button4_Click;
             // 
             // Kuliner
             // 

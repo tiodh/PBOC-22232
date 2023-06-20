@@ -512,7 +512,6 @@
             panel5.Size = new Size(250, 54);
             panel5.TabIndex = 1;
             panel5.Click += panel5_Click;
-            panel5.Paint += panel5_Paint;
             // 
             // label2
             // 

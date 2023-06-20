@@ -38,7 +38,8 @@ namespace J_Explore.Fitur
 
                     string query = @"SELECT k.id_kuliner, nt.nama_tempat, nt.deskripsi_nama_tempat, k.nama_kuliner, k.harga_kuliner
                                     FROM nama_tempat nt
-                                    INNER JOIN kuliner k ON nt.id_nama_tempat = k.id_nama_tempat";
+                                    INNER JOIN kuliner k ON nt.id_nama_tempat = k.id_nama_tempat
+                                    ORDER BY k.id_kuliner";
                     using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
                     {
                         using (NpgsqlDataReader reader = command.ExecuteReader())

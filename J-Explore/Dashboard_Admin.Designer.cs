@@ -63,6 +63,10 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+            tableLayoutPanel8 = new TableLayoutPanel();
+            pictureBox8 = new PictureBox();
+            panel12 = new Panel();
+            label8 = new Label();
             panel2.SuspendLayout();
             panel11.SuspendLayout();
             panel1.SuspendLayout();
@@ -87,6 +91,9 @@
             tableLayoutPanel1.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel12.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -99,7 +106,7 @@
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.MinimumSize = new Size(1183, 808);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1232, 808);
+            panel2.Size = new Size(1691, 833);
             panel2.TabIndex = 1;
             // 
             // showPanel
@@ -107,7 +114,7 @@
             showPanel.Dock = DockStyle.Fill;
             showPanel.Location = new Point(373, 136);
             showPanel.Name = "showPanel";
-            showPanel.Size = new Size(859, 672);
+            showPanel.Size = new Size(1318, 697);
             showPanel.TabIndex = 2;
             // 
             // panel11
@@ -117,7 +124,7 @@
             panel11.Dock = DockStyle.Top;
             panel11.Location = new Point(373, 0);
             panel11.Name = "panel11";
-            panel11.Size = new Size(859, 136);
+            panel11.Size = new Size(1318, 136);
             panel11.TabIndex = 1;
             // 
             // tittlePageAdmin
@@ -126,7 +133,7 @@
             tittlePageAdmin.AutoSize = true;
             tittlePageAdmin.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             tittlePageAdmin.ForeColor = Color.White;
-            tittlePageAdmin.Location = new Point(392, 41);
+            tittlePageAdmin.Location = new Point(622, 41);
             tittlePageAdmin.Name = "tittlePageAdmin";
             tittlePageAdmin.Size = new Size(98, 38);
             tittlePageAdmin.TabIndex = 1;
@@ -135,6 +142,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(63, 130, 109);
+            panel1.Controls.Add(tableLayoutPanel8);
             panel1.Controls.Add(tableLayoutPanel7);
             panel1.Controls.Add(tableLayoutPanel6);
             panel1.Controls.Add(tableLayoutPanel5);
@@ -147,7 +155,7 @@
             panel1.ForeColor = Color.FromArgb(63, 130, 109);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(373, 808);
+            panel1.Size = new Size(373, 833);
             panel1.TabIndex = 0;
             // 
             // tableLayoutPanel7
@@ -505,11 +513,58 @@
             panel3.Size = new Size(373, 136);
             panel3.TabIndex = 0;
             // 
+            // tableLayoutPanel8
+            // 
+            tableLayoutPanel8.ColumnCount = 2;
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.4900665F));
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.50993F));
+            tableLayoutPanel8.Controls.Add(pictureBox8, 0, 0);
+            tableLayoutPanel8.Controls.Add(panel12, 1, 0);
+            tableLayoutPanel8.Dock = DockStyle.Top;
+            tableLayoutPanel8.Location = new Point(0, 633);
+            tableLayoutPanel8.Name = "tableLayoutPanel8";
+            tableLayoutPanel8.RowCount = 1;
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel8.Size = new Size(373, 71);
+            tableLayoutPanel8.TabIndex = 8;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Dock = DockStyle.Fill;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(3, 3);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(92, 65);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 2;
+            pictureBox8.TabStop = false;
+            // 
+            // panel12
+            // 
+            panel12.Controls.Add(label8);
+            panel12.Dock = DockStyle.Fill;
+            panel12.Location = new Point(101, 3);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(269, 65);
+            panel12.TabIndex = 0;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(19, 17);
+            label8.Name = "label8";
+            label8.Size = new Size(217, 28);
+            label8.TabIndex = 1;
+            label8.Text = "HAPUS AKUN ADMIN";
+            label8.Click += label8_Click;
+            // 
             // Dashboard_Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1232, 676);
+            ClientSize = new Size(1691, 833);
             Controls.Add(panel2);
             ForeColor = Color.White;
             Margin = new Padding(3, 4, 3, 4);
@@ -548,6 +603,10 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            tableLayoutPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -586,5 +645,9 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Label tittlePageAdmin;
+        private TableLayoutPanel tableLayoutPanel8;
+        private PictureBox pictureBox8;
+        private Panel panel12;
+        private Label label8;
     }
 }

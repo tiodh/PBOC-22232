@@ -28,20 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             pendataanBulan = new DataGridView();
             pendataanMinggu = new DataGridView();
-            pendataanHari = new DataGridView();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            tb_pendataanHari = new TextBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             textBox2 = new TextBox();
-            button4 = new Button();
+            searchDataharian = new Button();
             textBox3 = new TextBox();
             button5 = new Button();
+            pendataanHari = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pendataanBulan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pendataanMinggu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pendataanHari).BeginInit();
@@ -70,21 +74,6 @@
             pendataanMinggu.RowTemplate.Height = 33;
             pendataanMinggu.Size = new Size(479, 199);
             pendataanMinggu.TabIndex = 13;
-            // 
-            // pendataanHari
-            // 
-            pendataanHari.AllowUserToAddRows = false;
-            pendataanHari.AllowUserToDeleteRows = false;
-            pendataanHari.BackgroundColor = Color.White;
-            pendataanHari.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendataanHari.Location = new Point(34, 97);
-            pendataanHari.Margin = new Padding(2);
-            pendataanHari.Name = "pendataanHari";
-            pendataanHari.ReadOnly = true;
-            pendataanHari.RowHeadersWidth = 62;
-            pendataanHari.RowTemplate.Height = 33;
-            pendataanHari.Size = new Size(471, 199);
-            pendataanHari.TabIndex = 12;
             // 
             // label3
             // 
@@ -122,15 +111,16 @@
             label1.TabIndex = 21;
             label1.Text = "HARI INI";
             // 
-            // textBox1
+            // tb_pendataanHari
             // 
-            textBox1.Location = new Point(34, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(185, 27);
-            textBox1.TabIndex = 24;
+            tb_pendataanHari.Location = new Point(34, 45);
+            tb_pendataanHari.Name = "tb_pendataanHari";
+            tb_pendataanHari.Size = new Size(185, 27);
+            tb_pendataanHari.TabIndex = 24;
             // 
             // button1
             // 
+            button1.ForeColor = Color.Black;
             button1.Location = new Point(1021, 44);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
@@ -140,6 +130,7 @@
             // 
             // button2
             // 
+            button2.ForeColor = Color.Black;
             button2.Location = new Point(331, 45);
             button2.Name = "button2";
             button2.Size = new Size(75, 29);
@@ -149,6 +140,7 @@
             // 
             // button3
             // 
+            button3.ForeColor = Color.Black;
             button3.Location = new Point(421, 45);
             button3.Name = "button3";
             button3.Size = new Size(84, 29);
@@ -163,14 +155,16 @@
             textBox2.Size = new Size(360, 27);
             textBox2.TabIndex = 28;
             // 
-            // button4
+            // searchDataharian
             // 
-            button4.Location = new Point(231, 47);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 29;
-            button4.Text = "Cari";
-            button4.UseVisualStyleBackColor = true;
+            searchDataharian.ForeColor = Color.Black;
+            searchDataharian.Location = new Point(231, 47);
+            searchDataharian.Name = "searchDataharian";
+            searchDataharian.Size = new Size(94, 29);
+            searchDataharian.TabIndex = 29;
+            searchDataharian.Text = "Cari";
+            searchDataharian.UseVisualStyleBackColor = true;
+            searchDataharian.Click += searchDataharian_Click;
             // 
             // textBox3
             // 
@@ -181,6 +175,7 @@
             // 
             // button5
             // 
+            button5.ForeColor = Color.Black;
             button5.Location = new Point(990, 363);
             button5.Name = "button5";
             button5.Size = new Size(125, 29);
@@ -188,25 +183,69 @@
             button5.Text = "Cari";
             button5.UseVisualStyleBackColor = true;
             // 
+            // pendataanHari
+            // 
+            pendataanHari.AllowUserToAddRows = false;
+            pendataanHari.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            pendataanHari.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            pendataanHari.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            pendataanHari.BackgroundColor = Color.White;
+            pendataanHari.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            pendataanHari.DefaultCellStyle = dataGridViewCellStyle2;
+            pendataanHari.EnableHeadersVisualStyles = false;
+            pendataanHari.GridColor = Color.Black;
+            pendataanHari.Location = new Point(34, 107);
+            pendataanHari.Name = "pendataanHari";
+            pendataanHari.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            pendataanHari.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            pendataanHari.RowHeadersVisible = false;
+            pendataanHari.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            pendataanHari.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            pendataanHari.RowTemplate.Height = 29;
+            pendataanHari.Size = new Size(471, 189);
+            pendataanHari.TabIndex = 32;
+            // 
             // pendataan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1149, 627);
+            Controls.Add(pendataanHari);
             Controls.Add(button5);
             Controls.Add(textBox3);
-            Controls.Add(button4);
+            Controls.Add(searchDataharian);
             Controls.Add(textBox2);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(tb_pendataanHari);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pendataanBulan);
             Controls.Add(pendataanMinggu);
-            Controls.Add(pendataanHari);
             Margin = new Padding(2);
             Name = "pendataan";
             Text = "PENDATAAN";
@@ -220,17 +259,17 @@
         #endregion
         private DataGridView pendataanBulan;
         private DataGridView pendataanMinggu;
-        private DataGridView pendataanHari;
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox tb_pendataanHari;
         private Button button1;
         private Button button2;
         private Button button3;
         private TextBox textBox2;
-        private Button button4;
+        private Button searchDataharian;
         private TextBox textBox3;
         private Button button5;
+        private DataGridView pendataanHari;
     }
 }

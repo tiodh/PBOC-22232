@@ -1,18 +1,30 @@
-CREATE TABLE admin (
+CREATE TABLE IF NOT EXISTS akun_admin (
   username varchar(255) PRIMARY KEY,
   password varchar(255) NOT NULL
 );
 
-INSERT INTO admin VALUES ('admin', 'admin123');
+INSERT INTO akun_admin 
+VALUES 
+('admin', 'admin123'),
+('yudha', 'yudha123'),
+('zaidan', 'zaidan123'),
+('wildan', 'wildan123');
 
-CREATE TABLE transaksi (
+CREATE TABLE IF NOT EXISTS transaksi (
   id_transaksi SERIAL PRIMARY KEY,
   username_admin varchar(255) NOT NULL,
   tanggal_transaksi TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
   nama_pengunjung varchar(255),
   asal_pengunjung varchar(255),
-  foreign key (username_admin) references admin (username)
+  foreign key (username_admin) references akun_admin (username)
 );
+
+INSERT INTO transaksi VALUES
+(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
+(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
+(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
+(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL),
+(DEFAULT, 'zaidan', '2023-06-10 07:44:00', NULL, NULL);
 
 CREATE TABLE jenis_pengunjung (
   id_jenis_pengunjung SERIAL PRIMARY KEY,
@@ -314,7 +326,7 @@ INSERT INTO kuliner(
           (169, 'Kopi Lanang', 7000,2),
           (170, 'Robusta Gunung Ijen', 5000,2);
 
-create table rembangan (
+CREATE TABLE IF NOT EXISTS rembangan (
 	id_definisi_rembangan serial primary key,
 	definisi_rembangan text
 );

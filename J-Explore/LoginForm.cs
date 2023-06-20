@@ -17,7 +17,7 @@ namespace penjualan_laptop.lib.dataProduct
 {
     public partial class LoginForm : Form
     {
-        NpgsqlConnection connTol = new NpgsqlConnection($"Server={Global.DbHost};Port={Global.DbPort};User Id={Global.DbUsername};Password={Global.DbPassword};Database={Global.DbName}");
+        NpgsqlConnection conn = new NpgsqlConnection($"Server={Global.DbHost};Port={Global.DbPort};User Id={Global.DbUsername};Password={Global.DbPassword};Database={Global.DbName}");
         public LoginForm(Dashboard_User dashboard)
         {
             InitializeComponent();
@@ -29,9 +29,9 @@ namespace penjualan_laptop.lib.dataProduct
             string inputPassword = password.Text;
             try
             {
-                connTol.Open();
+                conn.Open();
                 string query = $"select * from akun_admin where username = '{username.Text}' and password = '{password.Text}'";
-                NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, connTol);
+                NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, conn);
 
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -61,7 +61,7 @@ namespace penjualan_laptop.lib.dataProduct
             }
             finally
             {
-                connTol.Close();
+                conn.Close();
             }
 
         }

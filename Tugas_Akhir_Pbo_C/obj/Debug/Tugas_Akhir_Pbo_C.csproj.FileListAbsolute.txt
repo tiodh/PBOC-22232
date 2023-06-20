@@ -354,6 +354,7 @@ E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\
 E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CopyComplete
 E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+<<<<<<< Updated upstream
 C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.AssemblyReference.cache
 C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.SuggestedBindingRedirects.cache
 C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.Form1.resources
@@ -383,3 +384,5 @@ C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas
 C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.csproj.CoreCompileInputs.cache
 C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.exe
 C:\Kuliah\Semester 2\PBO Projects\5\PBOC-22232\Tugas_Akhir_Pbo_C\obj\Debug\Tugas_Akhir_Pbo_C.pdb
+=======
+>>>>>>> Stashed changes

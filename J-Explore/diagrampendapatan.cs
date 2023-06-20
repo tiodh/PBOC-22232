@@ -1,5 +1,9 @@
-﻿using System;
+﻿using J_Explore.Services;
+using LiveChartsCore.SkiaSharpView;
+using LiveChartsCore;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -7,6 +11,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml.Style.Dxf;
+using System.Diagnostics.Eventing.Reader;
+using System.Windows.Forms.VisualStyles;
+using System.Diagnostics;
 
 namespace J_Explore
 {
@@ -15,6 +23,7 @@ namespace J_Explore
         public diagrampendapatan()
         {
             InitializeComponent();
+            readDaysIncome();
         }
 
         private void diagrampendapatan_Load(object sender, EventArgs e)

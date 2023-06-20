@@ -14,4 +14,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Read_Pendataan_Wisatawan_Mingguan
+<<<<<<< Updated upstream
 build_property.ProjectDir = D:\INFORMATIKA\SEMESTER 2\PBO\tugas akhir\PBOC-22232\Read_Pendataan_Wisatawan_Mingguan\Read_Pendataan_Wisatawan_Mingguan\
+=======
+build_property.ProjectDir = E:\Kuliah\Semester 2\Pemrograman Berorientasi Objek (PBO)\Revisi FIX\PBOC-22232\Read_Pendataan_Wisatawan_Mingguan\Read_Pendataan_Wisatawan_Mingguan\
+>>>>>>> Stashed changes

@@ -10,12 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using J_Explore.Utils;
 
 namespace J_Explore.Lib
 {
     public partial class FasilitasUser : Form
     {
-        private string connString = "Server=localhost; Port=5432; User Id=postgres; Password=123; Database=postgres";
+        private string connString = $"Server={Global.DbHost}; Port={Global.DbPort}; User Id={Global.DbUsername}; Password={Global.DbPassword}; Database={Global.DbName}";
         private NpgsqlConnection conn;
         private NpgsqlCommand cmd;
         Form activeForm;

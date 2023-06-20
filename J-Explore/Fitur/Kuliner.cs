@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using J_Explore.Utils;
 using Npgsql;
+using J_Explore.Services;
 
 namespace J_Explore.Fitur
 {
@@ -123,6 +124,39 @@ namespace J_Explore.Fitur
             {
                 Console.WriteLine("Error: " + ex.Message);
             }
+        }
+
+        private void OnButtonCreateClick(object sender, EventArgs e)
+        {
+            DataTable namaTempat = DbHelper.GetInstance().ExecuteQuery($"SELECT id_nama_tempat FROM nama_tempat WHERE nama_tempat = '{textBoxNamaTempat.Text.Trim()}'");
+
+            if (namaTempat.Rows.Count < 1)
+            {
+                MessageBox.Show("Nama tempat tidak ditemukan!", "Gagal menambahkan kuliner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int lastIdKuliner = (int)DbHelper.GetInstance().ExecuteQuery("SELECT id_kuliner FROM kuliner ORDER BY id_kuliner DESC LIMIT 1").Rows[0][0];
+
+            int affectedRows = DbHelper.GetInstance().Create("kuliner", new Dictionary<string, dynamic>
+            {
+                {"id_kuliner", ++lastIdKuliner},
+                {"nama_kuliner", textBoxNamaMakanan.Text.Trim()},
+                {"harga_kuliner", textBoxHarga.Text.Trim()},
+                {"id_nama_tempat", namaTempat.Rows[0][0]}
+            }
+            );
+
+            if (affectedRows > 0)
+            {
+                LoadKulinerData();
+                textBoxNamaTempat.Text = "";
+                textBoxNamaMakanan.Text = "";
+                textBoxHarga.Text = "";
+                return;
+            }
+            MessageBox.Show("Data gagal ditambahkan", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }

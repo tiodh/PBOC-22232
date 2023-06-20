@@ -38,6 +38,12 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            textBoxNamaTempat = new TextBox();
+            labelNamaTempat = new Label();
+            labelNamaMakanan = new Label();
+            textBoxNamaMakanan = new TextBox();
+            labelHarga = new Label();
+            textBoxHarga = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewKuliner).BeginInit();
             SuspendLayout();
             // 
@@ -102,13 +108,14 @@
             // 
             // button2
             // 
-            button2.Location = new Point(382, 36);
+            button2.Location = new Point(577, 625);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(86, 34);
             button2.TabIndex = 3;
             button2.Text = "Create";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += OnButtonCreateClick;
             // 
             // button3
             // 
@@ -132,11 +139,65 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // textBoxNamaTempat
+            // 
+            textBoxNamaTempat.Location = new Point(486, 485);
+            textBoxNamaTempat.Name = "textBoxNamaTempat";
+            textBoxNamaTempat.Size = new Size(174, 27);
+            textBoxNamaTempat.TabIndex = 6;
+            // 
+            // labelNamaTempat
+            // 
+            labelNamaTempat.AutoSize = true;
+            labelNamaTempat.Location = new Point(486, 462);
+            labelNamaTempat.Name = "labelNamaTempat";
+            labelNamaTempat.Size = new Size(103, 20);
+            labelNamaTempat.TabIndex = 7;
+            labelNamaTempat.Text = "Nama Tempat";
+            // 
+            // labelNamaMakanan
+            // 
+            labelNamaMakanan.AutoSize = true;
+            labelNamaMakanan.Location = new Point(486, 515);
+            labelNamaMakanan.Name = "labelNamaMakanan";
+            labelNamaMakanan.Size = new Size(113, 20);
+            labelNamaMakanan.TabIndex = 8;
+            labelNamaMakanan.Text = "Nama Makanan";
+            // 
+            // textBoxNamaMakanan
+            // 
+            textBoxNamaMakanan.Location = new Point(486, 538);
+            textBoxNamaMakanan.Name = "textBoxNamaMakanan";
+            textBoxNamaMakanan.Size = new Size(174, 27);
+            textBoxNamaMakanan.TabIndex = 9;
+            // 
+            // labelHarga
+            // 
+            labelHarga.AutoSize = true;
+            labelHarga.Location = new Point(486, 568);
+            labelHarga.Name = "labelHarga";
+            labelHarga.Size = new Size(50, 20);
+            labelHarga.TabIndex = 10;
+            labelHarga.Text = "Harga";
+            // 
+            // textBoxHarga
+            // 
+            textBoxHarga.Location = new Point(486, 591);
+            textBoxHarga.Name = "textBoxHarga";
+            textBoxHarga.Size = new Size(174, 27);
+            textBoxHarga.TabIndex = 11;
+            // 
             // Kuliner
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(670, 470);
+            ClientSize = new Size(675, 673);
+            Controls.Add(textBoxHarga);
+            Controls.Add(labelHarga);
+            Controls.Add(textBoxNamaMakanan);
+            Controls.Add(labelNamaMakanan);
+            Controls.Add(labelNamaTempat);
+            Controls.Add(textBoxNamaTempat);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -164,5 +225,11 @@
         private DataGridViewTextBoxColumn ColumnNamaTempat;
         private DataGridViewTextBoxColumn ColumnNamaMakanan;
         private DataGridViewTextBoxColumn ColumnHarga;
+        private TextBox textBoxNamaTempat;
+        private Label labelNamaTempat;
+        private Label labelNamaMakanan;
+        private TextBox textBoxNamaMakanan;
+        private Label labelHarga;
+        private TextBox textBoxHarga;
     }
 }

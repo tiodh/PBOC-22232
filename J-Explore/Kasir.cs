@@ -24,12 +24,12 @@ namespace J_Explore
         {
             InitializeComponent();
 
-            //DataTable pengunjung = DbHelper.GetInstance().Read(Global.TableJenisPengunjung, Global.ColumnJenisPengunjungId);
+            DataTable pengunjung = DbHelper.GetInstance().Read(Global.TableJenisPengunjung, Global.ColumnJenisPengunjungId);
 
-            //foreach (DataRow row in pengunjung.Rows)
-            //{
-            //    jenisPengunjung.Add(JenisPengunjung.FromDataRow(row));
-            //}
+            foreach (DataRow row in pengunjung.Rows)
+            {
+                jenisPengunjung.Add(JenisPengunjung.FromDataRow(row));
+            }
         }
 
         private void CountTotal()
@@ -64,54 +64,54 @@ namespace J_Explore
 
         private void OnButtonSimpanClick(object sender, EventArgs e)
         {
-            //string nama = null;
-            //string asal = null;
+            string nama = null;
+            string asal = null;
 
-            //if (!string.IsNullOrEmpty(textBox2.Text))
-            //{
-            //    nama = textBox2.Text;
-            //}
-            //if (!string.IsNullOrEmpty(textBox3.Text))
-            //{
-            //    asal = textBox3.Text;
-            //}
+            if (!string.IsNullOrEmpty(textBox2.Text))
+            {
+                nama = textBox2.Text;
+            }
+            if (!string.IsNullOrEmpty(textBox3.Text))
+            {
+                asal = textBox3.Text;
+            }
 
-            //int affectedRows = DbHelper.GetInstance().Create(Global.TableTransaksi, new Transaksi(1, Global.CurrentAdmin, DateTime.Now, nama, asal).ToDictionary());
-            //if (affectedRows < 0)
-            //{
-            //    MessageBox.Show("Gagal menambahkan data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
+            int affectedRows = DbHelper.GetInstance().Create(Global.TableTransaksi, new Transaksi(1, Global.CurrentAdmin, DateTime.Now, nama, asal).ToDictionary());
+            if (affectedRows < 0)
+            {
+                MessageBox.Show("Gagal menambahkan data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-            //Transaksi lastTransaksi = Transaksi.FromDataRow(DbHelper.GetInstance().ExecuteQuery($"SELECT * FROM {Global.TableTransaksi} JOIN {Global.TableAdmin} ON {Global.TableTransaksi}.{Global.ColumnTransaksiUsernameAdmin} = {Global.TableAdmin}.{Global.ColumnAdminUsername} ORDER BY {Global.ColumnTransaksiId} DESC LIMIT 1").Rows[0]);
+            Transaksi lastTransaksi = Transaksi.FromDataRow(DbHelper.GetInstance().ExecuteQuery($"SELECT * FROM {Global.TableTransaksi} JOIN {Global.TableAdmin} ON {Global.TableTransaksi}.{Global.ColumnTransaksiUsernameAdmin} = {Global.TableAdmin}.{Global.ColumnAdminUsername} ORDER BY {Global.ColumnTransaksiId} DESC LIMIT 1").Rows[0]);
 
-            //int valueAnak = 0;
-            //int valueDewasa = 0;
+            int valueAnak = 0;
+            int valueDewasa = 0;
 
-            //if (!string.IsNullOrEmpty(textBox6.Text))
-            //{
-            //    valueAnak = int.Parse(textBox6.Text);
-            //    affectedRows = DbHelper.GetInstance().Create(Global.TableDetailTransaksi, new DetailTransaksi(1, lastTransaksi, jenisPengunjung[0], valueAnak).ToDictionary());
-            //    if (affectedRows < 0)
-            //    {
-            //        MessageBox.Show("Gagal menambahkan data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        return;
-            //    }
-            //}
-            //if (!string.IsNullOrEmpty(textBox7.Text))
-            //{
-            //    valueDewasa = int.Parse(textBox7.Text);
-            //    affectedRows = DbHelper.GetInstance().Create(Global.TableDetailTransaksi, new DetailTransaksi(1, lastTransaksi, jenisPengunjung[1], valueDewasa).ToDictionary());
-            //    if (affectedRows < 0)
-            //    {
-            //        MessageBox.Show("Gagal menambahkan data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        return;
-            //    }
-            //}
+            if (!string.IsNullOrEmpty(textBox6.Text))
+            {
+                valueAnak = int.Parse(textBox6.Text);
+                affectedRows = DbHelper.GetInstance().Create(Global.TableDetailTransaksi, new DetailTransaksi(1, lastTransaksi, jenisPengunjung[0], valueAnak).ToDictionary());
+                if (affectedRows < 0)
+                {
+                    MessageBox.Show("Gagal menambahkan data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox7.Text))
+            {
+                valueDewasa = int.Parse(textBox7.Text);
+                affectedRows = DbHelper.GetInstance().Create(Global.TableDetailTransaksi, new DetailTransaksi(1, lastTransaksi, jenisPengunjung[1], valueDewasa).ToDictionary());
+                if (affectedRows < 0)
+                {
+                    MessageBox.Show("Gagal menambahkan data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
 
-            //PrintHelper.Print(new PrintingArgumentsTransaction(lastTransaksi.Id, lastTransaksi.Admin.Username, lastTransaksi.Tanggal, valueAnak, valueDewasa, int.Parse(textBox4.Text.Replace(",", string.Empty))));
+            PrintHelper.Print(new PrintingArgumentsTransaction(lastTransaksi.Id, lastTransaksi.Admin.Username, lastTransaksi.Tanggal, valueAnak, valueDewasa, int.Parse(textBox4.Text.Replace(",", string.Empty))));
 
-            //ClearState();
+            ClearState();
         }
 
         private void OnTextBoxJumlahAnakAnakKeyPressed(object sender, KeyPressEventArgs e) => e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);

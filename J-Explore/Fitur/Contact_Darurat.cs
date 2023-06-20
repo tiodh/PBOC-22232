@@ -1,4 +1,5 @@
-﻿using J_Explore.Utils;
+﻿using J_Explore.Services;
+using J_Explore.Utils;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -73,6 +74,49 @@ namespace J_Explore.Fitur
 
                 ReadKontakDarurat();
             }
+        }
+
+        private void OnButtonUpdateClick(object sender, EventArgs e)
+        {
+            int selectedRow = DataKontakDarurat.SelectedCells[0].RowIndex;
+
+            int id = Convert.ToInt32(DataKontakDarurat.Rows[selectedRow].Cells[0].Value);
+            string nama = Convert.ToString(DataKontakDarurat.Rows[selectedRow].Cells[1].Value);
+            string noHp = Convert.ToString(DataKontakDarurat.Rows[selectedRow].Cells[2].Value);
+            string email = Convert.ToString(DataKontakDarurat.Rows[selectedRow].Cells[3].Value);
+            string deskripsi = Convert.ToString(DataKontakDarurat.Rows[selectedRow].Cells[4].Value);
+
+            int affectedRows = DbHelper.GetInstance().ExecuteNonQuery($"UPDATE layanan_darurat SET nama_layanan_darurat = '{nama}', email_layanan_daurat = '{email}', no_telp = '{noHp}', deskripsi_layanan_darurat = '{deskripsi}' WHERE id_layanan_darurat = '{id}'");
+
+            if (affectedRows > 0)
+            {
+                MessageBox.Show("Data berhasil diupdate", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            MessageBox.Show("Data gagal diupdate", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void OnButtonTambahClick(object sender, EventArgs e)
+        {
+            string nama = textBoxNama.Text.Trim();
+            string noHp = textBoxNoHp.Text.Trim();
+            string email = textBoxEmail.Text.Trim();
+            string deskripsi = textBoxDeskripsi.Text.Trim();
+
+            int affectedRows = DbHelper.GetInstance().ExecuteNonQuery($"INSERT INTO layanan_darurat VALUES (DEFAULT, '{nama}', '{noHp}', '{email}', '{deskripsi}')");
+
+            if (affectedRows > 0)
+            {
+                textBoxNama.Text = "";
+                textBoxNoHp.Text = "";
+                textBoxEmail.Text = "";
+                textBoxDeskripsi.Text = "";
+                ReadKontakDarurat();
+                return;
+            }
+
+            MessageBox.Show("Data gagal ditambah", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

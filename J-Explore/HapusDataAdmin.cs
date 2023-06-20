@@ -30,7 +30,7 @@ namespace J_Explore
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            hapusDataAkun();
         }
 
         private void hapusDataAkun()
@@ -56,7 +56,7 @@ namespace J_Explore
                     {
                         MessageBox.Show("Akun admin berhasil dihapus.");
                         usernameInput.Text = "";
-                        passwordInput.Text= "Password";
+                        passwordInput.Text= "";
                     }
                     else
                     {

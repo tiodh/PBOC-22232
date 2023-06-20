@@ -115,7 +115,7 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(23, -56);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(238, 206);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -168,7 +168,7 @@
             // pictureBox2
             // 
             pictureBox2.Location = new Point(23, 188);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(105, 128);
             pictureBox2.TabIndex = 5;
@@ -177,7 +177,7 @@
             // pictureBox3
             // 
             pictureBox3.Location = new Point(156, 188);
-            pictureBox3.Margin = new Padding(2, 2, 2, 2);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(105, 128);
             pictureBox3.TabIndex = 6;
@@ -186,7 +186,7 @@
             // pictureBox4
             // 
             pictureBox4.Location = new Point(289, 188);
-            pictureBox4.Margin = new Padding(2, 2, 2, 2);
+            pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(105, 128);
             pictureBox4.TabIndex = 7;
@@ -195,7 +195,7 @@
             // pictureBox5
             // 
             pictureBox5.Location = new Point(423, 188);
-            pictureBox5.Margin = new Padding(2, 2, 2, 2);
+            pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(105, 128);
             pictureBox5.TabIndex = 8;
@@ -204,7 +204,7 @@
             // pictureBox6
             // 
             pictureBox6.Location = new Point(560, 188);
-            pictureBox6.Margin = new Padding(2, 2, 2, 2);
+            pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(105, 128);
             pictureBox6.TabIndex = 9;
@@ -213,7 +213,7 @@
             // pictureBox7
             // 
             pictureBox7.Location = new Point(560, 379);
-            pictureBox7.Margin = new Padding(2, 2, 2, 2);
+            pictureBox7.Margin = new Padding(2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(105, 128);
             pictureBox7.TabIndex = 14;
@@ -222,7 +222,7 @@
             // pictureBox8
             // 
             pictureBox8.Location = new Point(423, 379);
-            pictureBox8.Margin = new Padding(2, 2, 2, 2);
+            pictureBox8.Margin = new Padding(2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(105, 128);
             pictureBox8.TabIndex = 13;
@@ -231,7 +231,7 @@
             // pictureBox9
             // 
             pictureBox9.Location = new Point(289, 379);
-            pictureBox9.Margin = new Padding(2, 2, 2, 2);
+            pictureBox9.Margin = new Padding(2);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(105, 128);
             pictureBox9.TabIndex = 12;
@@ -240,7 +240,7 @@
             // pictureBox10
             // 
             pictureBox10.Location = new Point(156, 379);
-            pictureBox10.Margin = new Padding(2, 2, 2, 2);
+            pictureBox10.Margin = new Padding(2);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(105, 128);
             pictureBox10.TabIndex = 11;
@@ -249,7 +249,7 @@
             // pictureBox11
             // 
             pictureBox11.Location = new Point(23, 379);
-            pictureBox11.Margin = new Padding(2, 2, 2, 2);
+            pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(105, 128);
             pictureBox11.TabIndex = 10;
@@ -652,9 +652,10 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Beranda";
             Text = "Beranda";
+            Load += Beranda_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Tugas_Akhir_Pbo_C
 {
@@ -34,29 +35,64 @@ namespace Tugas_Akhir_Pbo_C
         {
 
         }
-
+        NpgsqlConnection conn = new NpgsqlConnection($"Host=localhost;Port=5432;Username=postgres;Password=Rizal020304;Database=pbo;");
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             string inputUsername = Username_Login.Text;
             string inputPassword = Password_Login.Text;
-
-            if (inputUsername == username && inputPassword == password)
+            try
             {
-                MessageBox.Show("Login berhasil!");
+                String query = $"select * from akun_admin where username = '{Username_Login.Text}' and password = '{Password_Login.Text}'";
+                NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, conn);
 
-                // Menutup form login
-                this.Hide();
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
 
-                // Membuat instance form baru yang akan ditampilkan setelah login
-                Dashboard_Admin Dashboard_Admin = new Dashboard_Admin();
+                if (dt.Rows.Count > 0)
+                {
+                    inputUsername = Username_Login.Text;
+                    inputPassword = Password_Login.Text;
 
-                // Menampilkan form utama
-                Dashboard_Admin.Show();
+                    Dashboard_Admin dashboard_Admin = new Dashboard_Admin();
+                    dashboard_Admin.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Username/Password salah", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Username_Login.Clear();
+                    Password_Login.Clear();
+
+                    Username_Login.Focus();
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Username atau password salah. Silakan coba lagi.");
+                MessageBox.Show("Error");
             }
+            finally
+            {
+                conn.Close();
+            }
+
+
+            //if (inputUsername == username && inputPassword == password)
+            //{
+            //    MessageBox.Show("Login berhasil!");
+
+            //    // Menutup form login
+            //    this.Hide();
+
+            //    // Membuat instance form baru yang akan ditampilkan setelah login
+            //    Dashboard_Admin Dashboard_Admin = new Dashboard_Admin();
+
+            //    // Menampilkan form utama
+            //    Dashboard_Admin.Show();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Username atau password salah. Silakan coba lagi.");
+            //}
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)

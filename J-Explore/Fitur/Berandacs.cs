@@ -17,6 +17,9 @@ namespace J_Explore.Fitur
             InitializeComponent();
         }
 
+        private void Beranda_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

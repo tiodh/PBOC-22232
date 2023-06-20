@@ -1,4 +1,5 @@
 ﻿using J_Explore;
+using J_Explore.Models;
 using J_Explore.Services;
 using J_Explore.Utils;
 using Npgsql;
@@ -25,12 +26,12 @@ namespace penjualan_laptop.lib.dataProduct
 
         private void LoginBTN_Click(object sender, EventArgs e)
         {
-            string inputUsername = username.Text;
-            string inputPassword = password.Text;
+            string inputUsername = username.Text.Trim();
+            string inputPassword = password.Text.Trim();
             try
             {
                 conn.Open();
-                string query = $"select * from akun_admin where username = '{username.Text}' and password = '{password.Text}'";
+                string query = $"select * from akun_admin where username = '{username.Text.Trim()}' and password = '{password.Text.Trim()}'";
                 NpgsqlDataAdapter sda = new NpgsqlDataAdapter(query, conn);
 
                 DataTable dt = new DataTable();
@@ -38,9 +39,10 @@ namespace penjualan_laptop.lib.dataProduct
 
                 if (dt.Rows.Count > 0)
                 {
-                    inputUsername = username.Text;
-                    inputPassword = password.Text;
+                    inputUsername = username.Text.Trim();
+                    inputPassword = password.Text.Trim();
 
+                    Global.CurrentAdmin = Admin.FromDataRow(dt.Rows[0]);
                     
                     Dashboard_Admin dashboard_Admin = new Dashboard_Admin();
                     dashboard_Admin.ShowDialog();
@@ -55,9 +57,9 @@ namespace penjualan_laptop.lib.dataProduct
                     username.Focus();
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show($"Error, {ex}");
             }
             finally
             {

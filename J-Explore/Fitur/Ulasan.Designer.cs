@@ -29,158 +29,85 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             button2 = new Button();
-            textBox2 = new TextBox();
-            label3 = new Label();
             label4 = new Label();
             textBox3 = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            dataGridView1 = new DataGridView();
+            button3 = new Button();
+            button4 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(104, 358);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
+            textBox1.Location = new Point(48, 256);
+            textBox1.Margin = new Padding(4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1127, 161);
+            textBox1.Size = new Size(1344, 161);
             textBox1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(104, 110);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(52, 51);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(209, 110);
-            pictureBox2.Margin = new Padding(4, 4, 4, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(52, 51);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Location = new Point(420, 110);
-            pictureBox3.Margin = new Padding(4, 4, 4, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(52, 51);
-            pictureBox3.TabIndex = 5;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Location = new Point(315, 110);
-            pictureBox4.Margin = new Padding(4, 4, 4, 4);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(52, 51);
-            pictureBox4.TabIndex = 4;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Location = new Point(525, 110);
-            pictureBox5.Margin = new Padding(4, 4, 4, 4);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(52, 51);
-            pictureBox5.TabIndex = 6;
-            pictureBox5.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(104, 26);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(48, 24);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(421, 44);
+            label1.Size = new Size(351, 37);
             label1.TabIndex = 1;
             label1.Text = "Tuliskan Ulasan Anda";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(104, 307);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(48, 205);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(131, 35);
+            label2.Size = new Size(156, 37);
             label2.TabIndex = 7;
             label2.Text = "Komentar";
             // 
             // button1
             // 
-            button1.Location = new Point(105, 528);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Location = new Point(48, 444);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(266, 73);
             button1.TabIndex = 8;
             button1.Text = "Simpan";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(380, 528);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Location = new Point(341, 444);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(266, 73);
             button2.TabIndex = 9;
             button2.Text = "Edit";
             button2.UseVisualStyleBackColor = true;
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(16, 766);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(1548, 234);
-            textBox2.TabIndex = 10;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(16, 611);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(146, 35);
-            label3.TabIndex = 11;
-            label3.Text = "User Name";
-            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(105, 192);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(49, 90);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(146, 35);
+            label4.Size = new Size(179, 37);
             label4.TabIndex = 12;
             label4.Text = "User Name";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(105, 248);
+            textBox3.Location = new Point(49, 146);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(377, 39);
             textBox3.TabIndex = 13;
@@ -188,50 +115,76 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(26, 718);
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(48, 553);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(235, 35);
+            label5.Size = new Size(303, 37);
             label5.TabIndex = 14;
             label5.Text = "Ulasan Orang Lain";
+            label5.Click += label5_Click;
             // 
-            // textBox4
+            // dataGridView1
             // 
-            textBox4.Location = new Point(16, 663);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(377, 39);
-            textBox4.TabIndex = 15;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(48, 610);
+            dataGridView1.MultiSelect = false;
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 82;
+            dataGridView1.RowTemplate.Height = 41;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(1351, 355);
+            dataGridView1.TabIndex = 15;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(635, 444);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(266, 73);
+            button3.TabIndex = 16;
+            button3.Text = "Delete";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(1126, 987);
+            button4.Margin = new Padding(4);
+            button4.Name = "button4";
+            button4.Size = new Size(266, 73);
+            button4.TabIndex = 17;
+            button4.Text = "Read";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Ulasan
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1568, 1016);
-            Controls.Add(textBox4);
+            ClientSize = new Size(1568, 1113);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(dataGridView1);
             Controls.Add(label5);
             Controls.Add(textBox3);
             Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(textBox2);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(textBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Ulasan";
             Text = "Ulasan";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            Load += Ulasan_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -239,20 +192,15 @@
         #endregion
 
         private TextBox textBox1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
         private Label label1;
         private Label label2;
         private Button button1;
         private Button button2;
-        private TextBox textBox2;
-        private Label label3;
         private Label label4;
         private TextBox textBox3;
         private Label label5;
-        private TextBox textBox4;
+        private DataGridView dataGridView1;
+        private Button button3;
+        private Button button4;
     }
 }

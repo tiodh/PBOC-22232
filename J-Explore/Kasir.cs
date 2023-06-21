@@ -109,7 +109,7 @@ namespace J_Explore
                 }
             }
 
-            PrintHelper.Print(new PrintingArgumentsTransaction(lastTransaksi.Id, lastTransaksi.Admin.Username, lastTransaksi.Tanggal, valueAnak, valueDewasa, int.Parse(textBox4.Text.Replace(",", string.Empty))));
+            PrintHelper.Print(new PrintingArgumentsTransaction(lastTransaksi.Id, lastTransaksi.Admin.Username, lastTransaksi.Tanggal, textBox2.Text.Trim(), textBox3.Text.Trim(), valueAnak, valueDewasa, int.Parse(textBox4.Text.Replace(",", string.Empty))));
 
             ClearState();
         }

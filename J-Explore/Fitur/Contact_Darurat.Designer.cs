@@ -60,8 +60,8 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(30);
-            panel1.Size = new Size(1250, 792);
+            panel1.Padding = new Padding(30, 29, 30, 29);
+            panel1.Size = new Size(1250, 749);
             panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -72,11 +72,11 @@
             tableLayoutPanel1.Controls.Add(DataKontakDarurat, 0, 0);
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(30, 30);
+            tableLayoutPanel1.Location = new Point(30, 29);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1190, 732);
+            tableLayoutPanel1.Size = new Size(1190, 691);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // DataKontakDarurat
@@ -90,7 +90,7 @@
             DataKontakDarurat.Location = new Point(3, 3);
             DataKontakDarurat.Name = "DataKontakDarurat";
             DataKontakDarurat.RowHeadersWidth = 51;
-            DataKontakDarurat.Size = new Size(953, 726);
+            DataKontakDarurat.Size = new Size(953, 685);
             DataKontakDarurat.TabIndex = 4;
             // 
             // id
@@ -139,7 +139,7 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(962, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(225, 726);
+            panel2.Size = new Size(225, 685);
             panel2.TabIndex = 5;
             // 
             // buttonTambah
@@ -260,9 +260,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 792);
+            ClientSize = new Size(1250, 749);
             Controls.Add(panel1);
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Contact_Darurat";
             Text = "Contact_Darurat";
             panel1.ResumeLayout(false);

@@ -32,13 +32,15 @@ namespace J_Explore.Services
             reportSheet.Cells[3, 1].Value = "Id";
             reportSheet.Cells[3, 2].Value = "Admin";
             reportSheet.Cells[3, 3].Value = "Tanggal";
-            reportSheet.Cells[3, 4].Value = "Anak-Anak";
-            reportSheet.Cells[3, 5].Value = "Dewasa";
-            reportSheet.Cells[3, 6].Value = "Total";
+            reportSheet.Cells[3, 4].Value = "Nama";
+            reportSheet.Cells[3, 5].Value = "Asal";
+            reportSheet.Cells[3, 6].Value = "Anak-Anak";
+            reportSheet.Cells[3, 7].Value = "Dewasa";
+            reportSheet.Cells[3, 8].Value = "Total";
 
             List<ExcelRange> mergedCells = new List<ExcelRange>()
             {
-                reportSheet.Cells["A1:F2"]
+                reportSheet.Cells["A1:H2"]
             };
 
             foreach (ExcelRange mergedCell in mergedCells)
@@ -55,16 +57,18 @@ namespace J_Explore.Services
                 reportSheet.Cells[i + additionalRow, 1].Value = transaction.Id;
                 reportSheet.Cells[i + additionalRow, 2].Value = transaction.UsernameAdmin;
                 reportSheet.Cells[i + additionalRow, 3].Value = Global.GetFormattedDate(transaction.Tanggal, withDayOfWeek: true, withMonthName: true);
-                reportSheet.Cells[i + additionalRow, 4].Value = transaction.AnakAnak.ToString("N0");
-                reportSheet.Cells[i + additionalRow, 5].Value = transaction.Dewasa.ToString("N0");
-                reportSheet.Cells[i + additionalRow, 6].Value = transaction.Total.ToString("N0");
-                 
+                reportSheet.Cells[i + additionalRow, 4].Value = transaction.Nama;
+                reportSheet.Cells[i + additionalRow, 5].Value = transaction.Asal;
+                reportSheet.Cells[i + additionalRow, 6].Value = transaction.AnakAnak.ToString("N0");
+                reportSheet.Cells[i + additionalRow, 7].Value = transaction.Dewasa.ToString("N0");
+                reportSheet.Cells[i + additionalRow, 8].Value = transaction.Total.ToString("N0");
+
                 i++;
             }
             return excelPackage;
         }
 
-        private static string? OpenSaveAsDialog(bool isExcel = false)
+        private static string? OpenSaveAsDialog(string fileName, bool isExcel = false)
         {
             SaveFileDialog saveAsDialog = new SaveFileDialog();
 
@@ -83,6 +87,7 @@ namespace J_Explore.Services
 
             saveAsDialog.Filter = filter;
             saveAsDialog.DefaultExt = defaultExt;
+            saveAsDialog.FileName = fileName;
             DialogResult result = saveAsDialog.ShowDialog();
 
             if (result == DialogResult.Cancel)
@@ -92,82 +97,106 @@ namespace J_Explore.Services
             return saveAsDialog.FileName;
         }
 
-        public static void ExportReportToExcel(List<PrintingArgumentsTransaction> data)
+        public static void ExportHistoryToExcel(List<PrintingArgumentsTransaction> data)
         {
-            string? filePath = OpenSaveAsDialog(true);
-
-            if (filePath == null)
+            try
             {
+                string? filePath = OpenSaveAsDialog($"Laporan Riwayat Transaksi {Global.GetFormattedDate(data.First().Tanggal, withDayOfWeek: true, withMonthName: true, withHour: false)} - {Global.GetFormattedDate(data.Last().Tanggal, withDayOfWeek: true, withMonthName: true, withHour: false)}", true);
+
+                if (filePath == null)
+                {
+                    return;
+                }
+
+                ExcelPackage excelPackage = GenerateExcel(data);
+
+                FileInfo fileInfo = new FileInfo(filePath);
+                excelPackage.SaveAs(fileInfo);
+            }
+            catch
+            {
+                MessageBox.Show("Data gagal diexport", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            ExcelPackage excelPackage = GenerateExcel(data);
-
-            FileInfo fileInfo = new FileInfo(filePath);
-            excelPackage.SaveAs(fileInfo);
+            MessageBox.Show("Data berhasil diexport", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public static void ExportReportToPdf(List<PrintingArgumentsTransaction> data)
+        public static void ExportHistoryToPdf(List<PrintingArgumentsTransaction> data)
         {
-            string? filePath = OpenSaveAsDialog(true);
-
-            if (filePath == null)
+            try
             {
-                return;
-            }
+                string? filePath = OpenSaveAsDialog($"Laporan Riwayat Transaksi {Global.GetFormattedDate(data.First().Tanggal, withDayOfWeek: true, withMonthName: true, withHour: false)} - {Global.GetFormattedDate(data.Last().Tanggal, withDayOfWeek: true, withMonthName: true, withHour: false)}", false);
 
-            using (ExcelPackage excelPackage = GenerateExcel(data))
-            {
-                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets[0];
-                using (PdfWriter writer = new PdfWriter(filePath))
+                if (filePath == null)
                 {
-                    using (PdfDocument pdfDocument = new PdfDocument(writer))
+                    return;
+                }
+
+                using (ExcelPackage excelPackage = GenerateExcel(data))
+                {
+                    ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets[0];
+                    using (PdfWriter writer = new PdfWriter(filePath))
                     {
-                        pdfDocument.SetDefaultPageSize(PageSize.A4);
-
-                        using (iText.Layout.Document document = new iText.Layout.Document(pdfDocument))
+                        using (PdfDocument pdfDocument = new PdfDocument(writer))
                         {
-                            document.SetMargins(20, 20, 20, 20);
+                            pdfDocument.SetDefaultPageSize(PageSize.A4);
 
-                            PdfFont titleFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
-                            PdfFont cellFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA);
-
-                            // Add title to the PDF
-                            Paragraph title = new Paragraph("Laporan Riwayat Transaksi")
-                                .SetFont(titleFont)
-                                .SetFontSize(18)
-                                .SetTextAlignment(TextAlignment.CENTER)
-                                .SetMarginBottom(20);
-                            document.Add(title);
-
-                            // Create a table for the data
-                            Table table = new Table(UnitValue.CreatePercentArray(6)).UseAllAvailableWidth();
-                            table.SetHorizontalAlignment(iText.Layout.Properties.HorizontalAlignment.CENTER);
-
-                            // Add table headers
-                            table.AddCell(CreateCell("Id", cellFont, true));
-                            table.AddCell(CreateCell("Admin", cellFont, true));
-                            table.AddCell(CreateCell("Tanggal", cellFont, true));
-                            table.AddCell(CreateCell("Anak-Anak", cellFont, true));
-                            table.AddCell(CreateCell("Dewasa", cellFont, true));
-                            table.AddCell(CreateCell("Total", cellFont, true));
-
-                            // Populate table with data from Excel
-                            for (int row = 5; row <= worksheet.Dimension.End.Row; row++)
+                            using (iText.Layout.Document document = new iText.Layout.Document(pdfDocument))
                             {
-                                table.AddCell(CreateCell(worksheet.Cells[row, 1].Value?.ToString() ?? "", cellFont));
-                                table.AddCell(CreateCell(worksheet.Cells[row, 2].Value?.ToString() ?? "", cellFont));
-                                table.AddCell(CreateCell(worksheet.Cells[row, 3].Value?.ToString() ?? "", cellFont));
-                                table.AddCell(CreateCell(worksheet.Cells[row, 4].Value?.ToString() ?? "", cellFont));
-                                table.AddCell(CreateCell(worksheet.Cells[row, 5].Value?.ToString() ?? "", cellFont));
-                                table.AddCell(CreateCell(worksheet.Cells[row, 6].Value?.ToString() ?? "", cellFont));
-                            }
+                                document.SetMargins(20, 20, 20, 20);
 
-                            document.Add(table);
+                                PdfFont titleFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
+                                PdfFont cellFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA);
+
+                                // Add title to the PDF
+                                Paragraph title = new Paragraph("Laporan Riwayat Transaksi")
+                                    .SetFont(titleFont)
+                                    .SetFontSize(18)
+                                    .SetTextAlignment(TextAlignment.CENTER)
+                                    .SetMarginBottom(20);
+                                document.Add(title);
+
+                                // Create a table for the data
+                                Table table = new Table(UnitValue.CreatePercentArray(8)).UseAllAvailableWidth();
+                                table.SetHorizontalAlignment(iText.Layout.Properties.HorizontalAlignment.CENTER);
+
+                                // Add table headers
+                                table.AddCell(CreateCell("Id", cellFont, true));
+                                table.AddCell(CreateCell("Admin", cellFont, true));
+                                table.AddCell(CreateCell("Tanggal", cellFont, true));
+                                table.AddCell(CreateCell("Nama", cellFont, true));
+                                table.AddCell(CreateCell("Asal", cellFont, true));
+                                table.AddCell(CreateCell("Anak-Anak", cellFont, true));
+                                table.AddCell(CreateCell("Dewasa", cellFont, true));
+                                table.AddCell(CreateCell("Total", cellFont, true));
+
+                                // Populate table with data from Excel
+                                for (int row = 4; row <= worksheet.Dimension.End.Row; row++)
+                                {
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 1].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 2].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 3].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 4].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 5].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 6].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 7].Value?.ToString() ?? "", cellFont));
+                                    table.AddCell(CreateCell(worksheet.Cells[row, 8].Value?.ToString() ?? "", cellFont));
+                                }
+
+                                document.Add(table);
+                            }
                         }
                     }
                 }
             }
+            catch
+            {
+                MessageBox.Show("Data gagal diexport", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            MessageBox.Show("Data berhasil diexport", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         private static Cell CreateCell(string cellValue, PdfFont font, bool isHeader = false)

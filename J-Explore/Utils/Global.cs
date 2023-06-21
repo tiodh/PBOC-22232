@@ -1,6 +1,7 @@
 ﻿using J_Explore.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
@@ -42,8 +43,8 @@ namespace J_Explore.Utils
         public const string DbHost = "localhost";
         public const int DbPort = 5432;
         public const string DbUsername = "postgres";
-        public const string DbPassword = "HELLOWORLD123";
-        public const string DbName = "new_pbo";
+        public const string DbPassword = "12345";
+        public const string DbName = "anyar";
 
         public static readonly Color OnHoverColor = Color.Lime;
 
@@ -126,8 +127,20 @@ namespace J_Explore.Utils
             }
         }
 
-        public static string PadLeft(int number) => number.ToString().PadLeft(2, '0');
+        public static string PadLeft(long number) => number.ToString().PadLeft(2, '0');
 
-        public static string GetFormattedDate(DateTime date, bool withDayOfWeek = false, bool withMonthName = false) => $"{(withDayOfWeek ? $"{Global.TranslateDayOfWeek(date.DayOfWeek)}, " : "")}{PadLeft(date.Day)}{(withMonthName ? " " : "/")}{(withMonthName ? Global.TranslateMonth(date.Month) : PadLeft(date.Month))}{(withMonthName ? " " : "/")}{PadLeft(date.Year)} {PadLeft(date.Hour)}:{PadLeft(date.Minute)}:{PadLeft(date.Second)}";
+        public static List<object> GetColumnData(DataTable dataTable, int columnIndex)
+        {
+            List<object> columnData = new List<object>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                columnData.Add(row[columnIndex]);
+            }
+
+            return columnData;
+        }
+
+        public static string GetFormattedDate(DateTime date, bool withDayOfWeek = false, bool withMonthName = false, bool withHour = true) => $"{(withDayOfWeek ? $"{Global.TranslateDayOfWeek(date.DayOfWeek)}, " : "")}{PadLeft(date.Day)}{(withMonthName ? " " : "/")}{(withMonthName ? Global.TranslateMonth(date.Month) : PadLeft(date.Month))}{(withMonthName ? " " : "/")}{PadLeft(date.Year)}{(withHour ? $" {PadLeft(date.Hour)}:{PadLeft(date.Minute)}:{PadLeft(date.Second)}" : string.Empty)}";
     }
 }

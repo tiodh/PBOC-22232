@@ -19,13 +19,14 @@ using LiveChartsCore.SkiaSharpView.VisualElements;
 using System.Data.Common;
 using LiveChartsCore.SkiaSharpView.WinForms;
 using LiveChartsCore.Kernel.Sketches;
+using J_Explore.Utils;
 
 namespace J_Explore
 {
     public partial class diagrampendataan : Form
     {
         private ObservableCollection<DateTimePoint> weeklyData;
-        private string connectionString = "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=Ilmiana15!";
+        private string connectionString = $"Host={Global.DbHost};Port={Global.DbPort};Database={Global.DbName};Username={Global.DbUsername};Password={Global.DbPassword}";
         private NpgsqlConnection _dbConnection;
 
         public diagrampendataan()
@@ -39,7 +40,7 @@ namespace J_Explore
             ObservableCollection<DateTimePoint> monthlyData = new ObservableCollection<DateTimePoint>();
             // Ambil data dari database
             _dbConnection.Open();
-            NpgsqlCommand command = new NpgsqlCommand("SELECT tanggal_transaksi, SUM(jumlah_pengunjung) AS total_pengunjung FROM transaksi JOIN data_pengunjung ON transaksi.id_transaksi = data_pengunjung.id_data_pengunjung GROUP BY tanggal_transaksi", _dbConnection);
+            NpgsqlCommand command = new NpgsqlCommand("SELECT tanggal_transaksi, count(nama_pengunjung) AS total_pengunjung FROM transaksi GROUP BY tanggal_transaksi", _dbConnection);
             NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command);
             DataTable data = new DataTable();
             adapter.Fill(data);

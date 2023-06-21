@@ -32,6 +32,7 @@
             LoginBTN = new Button();
             alert = new Label();
             panel1 = new Panel();
+            resetPassword = new LinkLabel();
             label1 = new Label();
             password = new TextBox();
             label2 = new Label();
@@ -69,15 +70,15 @@
             alert.AutoSize = true;
             alert.Font = new Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point);
             alert.ForeColor = Color.Red;
-            alert.Location = new Point(155, 291);
+            alert.Location = new Point(160, 292);
             alert.Name = "alert";
-            alert.Size = new Size(212, 17);
+            alert.Size = new Size(112, 17);
             alert.TabIndex = 12;
-            alert.Text = "USERNAME TIDAK DI TEMUKAN !!!";
-            alert.Visible = false;
+            alert.Text = "Lupa Kata Sandi ?";
             // 
             // panel1
             // 
+            panel1.Controls.Add(resetPassword);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(password);
             panel1.Controls.Add(alert);
@@ -89,6 +90,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(528, 450);
             panel1.TabIndex = 11;
+            // 
+            // resetPassword
+            // 
+            resetPassword.AutoSize = true;
+            resetPassword.LinkColor = Color.Black;
+            resetPassword.Location = new Point(278, 289);
+            resetPassword.Name = "resetPassword";
+            resetPassword.Size = new Size(74, 20);
+            resetPassword.TabIndex = 15;
+            resetPassword.TabStop = true;
+            resetPassword.Text = "Klik Disini";
+            resetPassword.LinkClicked += resetPassword_LinkClicked;
             // 
             // label1
             // 
@@ -145,5 +158,6 @@
         private Label label1;
         private TextBox password;
         private Label label2;
+        private LinkLabel resetPassword;
     }
 }

@@ -50,5 +50,25 @@ namespace J_Explore.Fitur
             textBox2.Text = result1;
             conn.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string update = @"update jenis_pengunjung set harga_tiket = '" + textBox1.Text + "' where id_jenis_pengunjung = '1'";
+            cmd = new NpgsqlCommand(update, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Data harga tiket berhasil diubah!");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            string update = @"update jenis_pengunjung set harga_tiket = '" + textBox2.Text + "' where id_jenis_pengunjung = '2'";
+            cmd = new NpgsqlCommand(update, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Data harga tiket berhasil diubah!");
+        }
     }
 }

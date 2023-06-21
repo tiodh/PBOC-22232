@@ -43,8 +43,8 @@ namespace J_Explore.Utils
         public const string DbHost = "localhost";
         public const int DbPort = 5432;
         public const string DbUsername = "postgres";
-        public const string DbPassword = "Rizal020304";
-        public const string DbName = "pbo2";
+        public const string DbPassword = "HELLOWORLD123";
+        public const string DbName = "new_pbo";
 
         public static readonly Color OnHoverColor = Color.Lime;
 
@@ -127,7 +127,7 @@ namespace J_Explore.Utils
             }
         }
 
-        public static string PadLeft(int number) => number.ToString().PadLeft(2, '0');
+        public static string PadLeft(long number) => number.ToString().PadLeft(2, '0');
 
         public static List<object> GetColumnData(DataTable dataTable, int columnIndex)
         {
@@ -141,6 +141,6 @@ namespace J_Explore.Utils
             return columnData;
         }
 
-        public static string GetFormattedDate(DateTime date, bool withDayOfWeek = false, bool withMonthName = false) => $"{(withDayOfWeek ? $"{Global.TranslateDayOfWeek(date.DayOfWeek)}, " : "")}{PadLeft(date.Day)}{(withMonthName ? " " : "/")}{(withMonthName ? Global.TranslateMonth(date.Month) : PadLeft(date.Month))}{(withMonthName ? " " : "/")}{PadLeft(date.Year)} {PadLeft(date.Hour)}:{PadLeft(date.Minute)}:{PadLeft(date.Second)}";
+        public static string GetFormattedDate(DateTime date, bool withDayOfWeek = false, bool withMonthName = false, bool withHour = true) => $"{(withDayOfWeek ? $"{Global.TranslateDayOfWeek(date.DayOfWeek)}, " : "")}{PadLeft(date.Day)}{(withMonthName ? " " : "/")}{(withMonthName ? Global.TranslateMonth(date.Month) : PadLeft(date.Month))}{(withMonthName ? " " : "/")}{PadLeft(date.Year)}{(withHour ? $" {PadLeft(date.Hour)}:{PadLeft(date.Minute)}:{PadLeft(date.Second)}" : string.Empty)}";
     }
 }

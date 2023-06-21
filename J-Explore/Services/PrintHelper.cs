@@ -185,15 +185,19 @@ namespace J_Explore.Services
         public int Id;
         public string UsernameAdmin;
         public DateTime Tanggal;
-        public int AnakAnak;
-        public int Dewasa;
-        public int Total;
+        public string? Nama;
+        public string? Asal;
+        public long AnakAnak;
+        public long Dewasa;
+        public long Total;
 
-        public PrintingArgumentsTransaction(int id, string usernameAdmin, DateTime tanggal, int anakAnak, int dewasa, int total)
+        public PrintingArgumentsTransaction(int id, string usernameAdmin, DateTime tanggal, string? nama, string? asal, long anakAnak, long dewasa, long total)
         {
             Id = id;
             UsernameAdmin = usernameAdmin;
             Tanggal = tanggal;
+            Nama = nama;
+            Asal = asal;
             AnakAnak = anakAnak;
             Dewasa = dewasa;
             Total = total;

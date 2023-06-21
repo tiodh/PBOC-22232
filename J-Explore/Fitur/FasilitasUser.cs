@@ -54,7 +54,7 @@ namespace J_Explore.Lib
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             DetailFasilitas detailfasilitas1 = new DetailFasilitas();
             conn.Open();
@@ -90,7 +90,7 @@ namespace J_Explore.Lib
             OpenChildFrom(detailfasilitas1, sender);
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        public void button9_Click(object sender, EventArgs e)
         {
             DetailFasilitas detailfasilitas9 = new DetailFasilitas();
             conn.Open();
@@ -124,6 +124,7 @@ namespace J_Explore.Lib
 
             conn.Close();
             OpenChildFrom(detailfasilitas9, sender);
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -565,5 +566,28 @@ namespace J_Explore.Lib
                 MessageBox.Show("Fasilitas tidak ditemukan.");
             }
         }
+
+        private void UpdateFasilitas(string idFasilitas, string imagePath, string namaFasilitas, string jumlahFasilitas, string hargaFasilitas, string jamOperational, string deskripsiJenisFasilitas)
+        {
+            conn.Open();
+
+            // Update gambar fasilitas
+            string updateImageQuery = $"UPDATE fasilitas SET gambar_fasilitas = '{imagePath}' WHERE id_fasilitas = '{idFasilitas}'";
+            cmd = new NpgsqlCommand(updateImageQuery, conn);
+            cmd.ExecuteNonQuery();
+
+            // Update data fasilitas
+            string updateFasilitasQuery = $"UPDATE fasilitas SET nama_fasilitas = '{namaFasilitas}', jumlah_fasilitas = '{jumlahFasilitas}', harga_fasilitas = '{hargaFasilitas}', jam_operational = '{jamOperational}' WHERE id_fasilitas = '{idFasilitas}'";
+            cmd = new NpgsqlCommand(updateFasilitasQuery, conn);
+            cmd.ExecuteNonQuery();
+
+            // Update deskripsi jenis fasilitas
+            string updateJenisFasilitasQuery = $"UPDATE jenis_fasilitas SET deskripsi_jenis_fasilitas = '{deskripsiJenisFasilitas}' WHERE id_jenis_fasilitas = (SELECT id_jenis_fasilitas FROM fasilitas WHERE id_fasilitas = '{idFasilitas}')";
+            cmd = new NpgsqlCommand(updateJenisFasilitasQuery, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+        }
+
     }
 }

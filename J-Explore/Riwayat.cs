@@ -16,6 +16,7 @@ namespace J_Explore.Properties
         public Riwayat()
         {
             InitializeComponent();
+            readData();
         }
 
         private void OnButtonExportExcelClick(object sender, EventArgs e)
@@ -44,6 +45,12 @@ namespace J_Explore.Properties
                     new PrintingArgumentsTransaction(1, "Otong", DateTime.Now, 2, 0, 6000),
                 }
             );
+        }
+
+        private void readData()
+        {
+            DataTable data = DbHelper.GetInstance().ExecuteQuery("select * from transaksi");
+            dataGridViewRiwayat.DataSource = data;
         }
     }
 }

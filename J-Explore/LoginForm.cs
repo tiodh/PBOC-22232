@@ -43,7 +43,7 @@ namespace penjualan_laptop.lib.dataProduct
                     inputPassword = password.Text.Trim();
 
                     Global.CurrentAdmin = Admin.FromDataRow(dt.Rows[0]);
-                    
+
                     Dashboard_Admin dashboard_Admin = new Dashboard_Admin();
                     dashboard_Admin.ShowDialog();
                     this.Close();
@@ -66,6 +66,12 @@ namespace penjualan_laptop.lib.dataProduct
                 conn.Close();
             }
 
+        }
+
+        private void resetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ResetPassword resetPage = new ResetPassword();
+            resetPage.ShowDialog();
         }
     }
 }

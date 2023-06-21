@@ -22,9 +22,15 @@ namespace J_Explore
         public pendataan()
         {
             InitializeComponent();
+            conn = new NpgsqlConnection
+            {
+                ConnectionString = connString
+            };
             showWisataHarian();
             ShowWisatawanMingguan();
+            ShowWisatawanBulanan();
         }
+
 
         private void showWisataHarian()
         {
@@ -48,6 +54,21 @@ namespace J_Explore
             {
                 pendataanMinggu.Rows.Add(new[] { Global.TranslateDayOfWeek(Convert.ToDecimal(row[0])), row[1] });
             }
+        }
+
+        private void ShowWisatawanBulanan()
+        {
+            conn.Open();
+            string sql = @"SELECT EXTRACT(MONTH FROM tanggal_transaksi) AS bulan, COUNT(*) AS jumlah_pengunjung FROM transaksi GROUP BY bulan ORDER BY bulan;";
+            if (!string.IsNullOrEmpty(textBox3.Text))
+            {
+                sql = @"SELECT EXTRACT(MONTH FROM tanggal_transaksi) AS bulan, COUNT(*) AS jumlah_pengunjung FROM transaksi WHERE EXTRACT(MONTH FROM tanggal_transaksi) = '" + textBox3.Text + "' GROUP BY bulan ORDER BY bulan;";
+            }
+            cmd = new NpgsqlCommand(sql, conn);
+            dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
+            conn.Close();
+            pendataanBulan.DataSource = dt;
         }
 
         private void searchDataharian_Click(object sender, EventArgs e)
@@ -81,14 +102,7 @@ namespace J_Explore
 
         private void button5_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            string sql = @"SELECT EXTRACT(MONTH FROM tanggal_transaksi) AS bulan, COUNT(*) AS jumlah_pengunjung FROM transaksi WHERE EXTRACT(MONTH FROM tanggal_transaksi) = '" + textBox3.Text + "' GROUP BY bulan ORDER BY bulan;";
-            cmd = new NpgsqlCommand(sql, conn);
-            dt = new DataTable();
-            dt.Load(cmd.ExecuteReader());
-            conn.Close();
-            pendataanBulan.DataSource = dt;
-            MessageBox.Show("Data berhasil ditampilkan!");
+            ShowWisatawanBulanan();
         }
 
         private void OnButtonMingguIniClick(object sender, EventArgs e)

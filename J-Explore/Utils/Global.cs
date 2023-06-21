@@ -11,7 +11,7 @@ namespace J_Explore.Utils
 {
     public static class Global
     {
-        public const string TableAdmin = "admin";
+        public const string TableAdmin = "akun_admin";
         public const string ColumnAdminUsername = "username";
         public const string ColumnAdminPassword = "password";
 
@@ -43,8 +43,8 @@ namespace J_Explore.Utils
         public const string DbHost = "localhost";
         public const int DbPort = 5432;
         public const string DbUsername = "postgres";
-        public const string DbPassword = "12345";
-        public const string DbName = "anyar";
+        public const string DbPassword = "HELLOWORLD123";
+        public const string DbName = "new_pbo";
 
         public static readonly Color OnHoverColor = Color.Lime;
 

@@ -15,6 +15,7 @@ using OfficeOpenXml.Style.Dxf;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms.VisualStyles;
 using System.Diagnostics;
+using J_Explore.Utils;
 
 namespace J_Explore
 {
@@ -23,7 +24,7 @@ namespace J_Explore
         public diagrampendapatan()
         {
             InitializeComponent();
-            readDaysIncome();
+            ReadIncomeV2();
         }
 
         private void diagrampendapatan_Load(object sender, EventArgs e)
@@ -86,7 +87,7 @@ namespace J_Explore
                 }
             }
 
-            cartDataHari.Series = new ISeries[] {
+            cartDataBulan.Series = new ISeries[] {
                 new ColumnSeries<int>
                 {
                     Name = "Jumlah",
@@ -94,7 +95,7 @@ namespace J_Explore
                 }
             };
 
-            cartDataMinggu.Series = new ISeries[] {
+            cartDataTahun.Series = new ISeries[] {
                 new ColumnSeries<int>
                 {
                     Name = "Jumlah",
@@ -102,7 +103,7 @@ namespace J_Explore
                 }
             };
 
-            cartDataHari.XAxes = new Axis[]
+            cartDataBulan.XAxes = new Axis[]
             {
                 new Axis
                 {
@@ -111,12 +112,76 @@ namespace J_Explore
                 }
             };
 
-            cartDataMinggu.XAxes = new Axis[]
+            cartDataTahun.XAxes = new Axis[]
             {
                 new Axis
                 {
                     Labeler = (value) => "Rp " + value.ToString("N0"),
                     Labels = month
+                }
+            };
+        }
+
+        private void ReadIncomeV2()
+        {
+            // Ambil data per bulan
+            DataTable dataPerBulan = DbHelper.GetInstance().ExecuteQuery("SELECT EXTRACT(MONTH FROM tanggal_transaksi) AS bulan, SUM(jumlah_pengunjung * harga_tiket) AS total_pendapatan FROM transaksi JOIN detail_transaksi USING (id_transaksi) JOIN jenis_pengunjung USING (id_jenis_pengunjung) WHERE EXTRACT(YEAR FROM tanggal_transaksi) = EXTRACT(YEAR FROM CURRENT_DATE) GROUP BY EXTRACT(MONTH FROM tanggal_transaksi) ORDER BY bulan");
+
+            List<long> bulanValues = new List<long> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            Axis bulanAxis = new Axis
+            {
+                Labeler = (value) => "Rp " + value.ToString("N0"),
+                Labels = new string[] { Global.TranslateMonth(1), Global.TranslateMonth(2), Global.TranslateMonth(3), Global.TranslateMonth(4), Global.TranslateMonth(5), Global.TranslateMonth(6), Global.TranslateMonth(7), Global.TranslateMonth(8), Global.TranslateMonth(9), Global.TranslateMonth(10), Global.TranslateMonth(11), Global.TranslateMonth(12) }
+            };
+
+            foreach (DataRow row in dataPerBulan.Rows)
+            {
+                bulanValues[Convert.ToInt32((decimal)row[0]) - 1] = (long)row[1];
+            }
+
+            cartDataBulan.Series = new ISeries[]
+            {
+                new ColumnSeries<long>
+                {
+                    TooltipLabelFormatter = (value) => $"Rp {value.PrimaryValue.ToString("N0")}",
+                    Name = "Jumlah",
+                    Values = bulanValues
+                }
+            };
+
+            cartDataBulan.XAxes = new Axis[]
+            {
+                bulanAxis
+            };
+
+            // Ambil data per tahun
+            DataTable dataPerTahun = DbHelper.GetInstance().ExecuteQuery("SELECT EXTRACT(YEAR FROM tanggal_transaksi) AS tahun, SUM(jumlah_pengunjung * harga_tiket) AS total_pendapatan FROM transaksi JOIN detail_transaksi USING (id_transaksi) JOIN jenis_pengunjung USING (id_jenis_pengunjung) GROUP BY EXTRACT(YEAR FROM tanggal_transaksi) ORDER BY tahun");
+
+            List<long> yearValues = new List<long>();
+            List<String> yearLabels = new List<string>();
+
+            foreach (DataRow row in dataPerTahun.Rows)
+            {
+                yearValues.Add((long)row[1]);
+                yearLabels.Add(((decimal)row[0]).ToString());
+            }
+
+            cartDataTahun.Series = new ISeries[]
+            {
+                new ColumnSeries<long>
+                {
+                    TooltipLabelFormatter = (value) => $"Rp {value.PrimaryValue.ToString("N0")}",
+                    Name = "Jumlah",
+                    Values = yearValues
+                }
+            };
+
+            cartDataTahun.XAxes = new Axis[]
+            {
+                new Axis
+                {
+                    Labeler = (value) => "Rp " + value.ToString("N0"),
+                    Labels = yearLabels
                 }
             };
         }

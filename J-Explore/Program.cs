@@ -19,7 +19,7 @@ namespace J_Explore
             ApplicationConfiguration.Initialize();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             DbHelper.Initialize(Global.DbHost, Global.DbPort, Global.DbUsername, Global.DbPassword, Global.DbName);
-            Application.Run(new Dashboard_User());
+            Application.Run(new Dashboard_Admin());
         }
     }
 }

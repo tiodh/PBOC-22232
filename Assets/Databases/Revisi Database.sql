@@ -39,8 +39,8 @@ INSERT INTO jenis_pengunjung VALUES
 CREATE TABLE detail_transaksi (
   id_detail_transaksi SERIAL PRIMARY KEY,
   id_transaksi int NOT NULL,
-  id_jenis_pengunjung int NOT NULL,
-  jumlah_pengunjung int NOT NULL,
+  id_jenis_pengunjung int,
+  jumlah_pengunjung int,
   foreign key (id_transaksi) references transaksi (id_transaksi),
   foreign key (id_jenis_pengunjung) references jenis_pengunjung (id_jenis_pengunjung)
 );
@@ -73,8 +73,8 @@ VALUES
 CREATE TABLE IF NOT EXISTS feedback_user (
   id_feedback_user SERIAL PRIMARY KEY,
   ulasan VARCHAR(255) DEFAULT NULL,
-  rating INTEGER NOT NULL,
-  tanggal_feedback DATE NOT NULL,
+  rating INTEGER,
+  tanggal_feedback DATE,
 	id_akun_user int not null,
 	foreign key (id_akun_user) references akun_user (id_akun_user)
 );

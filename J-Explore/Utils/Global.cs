@@ -43,8 +43,8 @@ namespace J_Explore.Utils
         public const string DbHost = "localhost";
         public const int DbPort = 5432;
         public const string DbUsername = "postgres";
-        public const string DbPassword = "Ilmiana15!";
-        public const string DbName = "postgres";
+        public const string DbPassword = "HELLOWORLD123";
+        public const string DbName = "new_pbo";
 
         public static readonly Color OnHoverColor = Color.Lime;
 

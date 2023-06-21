@@ -45,20 +45,24 @@ namespace J_Explore
 
             DataTable table = DbHelper.GetInstance().ExecuteQuery("SELECT DATE_TRUNC('week', tanggal_transaksi) AS minggu, SUM(harga_tiket * jumlah_pengunjung) AS pendapatan_mingguan\r\nFROM transaksi\r\nJOIN detail_transaksi ON transaksi.id_transaksi = detail_transaksi.id_transaksi\r\nJOIN jenis_pengunjung ON detail_transaksi.id_jenis_pengunjung = jenis_pengunjung.id_jenis_pengunjung\r\nWHERE DATE_TRUNC('week', tanggal_transaksi) = DATE_TRUNC('week', CURRENT_DATE)\r\nGROUP BY minggu;\r\n");
 
-            foreach (DataRow row in table.Rows)
-            {
-                pendapatanMinggu.Rows.Add(new[] { Global.TranslateDayOfWeek(Convert.ToDecimal(row[0])), row[1] });
-            }
+            //foreach (DataRow row in table.Rows)
+            //{
+            //    pendapatanMinggu.Rows.Add(new[] { row[0], row[1] });
+            //}
+
+            pendapatanMinggu.DataSource = table;
         }
         private void showWisatawanBulanan()
         {
             pendapatanBulan.Rows.Clear();
             DataTable table = DbHelper.GetInstance().ExecuteQuery("SELECT DATE_TRUNC('month', tanggal_transaksi) AS bulan, SUM(harga_tiket * jumlah_pengunjung) AS pendapatan_bulanan\r\nFROM transaksi\r\nJOIN detail_transaksi ON transaksi.id_transaksi = detail_transaksi.id_transaksi\r\nJOIN jenis_pengunjung ON detail_transaksi.id_jenis_pengunjung = jenis_pengunjung.id_jenis_pengunjung\r\nWHERE DATE_TRUNC('month', tanggal_transaksi) = DATE_TRUNC('month', CURRENT_DATE)\r\nGROUP BY bulan;\r\n");
 
-            foreach (DataRow row in table.Rows)
-            {
-                pendapatanBulan.Rows.Add(new[] { Global.TranslateDayOfWeek(Convert.ToDecimal(row[0])), row[1] });
-            }
+            //foreach (DataRow row in table.Rows)
+            //{
+            //    pendapatanBulan.Rows.Add(new[] { row[0], row[1] });
+            //}
+
+            pendapatanBulan.DataSource = table;
         }
         private void pendataan_Load(object sender, EventArgs e)
         {

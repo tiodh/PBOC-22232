@@ -48,84 +48,85 @@
             // 
             // pendapatanBulan
             // 
+            pendapatanBulan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             pendapatanBulan.BackgroundColor = Color.White;
             pendapatanBulan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendapatanBulan.Location = new Point(41, 520);
+            pendapatanBulan.Location = new Point(33, 416);
+            pendapatanBulan.Margin = new Padding(2, 2, 2, 2);
             pendapatanBulan.Name = "pendapatanBulan";
             pendapatanBulan.RowHeadersWidth = 62;
             pendapatanBulan.RowTemplate.Height = 33;
-            pendapatanBulan.Size = new Size(1352, 296);
+            pendapatanBulan.Size = new Size(1082, 237);
             pendapatanBulan.TabIndex = 8;
             pendapatanBulan.CellContentClick += pendapatanBulan_CellContentClick;
             // 
             // pendapatanMinggu
             // 
+            pendapatanMinggu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             pendapatanMinggu.BackgroundColor = Color.White;
             pendapatanMinggu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendapatanMinggu.Location = new Point(794, 108);
+            pendapatanMinggu.Location = new Point(635, 86);
+            pendapatanMinggu.Margin = new Padding(2, 2, 2, 2);
             pendapatanMinggu.Name = "pendapatanMinggu";
             pendapatanMinggu.RowHeadersWidth = 62;
             pendapatanMinggu.RowTemplate.Height = 33;
-            pendapatanMinggu.Size = new Size(599, 283);
+            pendapatanMinggu.Size = new Size(479, 226);
             pendapatanMinggu.TabIndex = 7;
             pendapatanMinggu.CellContentClick += pendataanMinggu_CellContentClick;
             // 
             // pendapatanHari
             // 
+            pendapatanHari.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             pendapatanHari.BackgroundColor = Color.White;
             pendapatanHari.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            pendapatanHari.Location = new Point(41, 108);
+            pendapatanHari.Location = new Point(33, 86);
+            pendapatanHari.Margin = new Padding(2, 2, 2, 2);
             pendapatanHari.Name = "pendapatanHari";
             pendapatanHari.RowHeadersWidth = 62;
             pendapatanHari.RowTemplate.Height = 33;
-            pendapatanHari.Size = new Size(599, 283);
+            pendapatanHari.Size = new Size(479, 226);
             pendapatanHari.TabIndex = 6;
             // 
             // button5
             // 
             button5.ForeColor = Color.Black;
-            button5.Location = new Point(1243, 465);
-            button5.Margin = new Padding(4);
+            button5.Location = new Point(994, 372);
             button5.Name = "button5";
-            button5.Size = new Size(156, 36);
+            button5.Size = new Size(125, 29);
             button5.TabIndex = 41;
             button5.Text = "Cari";
             button5.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(47, 465);
-            textBox3.Margin = new Padding(4);
+            textBox3.Location = new Point(38, 372);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(1160, 31);
+            textBox3.Size = new Size(929, 27);
             textBox3.TabIndex = 40;
             // 
             // searchDataharian
             // 
             searchDataharian.ForeColor = Color.Black;
-            searchDataharian.Location = new Point(317, 70);
-            searchDataharian.Margin = new Padding(4);
+            searchDataharian.Location = new Point(254, 56);
             searchDataharian.Name = "searchDataharian";
-            searchDataharian.Size = new Size(118, 36);
+            searchDataharian.Size = new Size(94, 29);
             searchDataharian.TabIndex = 39;
             searchDataharian.Text = "Cari";
             searchDataharian.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(824, 70);
-            textBox2.Margin = new Padding(4);
+            textBox2.Location = new Point(659, 56);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(448, 31);
+            textBox2.Size = new Size(359, 27);
             textBox2.TabIndex = 38;
             // 
             // button2
             // 
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(442, 67);
-            button2.Margin = new Padding(4);
+            button2.Location = new Point(354, 54);
             button2.Name = "button2";
-            button2.Size = new Size(94, 36);
+            button2.Size = new Size(75, 29);
             button2.TabIndex = 37;
             button2.Text = "Update";
             button2.UseVisualStyleBackColor = true;
@@ -133,20 +134,18 @@
             // button1
             // 
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(1304, 66);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(1043, 53);
             button1.Name = "button1";
-            button1.Size = new Size(118, 36);
+            button1.Size = new Size(94, 29);
             button1.TabIndex = 36;
             button1.Text = "Cari";
             button1.UseVisualStyleBackColor = true;
             // 
             // tb_pendataanHari
             // 
-            tb_pendataanHari.Location = new Point(70, 67);
-            tb_pendataanHari.Margin = new Padding(4);
+            tb_pendataanHari.Location = new Point(56, 54);
             tb_pendataanHari.Name = "tb_pendataanHari";
-            tb_pendataanHari.Size = new Size(230, 31);
+            tb_pendataanHari.Size = new Size(185, 27);
             tb_pendataanHari.TabIndex = 35;
             // 
             // label3
@@ -154,10 +153,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(649, 412);
+            label3.Location = new Point(519, 330);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(134, 29);
+            label3.Size = new Size(107, 24);
             label3.TabIndex = 34;
             label3.Text = "BULAN INI";
             // 
@@ -166,10 +165,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(824, 22);
+            label2.Location = new Point(659, 18);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(151, 29);
+            label2.Size = new Size(122, 24);
             label2.TabIndex = 33;
             label2.Text = "MINGGU INI";
             // 
@@ -178,18 +177,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(70, 22);
+            label1.Location = new Point(56, 18);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(109, 29);
+            label1.Size = new Size(86, 24);
             label1.TabIndex = 32;
             label1.Text = "HARI INI";
             // 
             // pendapatan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1436, 852);
+            ClientSize = new Size(1149, 682);
             Controls.Add(button5);
             Controls.Add(textBox3);
             Controls.Add(searchDataharian);
@@ -204,6 +203,7 @@
             Controls.Add(pendapatanMinggu);
             Controls.Add(pendapatanHari);
             ForeColor = Color.Black;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "pendapatan";
             Text = "PENDATAAN";
             Load += pendapatan_Load;

@@ -21,6 +21,7 @@ namespace J_Explore
         public Dashboard_User()
         {
             InitializeComponent();
+            OpenChildFrom(new Beranda(), this);
         }
 
         public void OpenChildFrom(Form childFrom, object btnsender)

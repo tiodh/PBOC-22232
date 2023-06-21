@@ -1,4 +1,5 @@
 ﻿using J_Explore.Services;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,6 @@ namespace J_Explore.Properties
         public Riwayat()
         {
             InitializeComponent();
-            readData();
         }
 
         private void OnButtonExportExcelClick(object sender, EventArgs e)
@@ -49,7 +49,28 @@ namespace J_Explore.Properties
 
         private void Riwayat_Load(object sender, EventArgs e)
         {
+            DataTable dt = DbHelper.GetInstance().ExecuteQuery($"select id_transaksi as \"ID TRANSAKSI\", tanggal_transaksi as \"TANGGAL\", nama_pengunjung as \"NAMA PEMBELI\", asal_pengunjung as \"ASAL\", sum(jumlah_pengunjung * harga_tiket) as total from transaksi join detail_transaksi using (id_transaksi) join jenis_pengunjung using (id_jenis_pengunjung) group by id_transaksi, tanggal_transaksi, nama_pengunjung, asal_pengunjung");
+            dataGridViewRiwayat.DataSource = dt;
+        }
 
+        private void SearchData()
+        {
+            dataGridViewRiwayat.Rows.Clear();
+
+            try
+            {
+                DataTable dt = DbHelper.GetInstance().ExecuteQuery($"select id_transaksi as \"ID TRANSAKSI\", tanggal_transaksi as \"TANGGAL\", nama_pengunjung as \"NAMA PEMBELI\", asal_pengunjung as \"ASAL\", sum(jumlah_pengunjung * harga_tiket) as total from transaksi join detail_transaksi using (id_transaksi) join jenis_pengunjung using (id_jenis_pengunjung) group by id_transaksi, tanggal_transaksi, nama_pengunjung, asal_pengunjung");
+                dataGridViewRiwayat.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SearchData();
         }
     }
 }

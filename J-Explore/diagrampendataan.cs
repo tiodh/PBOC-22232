@@ -25,18 +25,18 @@ namespace J_Explore
 {
     public partial class diagrampendataan : Form
     {
-        private ObservableCollection<DateTimePoint> weeklyData;
         private string connectionString = $"Host={Global.DbHost};Port={Global.DbPort};Database={Global.DbName};Username={Global.DbUsername};Password={Global.DbPassword}";
         private NpgsqlConnection _dbConnection;
 
+        [Obsolete]
         public diagrampendataan()
         {
             InitializeComponent();
             _dbConnection = new NpgsqlConnection(connectionString);
 
             // Inisialisasi koleksi tanggal dan jumlah pengunjung
+            ObservableCollection<DateTimePoint> dailyData = new ObservableCollection<DateTimePoint>();
             ObservableCollection<DateTimePoint> weeklyData = new ObservableCollection<DateTimePoint>();
-            ObservableCollection<DateTimePoint> weeklyData2 = new ObservableCollection<DateTimePoint>();
             ObservableCollection<DateTimePoint> monthlyData = new ObservableCollection<DateTimePoint>();
             // Ambil data dari database
             _dbConnection.Open();
@@ -47,8 +47,8 @@ namespace J_Explore
             _dbConnection.Close();
 
             DateTime firstDate = (DateTime)data.Rows[0]["tanggal_transaksi"];
-            DateTime lastDate = (DateTime)data.Rows[data.Rows.Count - 1]["tanggal_transaksi"];
-            //DateTime endDate = startDate.AddMonths(1).AddDays(-1);
+            //DateTime lastDate = (DateTime)data.Rows[data.Rows.Count - 1]["tanggal_transaksi"];
+            DateTime lastDate = DateTime.Now.Date;
 
 
             // Menghitung durasi antara tanggal pertama dan terakhir
@@ -127,7 +127,7 @@ namespace J_Explore
                     .Select(group => new
                     {
                         WeekStartDate = DateTime.Parse(group.Key.Week),
-                        Total = group.Sum(row => (int)row["total_pengunjung"])
+                        Total = group.Sum(row => (Int64)row["total_pengunjung"])
                     })
                     .OrderBy(group => group.WeekStartDate);
 
@@ -158,7 +158,7 @@ namespace J_Explore
                 }
             }
             // Konfigurasi grafik
-            cartDataMinggu.Title = new LabelVisual
+            cartMinggu.Title = new LabelVisual
             {
                 Text = "Laporan Jumlah Pengunjung",
                 TextSize = 25,
@@ -166,7 +166,7 @@ namespace J_Explore
                 Paint = new SolidColorPaint(SKColors.DarkSlateGray)
             };
 
-            cartDataMinggu.Series = new ISeries[]
+            cartMinggu.Series = new ISeries[]
             {
                 new ColumnSeries<DateTimePoint>
                 {
@@ -176,14 +176,14 @@ namespace J_Explore
                 }
             };
 
-            cartDataMinggu.XAxes = new Axis[]
+            cartMinggu.XAxes = new Axis[]
             {
                 new Axis
                 {
                     Labeler = value => new DateTime((long)value).ToString("dd MMM yyyy"),
                     LabelsRotation = 45,
-                    UnitWidth = TimeSpan.FromDays(1).Ticks,
-                    MinStep = TimeSpan.FromDays(1).Ticks,
+                    UnitWidth = TimeSpan.FromDays(7).Ticks,
+                    MinStep = TimeSpan.FromDays(7).Ticks,
                 }
             };
             if (duration.Days >= 7)
@@ -198,7 +198,7 @@ namespace J_Explore
 
                 foreach (var dailyGroup2 in dailyGroups2)
                 {
-                    weeklyData2.Add(new DateTimePoint(dailyGroup2.Date, dailyGroup2.Total));
+                    dailyData.Add(new DateTimePoint(dailyGroup2.Date, dailyGroup2.Total));
                 }
             }
 
@@ -214,7 +214,7 @@ namespace J_Explore
 
                 foreach (var dailyGroup2 in dailyGroups2)
                 {
-                    weeklyData2.Add(new DateTimePoint(dailyGroup2.Date, dailyGroup2.Total));
+                    dailyData.Add(new DateTimePoint(dailyGroup2.Date, dailyGroup2.Total));
                 }
             }
 
@@ -233,7 +233,7 @@ namespace J_Explore
                 {
                     TooltipLabelFormatter = (chartPoint) => $"{new DateTime((long)chartPoint.SecondaryValue):dd MMM yyyy}: {chartPoint.PrimaryValue:N0}",
                     Name = "Jumlah Pengunjung",
-                    Values = weeklyData2
+                    Values = dailyData
                 }
             };
 

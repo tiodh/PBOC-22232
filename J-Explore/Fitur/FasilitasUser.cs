@@ -413,5 +413,157 @@ namespace J_Explore.Lib
             conn.Close();
             OpenChildFrom(detailfasilitas11, sender);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string search = textBox1.Text; // Ambil teks dari TextBox sebagai nama panel yang ingin dicari
+
+            PictureBox picToShow = null;
+            Button buttonToShow = null;
+            PictureBox[] picToHide = new PictureBox[] { Music, Hotel, Aula, Kantin, Suite, Kolam, Camping, Playground, Restoran, Cafe };
+            Button[] buttonToHide = new Button[] { button2, button3, button4, button5, button6, button7, button8, button9, button10, button11 };
+
+            // Cek nama panel dan tentukan panel mana yang akan ditampilkan dan yang akan disembunyikan
+            if (search == "Music Corner")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Music;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button2;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Hotel")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Hotel;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button3;
+                    button.Visible = false;
+                }
+            }
+            else if(search == "Aula")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Aula;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button4;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Kantin")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Kantin;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button5;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Suite Room")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Suite;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button6;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Kolam Renang")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Kolam;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button7;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Camping Ground")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Camping;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button8;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Playground")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Playground;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button9;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Restoran")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Restoran;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button10;
+                    button.Visible = false;
+                }
+            }
+            else if (search == "Cafe")
+            {
+                foreach (PictureBox picture in picToHide)
+                {
+                    picToShow = Cafe;
+                    picture.Visible = false;
+                }
+                foreach (Button button in buttonToHide)
+                {
+                    buttonToShow = button11;
+                    button.Visible = false;
+                }
+            }
+
+            if (picToShow != null)
+            {
+                picToShow.Visible = true;
+                buttonToShow.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Fasilitas tidak ditemukan.");
+            }
+        }
     }
 }

@@ -86,7 +86,7 @@ namespace J_Explore
                 }
             }
 
-            cartDataHari.Series = new ISeries[] {
+            cartDataBulan.Series = new ISeries[] {
                 new ColumnSeries<int>
                 {
                     Name = "Jumlah",
@@ -94,7 +94,7 @@ namespace J_Explore
                 }
             };
 
-            cartDataMinggu.Series = new ISeries[] {
+            cartDataTahun.Series = new ISeries[] {
                 new ColumnSeries<int>
                 {
                     Name = "Jumlah",
@@ -102,7 +102,7 @@ namespace J_Explore
                 }
             };
 
-            cartDataHari.XAxes = new Axis[]
+            cartDataBulan.XAxes = new Axis[]
             {
                 new Axis
                 {
@@ -111,7 +111,7 @@ namespace J_Explore
                 }
             };
 
-            cartDataMinggu.XAxes = new Axis[]
+            cartDataTahun.XAxes = new Axis[]
             {
                 new Axis
                 {

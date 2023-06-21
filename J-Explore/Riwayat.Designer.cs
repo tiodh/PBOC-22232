@@ -181,6 +181,7 @@
             Controls.Add(textBox1);
             Name = "Riwayat";
             Text = "Riwayat";
+            Load += Riwayat_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewRiwayat).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -45,5 +45,10 @@ namespace J_Explore.Properties
                 }
             );
         }
+
+        private void Riwayat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

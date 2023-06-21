@@ -11,7 +11,7 @@ namespace J_Explore.Utils
 {
     public static class Global
     {
-        public const string TableAdmin = "admin";
+        public const string TableAdmin = "akun_admin";
         public const string ColumnAdminUsername = "username";
         public const string ColumnAdminPassword = "password";
 

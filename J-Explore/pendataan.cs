@@ -23,6 +23,7 @@ namespace J_Explore
         {
             InitializeComponent();
             showWisataHarian();
+            ShowWisatawanMingguan();
         }
 
         private void showWisataHarian()
@@ -39,7 +40,14 @@ namespace J_Explore
 
         private void ShowWisatawanMingguan()
         {
+            pendataanMinggu.Rows.Clear();
 
+            DataTable table = DbHelper.GetInstance().ExecuteQuery("SELECT EXTRACT(DOW FROM tanggal_transaksi) AS weekday_number, count(*) AS total FROM transaksi WHERE tanggal_transaksi >= DATE_TRUNC('week', CURRENT_DATE) AND tanggal_transaksi < DATE_TRUNC('week', CURRENT_DATE) + INTERVAL '1 week' GROUP BY weekday_number");
+
+            foreach (DataRow row in table.Rows)
+            {
+                pendataanMinggu.Rows.Add(new[] { Global.TranslateDayOfWeek(Convert.ToDecimal(row[0])), row[1] });
+            }
         }
 
         private void searchDataharian_Click(object sender, EventArgs e)
@@ -81,6 +89,24 @@ namespace J_Explore
             conn.Close();
             pendataanBulan.DataSource = dt;
             MessageBox.Show("Data berhasil ditampilkan!");
+        }
+
+        private void OnButtonMingguIniClick(object sender, EventArgs e)
+        {
+            pendataanMinggu.Rows.Clear();
+
+            if (string.IsNullOrEmpty(textBox2.Text))
+            {
+                ShowWisatawanMingguan();
+                return;
+            }
+
+            DataTable table = DbHelper.GetInstance().ExecuteQuery($"SELECT EXTRACT(DOW FROM tanggal_transaksi) AS weekday_number, count(*) AS total FROM transaksi WHERE tanggal_transaksi >= DATE_TRUNC('week', CURRENT_DATE) AND tanggal_transaksi < DATE_TRUNC('week', CURRENT_DATE) + INTERVAL '1 week' AND EXTRACT(DOW FROM tanggal_transaksi) = {textBox2.Text.Trim()} GROUP BY weekday_number");
+
+            foreach (DataRow row in table.Rows)
+            {
+                pendataanMinggu.Rows.Add(new[] { Global.TranslateDayOfWeek(Convert.ToDecimal(row[0])), row[1] });
+            }
         }
     }
 }

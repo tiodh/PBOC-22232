@@ -59,9 +59,10 @@
             panel1.Controls.Add(tableLayoutPanel1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(30);
-            panel1.Size = new Size(1250, 792);
+            panel1.Padding = new Padding(26, 22, 26, 22);
+            panel1.Size = new Size(1094, 562);
             panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -72,11 +73,12 @@
             tableLayoutPanel1.Controls.Add(DataKontakDarurat, 0, 0);
             tableLayoutPanel1.Controls.Add(panel2, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(30, 30);
+            tableLayoutPanel1.Location = new Point(26, 22);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1190, 732);
+            tableLayoutPanel1.Size = new Size(1042, 518);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // DataKontakDarurat
@@ -87,10 +89,11 @@
             DataKontakDarurat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataKontakDarurat.Columns.AddRange(new DataGridViewColumn[] { id, name, phone, email, deskripsi });
             DataKontakDarurat.Dock = DockStyle.Fill;
-            DataKontakDarurat.Location = new Point(3, 3);
+            DataKontakDarurat.Location = new Point(3, 2);
+            DataKontakDarurat.Margin = new Padding(3, 2, 3, 2);
             DataKontakDarurat.Name = "DataKontakDarurat";
             DataKontakDarurat.RowHeadersWidth = 51;
-            DataKontakDarurat.Size = new Size(953, 726);
+            DataKontakDarurat.Size = new Size(833, 514);
             DataKontakDarurat.TabIndex = 4;
             // 
             // id
@@ -137,9 +140,10 @@
             panel2.Controls.Add(UpdateButton);
             panel2.Controls.Add(HapusButton);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(962, 3);
+            panel2.Location = new Point(842, 2);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(225, 726);
+            panel2.Size = new Size(197, 514);
             panel2.TabIndex = 5;
             // 
             // buttonTambah
@@ -148,9 +152,10 @@
             buttonTambah.Dock = DockStyle.Top;
             buttonTambah.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonTambah.ForeColor = Color.Black;
-            buttonTambah.Location = new Point(0, 276);
+            buttonTambah.Location = new Point(0, 218);
+            buttonTambah.Margin = new Padding(3, 2, 3, 2);
             buttonTambah.Name = "buttonTambah";
-            buttonTambah.Size = new Size(225, 44);
+            buttonTambah.Size = new Size(197, 33);
             buttonTambah.TabIndex = 13;
             buttonTambah.Text = "TAMBAH";
             buttonTambah.UseVisualStyleBackColor = false;
@@ -159,72 +164,76 @@
             // textBoxDeskripsi
             // 
             textBoxDeskripsi.Dock = DockStyle.Top;
-            textBoxDeskripsi.Location = new Point(0, 249);
+            textBoxDeskripsi.Location = new Point(0, 195);
+            textBoxDeskripsi.Margin = new Padding(3, 2, 3, 2);
             textBoxDeskripsi.Name = "textBoxDeskripsi";
-            textBoxDeskripsi.Size = new Size(225, 27);
+            textBoxDeskripsi.Size = new Size(197, 23);
             textBoxDeskripsi.TabIndex = 12;
             // 
             // labelDeskripsi
             // 
             labelDeskripsi.AutoSize = true;
             labelDeskripsi.Dock = DockStyle.Top;
-            labelDeskripsi.Location = new Point(0, 229);
+            labelDeskripsi.Location = new Point(0, 180);
             labelDeskripsi.Name = "labelDeskripsi";
-            labelDeskripsi.Size = new Size(69, 20);
+            labelDeskripsi.Size = new Size(54, 15);
             labelDeskripsi.TabIndex = 11;
             labelDeskripsi.Text = "Deskripsi";
             // 
             // textBoxEmail
             // 
             textBoxEmail.Dock = DockStyle.Top;
-            textBoxEmail.Location = new Point(0, 202);
+            textBoxEmail.Location = new Point(0, 157);
+            textBoxEmail.Margin = new Padding(3, 2, 3, 2);
             textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(225, 27);
+            textBoxEmail.Size = new Size(197, 23);
             textBoxEmail.TabIndex = 10;
             // 
             // labelEmail
             // 
             labelEmail.AutoSize = true;
             labelEmail.Dock = DockStyle.Top;
-            labelEmail.Location = new Point(0, 182);
+            labelEmail.Location = new Point(0, 142);
             labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(46, 20);
+            labelEmail.Size = new Size(36, 15);
             labelEmail.TabIndex = 9;
             labelEmail.Text = "Email";
             // 
             // textBoxNoHp
             // 
             textBoxNoHp.Dock = DockStyle.Top;
-            textBoxNoHp.Location = new Point(0, 155);
+            textBoxNoHp.Location = new Point(0, 119);
+            textBoxNoHp.Margin = new Padding(3, 2, 3, 2);
             textBoxNoHp.Name = "textBoxNoHp";
-            textBoxNoHp.Size = new Size(225, 27);
+            textBoxNoHp.Size = new Size(197, 23);
             textBoxNoHp.TabIndex = 8;
             // 
             // labelNoHp
             // 
             labelNoHp.AutoSize = true;
             labelNoHp.Dock = DockStyle.Top;
-            labelNoHp.Location = new Point(0, 135);
+            labelNoHp.Location = new Point(0, 104);
             labelNoHp.Name = "labelNoHp";
-            labelNoHp.Size = new Size(53, 20);
+            labelNoHp.Size = new Size(42, 15);
             labelNoHp.TabIndex = 7;
             labelNoHp.Text = "No Hp";
             // 
             // textBoxNama
             // 
             textBoxNama.Dock = DockStyle.Top;
-            textBoxNama.Location = new Point(0, 108);
+            textBoxNama.Location = new Point(0, 81);
+            textBoxNama.Margin = new Padding(3, 2, 3, 2);
             textBoxNama.Name = "textBoxNama";
-            textBoxNama.Size = new Size(225, 27);
+            textBoxNama.Size = new Size(197, 23);
             textBoxNama.TabIndex = 6;
             // 
             // labelNama
             // 
             labelNama.AutoSize = true;
             labelNama.Dock = DockStyle.Top;
-            labelNama.Location = new Point(0, 88);
+            labelNama.Location = new Point(0, 66);
             labelNama.Name = "labelNama";
-            labelNama.Size = new Size(49, 20);
+            labelNama.Size = new Size(39, 15);
             labelNama.TabIndex = 5;
             labelNama.Text = "Nama";
             // 
@@ -234,9 +243,10 @@
             UpdateButton.Dock = DockStyle.Top;
             UpdateButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             UpdateButton.ForeColor = Color.Black;
-            UpdateButton.Location = new Point(0, 44);
+            UpdateButton.Location = new Point(0, 33);
+            UpdateButton.Margin = new Padding(3, 2, 3, 2);
             UpdateButton.Name = "UpdateButton";
-            UpdateButton.Size = new Size(225, 44);
+            UpdateButton.Size = new Size(197, 33);
             UpdateButton.TabIndex = 4;
             UpdateButton.Text = "UPDATE";
             UpdateButton.UseVisualStyleBackColor = false;
@@ -249,8 +259,9 @@
             HapusButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             HapusButton.ForeColor = Color.Black;
             HapusButton.Location = new Point(0, 0);
+            HapusButton.Margin = new Padding(3, 2, 3, 2);
             HapusButton.Name = "HapusButton";
-            HapusButton.Size = new Size(225, 44);
+            HapusButton.Size = new Size(197, 33);
             HapusButton.TabIndex = 2;
             HapusButton.Text = "HAPUS";
             HapusButton.UseVisualStyleBackColor = false;
@@ -258,9 +269,9 @@
             // 
             // Contact_Darurat
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 792);
+            ClientSize = new Size(1094, 562);
             Controls.Add(panel1);
             Margin = new Padding(2);
             Name = "Contact_Darurat";

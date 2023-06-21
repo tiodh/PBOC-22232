@@ -47,10 +47,9 @@ namespace J_Explore.Properties
             );
         }
 
-        private void readData()
+        private void Riwayat_Load(object sender, EventArgs e)
         {
-            DataTable data = DbHelper.GetInstance().ExecuteQuery("select * from transaksi");
-            dataGridViewRiwayat.DataSource = data;
+
         }
     }
 }

@@ -41,10 +41,10 @@ namespace J_Explore.Utils
 
         // Konfigurasi Database
         public static string DbHost { get; set; }
-        public const int DbPort = 5432;
-        public const string DbUsername = "postgres";
-        public const string DbPassword = "Rizal020304";
-        public const string DbName = "pbo2";
+        public static int DbPort { get; set; }
+        public static string DbUsername { get; set; }
+        public static string DbPassword { get; set; }
+        public static string DbName { get; set; }
 
         public static readonly Color OnHoverColor = Color.Lime;
 

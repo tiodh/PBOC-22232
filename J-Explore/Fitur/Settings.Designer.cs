@@ -33,9 +33,14 @@
             panel3 = new Panel();
             label2 = new Label();
             panel5 = new Panel();
+            comboBoxPaperSize = new ComboBox();
+            label9 = new Label();
+            comboBoxPrinter = new ComboBox();
+            label8 = new Label();
             panel2 = new Panel();
             label1 = new Label();
             panel4 = new Panel();
+            SaveDatabase = new Button();
             panel10 = new Panel();
             nameDatabase = new RichTextBox();
             panel9 = new Panel();
@@ -52,10 +57,10 @@
             hostName = new RichTextBox();
             label3 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
-            SaveDatabase = new Button();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
+            panel5.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
             panel10.SuspendLayout();
@@ -116,11 +121,53 @@
             // 
             panel5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Controls.Add(comboBoxPaperSize);
+            panel5.Controls.Add(label9);
+            panel5.Controls.Add(comboBoxPrinter);
+            panel5.Controls.Add(label8);
             panel5.Location = new Point(10, 18);
             panel5.Margin = new Padding(0, 10, 0, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(494, 571);
             panel5.TabIndex = 3;
+            // 
+            // comboBoxPaperSize
+            // 
+            comboBoxPaperSize.FormattingEnabled = true;
+            comboBoxPaperSize.Location = new Point(29, 169);
+            comboBoxPaperSize.Name = "comboBoxPaperSize";
+            comboBoxPaperSize.Size = new Size(432, 28);
+            comboBoxPaperSize.TabIndex = 8;
+            comboBoxPaperSize.SelectedIndexChanged += OnComboboxPaperSizeSelectedIndexChanged;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(29, 123);
+            label9.Name = "label9";
+            label9.Size = new Size(156, 31);
+            label9.TabIndex = 7;
+            label9.Text = "Ukuran Kertas";
+            // 
+            // comboBoxPrinter
+            // 
+            comboBoxPrinter.FormattingEnabled = true;
+            comboBoxPrinter.Location = new Point(29, 78);
+            comboBoxPrinter.Name = "comboBoxPrinter";
+            comboBoxPrinter.Size = new Size(432, 28);
+            comboBoxPrinter.TabIndex = 6;
+            comboBoxPrinter.SelectedIndexChanged += OnComboboxPrinterSelectedIndexChanged;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(29, 33);
+            label8.Name = "label8";
+            label8.Size = new Size(82, 31);
+            label8.TabIndex = 5;
+            label8.Text = "Printer";
             // 
             // panel2
             // 
@@ -165,6 +212,17 @@
             panel4.Padding = new Padding(10);
             panel4.Size = new Size(494, 571);
             panel4.TabIndex = 1;
+            // 
+            // SaveDatabase
+            // 
+            SaveDatabase.ForeColor = Color.Black;
+            SaveDatabase.Location = new Point(19, 508);
+            SaveDatabase.Name = "SaveDatabase";
+            SaveDatabase.Size = new Size(262, 39);
+            SaveDatabase.TabIndex = 4;
+            SaveDatabase.Text = "SAVE";
+            SaveDatabase.UseVisualStyleBackColor = true;
+            SaveDatabase.Click += SaveDatabase_Click;
             // 
             // panel10
             // 
@@ -211,6 +269,7 @@
             port.Size = new Size(458, 36);
             port.TabIndex = 2;
             port.Text = "";
+            port.KeyPress += OnTextBoxPortKeyPress;
             // 
             // panel7
             // 
@@ -345,17 +404,6 @@
             tableLayoutPanel2.Size = new Size(200, 100);
             tableLayoutPanel2.TabIndex = 0;
             // 
-            // SaveDatabase
-            // 
-            SaveDatabase.ForeColor = Color.Black;
-            SaveDatabase.Location = new Point(19, 508);
-            SaveDatabase.Name = "SaveDatabase";
-            SaveDatabase.Size = new Size(262, 39);
-            SaveDatabase.TabIndex = 4;
-            SaveDatabase.Text = "SAVE";
-            SaveDatabase.UseVisualStyleBackColor = true;
-            SaveDatabase.Click += SaveDatabase_Click;
-            // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -368,6 +416,8 @@
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel4.ResumeLayout(false);
@@ -407,5 +457,9 @@
         private Label label4;
         private Label label5;
         private Button SaveDatabase;
+        private Label label8;
+        private Label label9;
+        private ComboBox comboBoxPrinter;
+        private ComboBox comboBoxPaperSize;
     }
 }

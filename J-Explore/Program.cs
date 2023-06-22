@@ -1,3 +1,4 @@
+using J_Explore.Fitur;
 using J_Explore.Services;
 using J_Explore.Utils;
 using Npgsql;
@@ -8,18 +9,37 @@ namespace J_Explore
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            DbHelper.Initialize(Global.DbHost, Global.DbPort, Global.DbUsername, Global.DbPassword, Global.DbName);
-            Application.Run(new Dashboard_User());
+
+            // Initialize settings by default
+            Global.DbHost = Properties.Settings.Default.DbHost;
+            Global.DbUsername = Properties.Settings.Default.DbUsername;
+            Global.DbPassword = Properties.Settings.Default.DbPassword;
+            Global.DbPort = Properties.Settings.Default.DbPort;
+            Global.DbName = Properties.Settings.Default.DbName;
+
+            try
+            {
+                DbHelper.Initialize(Global.DbHost, Global.DbPort, Global.DbUsername, Global.DbPassword, Global.DbName);
+                DbHelper.GetInstance().ExecuteQuery("SELECT * FROM akun_admin");
+
+                // If no exception occurs, show the Dashboard_User form
+                Application.Run(new Dashboard_User());
+            }
+            catch (ArgumentException)
+            {
+                // Show the Settings form if an ArgumentException occurs
+                var settingsForm = new Settings(true);
+                settingsForm.ShowDialog();
+
+                Application.Run(new Dashboard_User());
+
+            }
         }
     }
+
 }

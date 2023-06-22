@@ -193,6 +193,7 @@
             label9.TabIndex = 6;
             label9.Text = "SETTINGS";
             label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Click += OnLabelSettingsClick;
             // 
             // panel13
             // 

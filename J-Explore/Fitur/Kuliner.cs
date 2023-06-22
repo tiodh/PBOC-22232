@@ -16,13 +16,12 @@ namespace J_Explore.Fitur
 {
     public partial class Kuliner : Form
     {
-        private DataBase dataBase = new DataBase();
         private string ConnectionString;
 
         public Kuliner()
         {
             InitializeComponent();
-            ConnectionString = $"Host={dataBase.DbHost};Port={dataBase.DbPort};Database={dataBase.DbName};Username={dataBase.DbUsername};Password={dataBase.DbPassword}";
+            ConnectionString = $"Host={Global.DbHost};Port={Global.DbPort};Database={Global.DbName};Username={Global.DbUsername};Password={Global.DbPassword}";
         }
 
         private void Kuliner_Load(object sender, EventArgs e)

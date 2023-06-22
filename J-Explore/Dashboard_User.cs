@@ -138,5 +138,10 @@ namespace J_Explore
         {
             OpenChildFrom(new Settings(), sender);
         }
+
+        private void OnLabelSettingsClick(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Settings(), sender);
+        }
     }
 }

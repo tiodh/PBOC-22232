@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using J_Explore.Fitur;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -111,7 +112,7 @@ namespace J_Explore.Services
         }
 
         public DataTable Read(string table, string? orderBy) => ExecuteQuery($"SELECT * FROM {table} {(orderBy != null ? $"ORDER BY {orderBy}" : "")}");
-        
+
 
         public int Update(string table, Dictionary<string, object> data, string whereColumn, int? whereValue)
         {

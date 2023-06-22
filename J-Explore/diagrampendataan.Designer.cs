@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             cartBulan = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
-            cartDataMinggu = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            cartMinggu = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             cartHari = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
             label1 = new Label();
             label2 = new Label();
@@ -40,16 +40,16 @@
             // 
             cartBulan.Location = new Point(50, 446);
             cartBulan.Name = "cartBulan";
-            cartBulan.Size = new Size(1337, 309);
+            cartBulan.Size = new Size(1337, 408);
             cartBulan.TabIndex = 14;
             // 
-            // cartDataMinggu
+            // cartMinggu
             // 
-            cartDataMinggu.Location = new Point(799, 83);
-            cartDataMinggu.Name = "cartDataMinggu";
-            cartDataMinggu.Size = new Size(588, 248);
-            cartDataMinggu.TabIndex = 13;
-            cartDataMinggu.Load += cartesianChart2_Load;
+            cartMinggu.Location = new Point(799, 83);
+            cartMinggu.Name = "cartMinggu";
+            cartMinggu.Size = new Size(588, 248);
+            cartMinggu.TabIndex = 13;
+            cartMinggu.Load += cartesianChart2_Load;
             // 
             // cartHari
             // 
@@ -95,12 +95,12 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1436, 784);
+            ClientSize = new Size(1436, 866);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(cartBulan);
-            Controls.Add(cartDataMinggu);
+            Controls.Add(cartMinggu);
             Controls.Add(cartHari);
             ForeColor = Color.Black;
             Name = "diagrampendataan";
@@ -111,7 +111,7 @@
 
         #endregion
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartBulan;
-        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartDataMinggu;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartMinggu;
         private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartHari;
         private Label label1;
         private Label label2;

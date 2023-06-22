@@ -34,34 +34,34 @@
             tableLayoutPanel4 = new TableLayoutPanel();
             tableLayoutPanel13 = new TableLayoutPanel();
             button10 = new Button();
-            pictureBox9 = new PictureBox();
+            Restoran = new PictureBox();
             tableLayoutPanel12 = new TableLayoutPanel();
             button11 = new Button();
-            pictureBox10 = new PictureBox();
+            Cafe = new PictureBox();
             tableLayoutPanel11 = new TableLayoutPanel();
             button9 = new Button();
-            pictureBox8 = new PictureBox();
+            Playground = new PictureBox();
             tableLayoutPanel10 = new TableLayoutPanel();
             button7 = new Button();
-            pictureBox6 = new PictureBox();
+            Kolam = new PictureBox();
             tableLayoutPanel9 = new TableLayoutPanel();
             button8 = new Button();
-            pictureBox7 = new PictureBox();
+            Camping = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel1 = new TableLayoutPanel();
             button3 = new Button();
-            pictureBox1 = new PictureBox();
+            Hotel = new PictureBox();
             tableLayoutPanel8 = new TableLayoutPanel();
             button6 = new Button();
-            pictureBox5 = new PictureBox();
+            Suite = new PictureBox();
             tableLayoutPanel7 = new TableLayoutPanel();
             button5 = new Button();
-            pictureBox4 = new PictureBox();
+            Kantin = new PictureBox();
             tableLayoutPanel6 = new TableLayoutPanel();
             button4 = new Button();
-            pictureBox3 = new PictureBox();
+            Aula = new PictureBox();
             tableLayoutPanel5 = new TableLayoutPanel();
-            pictureBox2 = new PictureBox();
+            Music = new PictureBox();
             button2 = new Button();
             panel3 = new Panel();
             button1 = new Button();
@@ -73,26 +73,26 @@
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Restoran).BeginInit();
             tableLayoutPanel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Cafe).BeginInit();
             tableLayoutPanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Playground).BeginInit();
             tableLayoutPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Kolam).BeginInit();
             tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Camping).BeginInit();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Hotel).BeginInit();
             tableLayoutPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Suite).BeginInit();
             tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Kantin).BeginInit();
             tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Aula).BeginInit();
             tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Music).BeginInit();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -154,7 +154,7 @@
             tableLayoutPanel13.ColumnCount = 1;
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel13.Controls.Add(button10, 0, 1);
-            tableLayoutPanel13.Controls.Add(pictureBox9, 0, 0);
+            tableLayoutPanel13.Controls.Add(Restoran, 0, 0);
             tableLayoutPanel13.Dock = DockStyle.Fill;
             tableLayoutPanel13.Location = new Point(528, 2);
             tableLayoutPanel13.Margin = new Padding(3, 2, 3, 2);
@@ -175,21 +175,21 @@
             button10.UseVisualStyleBackColor = true;
             button10.Click += button10_Click;
             // 
-            // pictureBox9
+            // Restoran
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(3, 3);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(163, 109);
-            pictureBox9.TabIndex = 1;
-            pictureBox9.TabStop = false;
+            Restoran.Image = (Image)resources.GetObject("Restoran.Image");
+            Restoran.Location = new Point(3, 3);
+            Restoran.Name = "Restoran";
+            Restoran.Size = new Size(163, 109);
+            Restoran.TabIndex = 1;
+            Restoran.TabStop = false;
             // 
             // tableLayoutPanel12
             // 
             tableLayoutPanel12.ColumnCount = 1;
             tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel12.Controls.Add(button11, 0, 1);
-            tableLayoutPanel12.Controls.Add(pictureBox10, 0, 0);
+            tableLayoutPanel12.Controls.Add(Cafe, 0, 0);
             tableLayoutPanel12.Dock = DockStyle.Fill;
             tableLayoutPanel12.Location = new Point(703, 2);
             tableLayoutPanel12.Margin = new Padding(3, 2, 3, 2);
@@ -210,21 +210,21 @@
             button11.UseVisualStyleBackColor = true;
             button11.Click += button11_Click;
             // 
-            // pictureBox10
+            // Cafe
             // 
-            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(3, 3);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(165, 109);
-            pictureBox10.TabIndex = 1;
-            pictureBox10.TabStop = false;
+            Cafe.Image = (Image)resources.GetObject("Cafe.Image");
+            Cafe.Location = new Point(3, 3);
+            Cafe.Name = "Cafe";
+            Cafe.Size = new Size(165, 109);
+            Cafe.TabIndex = 1;
+            Cafe.TabStop = false;
             // 
             // tableLayoutPanel11
             // 
             tableLayoutPanel11.ColumnCount = 1;
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel11.Controls.Add(button9, 0, 1);
-            tableLayoutPanel11.Controls.Add(pictureBox8, 0, 0);
+            tableLayoutPanel11.Controls.Add(Playground, 0, 0);
             tableLayoutPanel11.Dock = DockStyle.Fill;
             tableLayoutPanel11.Location = new Point(353, 2);
             tableLayoutPanel11.Margin = new Padding(3, 2, 3, 2);
@@ -245,21 +245,21 @@
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
             // 
-            // pictureBox8
+            // Playground
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(3, 3);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(163, 109);
-            pictureBox8.TabIndex = 1;
-            pictureBox8.TabStop = false;
+            Playground.Image = (Image)resources.GetObject("Playground.Image");
+            Playground.Location = new Point(3, 3);
+            Playground.Name = "Playground";
+            Playground.Size = new Size(163, 109);
+            Playground.TabIndex = 1;
+            Playground.TabStop = false;
             // 
             // tableLayoutPanel10
             // 
             tableLayoutPanel10.ColumnCount = 1;
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel10.Controls.Add(button7, 0, 1);
-            tableLayoutPanel10.Controls.Add(pictureBox6, 0, 0);
+            tableLayoutPanel10.Controls.Add(Kolam, 0, 0);
             tableLayoutPanel10.Dock = DockStyle.Fill;
             tableLayoutPanel10.Location = new Point(3, 2);
             tableLayoutPanel10.Margin = new Padding(3, 2, 3, 2);
@@ -280,21 +280,21 @@
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
-            // pictureBox6
+            // Kolam
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(3, 3);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(163, 109);
-            pictureBox6.TabIndex = 1;
-            pictureBox6.TabStop = false;
+            Kolam.Image = (Image)resources.GetObject("Kolam.Image");
+            Kolam.Location = new Point(3, 3);
+            Kolam.Name = "Kolam";
+            Kolam.Size = new Size(163, 109);
+            Kolam.TabIndex = 1;
+            Kolam.TabStop = false;
             // 
             // tableLayoutPanel9
             // 
             tableLayoutPanel9.ColumnCount = 1;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel9.Controls.Add(button8, 0, 1);
-            tableLayoutPanel9.Controls.Add(pictureBox7, 0, 0);
+            tableLayoutPanel9.Controls.Add(Camping, 0, 0);
             tableLayoutPanel9.Dock = DockStyle.Fill;
             tableLayoutPanel9.Location = new Point(178, 2);
             tableLayoutPanel9.Margin = new Padding(3, 2, 3, 2);
@@ -315,14 +315,14 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
-            // pictureBox7
+            // Camping
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(3, 3);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(163, 109);
-            pictureBox7.TabIndex = 1;
-            pictureBox7.TabStop = false;
+            Camping.Image = (Image)resources.GetObject("Camping.Image");
+            Camping.Location = new Point(3, 3);
+            Camping.Name = "Camping";
+            Camping.Size = new Size(163, 109);
+            Camping.TabIndex = 1;
+            Camping.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -351,7 +351,7 @@
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(button3, 0, 1);
-            tableLayoutPanel1.Controls.Add(pictureBox1, 0, 0);
+            tableLayoutPanel1.Controls.Add(Hotel, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(178, 2);
             tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
@@ -372,21 +372,21 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // pictureBox1
+            // Hotel
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(163, 109);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            Hotel.Image = (Image)resources.GetObject("Hotel.Image");
+            Hotel.Location = new Point(3, 3);
+            Hotel.Name = "Hotel";
+            Hotel.Size = new Size(163, 109);
+            Hotel.TabIndex = 1;
+            Hotel.TabStop = false;
             // 
             // tableLayoutPanel8
             // 
             tableLayoutPanel8.ColumnCount = 1;
             tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel8.Controls.Add(button6, 0, 1);
-            tableLayoutPanel8.Controls.Add(pictureBox5, 0, 0);
+            tableLayoutPanel8.Controls.Add(Suite, 0, 0);
             tableLayoutPanel8.Dock = DockStyle.Fill;
             tableLayoutPanel8.Location = new Point(703, 2);
             tableLayoutPanel8.Margin = new Padding(3, 2, 3, 2);
@@ -407,21 +407,21 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
-            // pictureBox5
+            // Suite
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(3, 3);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(165, 109);
-            pictureBox5.TabIndex = 1;
-            pictureBox5.TabStop = false;
+            Suite.Image = (Image)resources.GetObject("Suite.Image");
+            Suite.Location = new Point(3, 3);
+            Suite.Name = "Suite";
+            Suite.Size = new Size(165, 109);
+            Suite.TabIndex = 1;
+            Suite.TabStop = false;
             // 
             // tableLayoutPanel7
             // 
             tableLayoutPanel7.ColumnCount = 1;
             tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel7.Controls.Add(button5, 0, 1);
-            tableLayoutPanel7.Controls.Add(pictureBox4, 0, 0);
+            tableLayoutPanel7.Controls.Add(Kantin, 0, 0);
             tableLayoutPanel7.Dock = DockStyle.Fill;
             tableLayoutPanel7.Location = new Point(528, 2);
             tableLayoutPanel7.Margin = new Padding(3, 2, 3, 2);
@@ -442,21 +442,21 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
-            // pictureBox4
+            // Kantin
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(3, 3);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(163, 109);
-            pictureBox4.TabIndex = 1;
-            pictureBox4.TabStop = false;
+            Kantin.Image = (Image)resources.GetObject("Kantin.Image");
+            Kantin.Location = new Point(3, 3);
+            Kantin.Name = "Kantin";
+            Kantin.Size = new Size(163, 109);
+            Kantin.TabIndex = 1;
+            Kantin.TabStop = false;
             // 
             // tableLayoutPanel6
             // 
             tableLayoutPanel6.ColumnCount = 1;
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel6.Controls.Add(button4, 0, 1);
-            tableLayoutPanel6.Controls.Add(pictureBox3, 0, 0);
+            tableLayoutPanel6.Controls.Add(Aula, 0, 0);
             tableLayoutPanel6.Dock = DockStyle.Fill;
             tableLayoutPanel6.Location = new Point(353, 2);
             tableLayoutPanel6.Margin = new Padding(3, 2, 3, 2);
@@ -477,20 +477,20 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // pictureBox3
+            // Aula
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(163, 109);
-            pictureBox3.TabIndex = 1;
-            pictureBox3.TabStop = false;
+            Aula.Image = (Image)resources.GetObject("Aula.Image");
+            Aula.Location = new Point(3, 3);
+            Aula.Name = "Aula";
+            Aula.Size = new Size(163, 109);
+            Aula.TabIndex = 1;
+            Aula.TabStop = false;
             // 
             // tableLayoutPanel5
             // 
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Controls.Add(pictureBox2, 0, 0);
+            tableLayoutPanel5.Controls.Add(Music, 0, 0);
             tableLayoutPanel5.Controls.Add(button2, 0, 1);
             tableLayoutPanel5.Dock = DockStyle.Fill;
             tableLayoutPanel5.Location = new Point(3, 2);
@@ -503,16 +503,16 @@
             tableLayoutPanel5.Size = new Size(169, 144);
             tableLayoutPanel5.TabIndex = 0;
             // 
-            // pictureBox2
+            // Music
             // 
-            pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 2);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(163, 111);
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            Music.Dock = DockStyle.Fill;
+            Music.Image = (Image)resources.GetObject("Music.Image");
+            Music.Location = new Point(3, 2);
+            Music.Margin = new Padding(3, 2, 3, 2);
+            Music.Name = "Music";
+            Music.Size = new Size(163, 111);
+            Music.TabIndex = 0;
+            Music.TabStop = false;
             // 
             // button2
             // 
@@ -545,6 +545,7 @@
             button1.TabIndex = 5;
             button1.Text = "Cari";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox1
             // 
@@ -602,26 +603,26 @@
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
             tableLayoutPanel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Restoran).EndInit();
             tableLayoutPanel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Cafe).EndInit();
             tableLayoutPanel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Playground).EndInit();
             tableLayoutPanel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Kolam).EndInit();
             tableLayoutPanel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Camping).EndInit();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Hotel).EndInit();
             tableLayoutPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Suite).EndInit();
             tableLayoutPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Kantin).EndInit();
             tableLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Aula).EndInit();
             tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Music).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
@@ -646,27 +647,27 @@
         private TableLayoutPanel tableLayoutPanel8;
         private TableLayoutPanel tableLayoutPanel7;
         private TableLayoutPanel tableLayoutPanel6;
-        private PictureBox pictureBox2;
+        private PictureBox Music;
         private TableLayoutPanel tableLayoutPanel13;
         private TableLayoutPanel tableLayoutPanel1;
         private Button button10;
-        private PictureBox pictureBox9;
+        private PictureBox Restoran;
         private Button button11;
-        private PictureBox pictureBox10;
+        private PictureBox Cafe;
         private Button button9;
-        private PictureBox pictureBox8;
+        private PictureBox Playground;
         private Button button7;
-        private PictureBox pictureBox6;
+        private PictureBox Kolam;
         private Button button8;
-        private PictureBox pictureBox7;
+        private PictureBox Camping;
         private Button button3;
-        private PictureBox pictureBox1;
+        private PictureBox Hotel;
         private Button button6;
-        private PictureBox pictureBox5;
+        private PictureBox Suite;
         private Button button5;
-        private PictureBox pictureBox4;
+        private PictureBox Kantin;
         private Button button4;
-        private PictureBox pictureBox3;
+        private PictureBox Aula;
         private Button button2;
         private Button button1;
         private TextBox textBox1;

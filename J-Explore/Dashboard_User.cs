@@ -133,5 +133,10 @@ namespace J_Explore
         {
 
         }
+
+        private void panel14_Click(object sender, EventArgs e)
+        {
+            OpenChildFrom(new Settings(), sender);
+        }
     }
 }

@@ -40,11 +40,11 @@ namespace J_Explore.Utils
         public static Admin CurrentAdmin = new Admin("admin", "admin123");
 
         // Konfigurasi Database
-        public const string DbHost = "localhost";
+        public static string DbHost { get; set; }
         public const int DbPort = 5432;
         public const string DbUsername = "postgres";
-        public const string DbPassword = "HELLOWORLD123";
-        public const string DbName = "new_pbo";
+        public const string DbPassword = "Rizal020304";
+        public const string DbName = "pbo2";
 
         public static readonly Color OnHoverColor = Color.Lime;
 

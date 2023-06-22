@@ -32,11 +32,11 @@ namespace J_Explore
             DataTable table = DbHelper.GetInstance().ExecuteQuery("SELECT tanggal_transaksi, SUM(harga_tiket * jumlah_pengunjung) AS pendapatan_harian\r\nFROM transaksi\r\nJOIN detail_transaksi ON transaksi.id_transaksi = detail_transaksi.id_transaksi\r\nJOIN jenis_pengunjung ON detail_transaksi.id_jenis_pengunjung = jenis_pengunjung.id_jenis_pengunjung\r\nWHERE tanggal_transaksi::date = CURRENT_DATE\r\nGROUP BY tanggal_transaksi;\r\n");
             pendapatanHari.DataSource = table;
 
-            foreach (DataRow row in table.Rows)
-            {
-                DateTime TanggalTransaksi = (DateTime)row["tanggal_transaksi"];
-                long JumlahWisatawanHarian = (long)row["jumlah_pengunjung"];
-            }
+            //foreach (DataRow row in table.Rows)
+            //{
+            //    DateTime TanggalTransaksi = (DateTime)row["tanggal_transaksi"];
+            //    long JumlahWisatawanHarian = (long)row["jumlah_pengunjung"];
+            //}
         }
 
         private void ShowWisatawanMingguan()
